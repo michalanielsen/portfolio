@@ -1,0 +1,25 @@
+[21/Feb/2020:19:38:12] (ℹ️): WordPress Instance Info:
+[21/Feb/2020:19:38:12] (ℹ️): Home URL : https://michalasoendergaard.dk
+[21/Feb/2020:19:38:12] (ℹ️): Site URL : https://michalasoendergaard.dk
+[21/Feb/2020:19:38:12] (ℹ️): WordPress Version : 5.3.2
+[21/Feb/2020:19:38:12] (ℹ️): Onboarding Version : 1.8.2
+[21/Feb/2020:19:38:12] (ℹ️): Multisite : No
+[21/Feb/2020:19:38:12] (ℹ️): Server Info : Apache
+[21/Feb/2020:19:38:12] (ℹ️): PHP Version : 7.3.15
+[21/Feb/2020:19:38:12] (ℹ️): HTTPS : Yes
+[21/Feb/2020:19:38:12] (ℹ️): PHP Max Execution Time : 50
+[21/Feb/2020:19:38:12] (ℹ️): PHP Max Input Vars : 5000
+[21/Feb/2020:19:38:12] (ℹ️): Max Upload Size : 100663296
+[21/Feb/2020:19:38:12] (ℹ️): Plugins:
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Apollo13 Framework Extensions : v1.8.2 (Apollo13Themes)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Elementor : v2.9.2 (Elementor.com)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Image optimization service by Optimole : v2.2.8 (Optimole)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Gutenberg Blocks and Template Library by Otter : v1.3.3 (ThemeIsle)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Really Simple SSL : v3.2.9 (Rogier Lankhorst, Mark Wolters)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Rife Elementor Extensions &amp; Templates : v1.1.2 (Apollo13Themes)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Orbit Fox Companion : v2.9.2 (Themeisle)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] TranslatePress - Multilingual : v1.6.6 (Cozmoslabs, Razvan Mocanu, Madalin Ungureanu, Cristophor Hurduban)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Visualizer: Tables and Charts for WordPress : v3.4.2 (Themeisle)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Weglot Translate : v3.1.6 (Weglot Translate team)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] WP Product Review Lite : v3.7.2 (ThemeIsle)
+[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] WPForms Lite : v1.5.8.2 (WPForms)

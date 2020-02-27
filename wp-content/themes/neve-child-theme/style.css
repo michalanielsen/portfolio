@@ -1,0 +1,50 @@
+/*
+ Theme Name:   Neve Child Theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Neve Child Theme
+ Author:       Michala Soendergaard Nielsen
+ Author URI:   http://michalasoendergaard.dk
+ Template:     neve
+ Version:      1.1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  Neve Child Theme
+*/
+
+
+/* Logo (Michala Soendergaard) tilpasning */ 
+
+.site-logo {
+    font-family: upgrade thin;
+}
+
+.site-logo h1, .site-logo p {
+    letter-spacing:0.1em;
+}
+
+
+/* Navigationsmenu tilpasning */ 
+
+.hfg-item-right .primary-menu-ul {
+    font-family: upgrade thin;
+}
+
+
+/* Portfolio side - WP standart overskrift skjult */
+
+.nv-page-title {
+    display:none;
+}
+
+
+/* Skills på om mig siden */
+
+.skill-title {
+    display:none;
+}
+
+
+
+
+

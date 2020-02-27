@@ -1,0 +1,2364 @@
+# Copyright (C) 2020 AnalogWP
+# This file is distributed under the same license as the Style Kits for Elementor plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Style Kits for Elementor 1.5.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/analogwp-templates\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-02-12T12:13:46+00:00\n"
+"PO-Revision-Date: 2020-02-12T12:13:46+00:00\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: ang\n"
+
+#: src/js/app/Header.js:108
+#: src/js/app/popup.js:134
+#: languages/ang-translations.php:11
+msgid "Close"
+msgstr ""
+
+#: src/js/app/Header.js:93
+#: languages/ang-translations.php:15
+msgid "Templates library refreshed"
+msgstr ""
+
+#: src/js/app/Header.js:94
+#: languages/ang-translations.php:19
+msgid "Error refreshing templates library, please try again."
+msgstr ""
+
+#: src/js/app/Header.js:98
+#: languages/ang-translations.php:23
+msgid "Syncing..."
+msgstr ""
+
+#: src/js/app/Header.js:99
+#: languages/ang-translations.php:27
+msgid "Sync Library"
+msgstr ""
+
+#: src/js/app/Nav.js:66
+#: inc/register-settings.php:34
+#: languages/ang-translations.php:32
+msgid "Templates"
+msgstr ""
+
+#: src/js/app/Nav.js:68
+#: inc/elementor/class-ang-action.php:124
+#: inc/elementor/class-finder-shortcuts.php:48
+#: inc/elementor/class-post-type.php:32
+#: inc/elementor/class-post-type.php:41
+#: inc/elementor/class-typography.php:661
+#: inc/register-settings.php:23
+#: inc/register-settings.php:41
+#: inc/register-settings.php:42
+#: inc/register-settings.php:68
+#: languages/ang-translations.php:45
+msgid "Style Kits"
+msgstr ""
+
+#: src/js/app/Nav.js:69
+#: inc/register-settings.php:49
+#: inc/register-settings.php:50
+#: languages/ang-translations.php:51
+msgid "Blocks"
+msgstr ""
+
+#: src/js/app/ProModal.js:37
+#: languages/ang-translations.php:55
+msgid "To import Pro "
+msgstr ""
+
+#: src/js/app/ProModal.js:37
+#: languages/ang-translations.php:59
+msgid ", you’ll need an active "
+msgstr ""
+
+#: src/js/app/ProModal.js:37
+#: inc/settings/class-settings-gopro.php:27
+#: languages/ang-translations.php:64
+msgid "Style Kits Pro"
+msgstr ""
+
+#: src/js/app/ProModal.js:37
+#: languages/ang-translations.php:68
+msgid "license."
+msgstr ""
+
+#: src/js/app/ProModal.js:39
+#: languages/ang-translations.php:72
+msgid "Learn More"
+msgstr ""
+
+#: src/js/app/Template.js:15
+#: src/js/app/blocks/BlockList.js:223
+#: languages/ang-translations.php:77
+msgid "New"
+msgstr ""
+
+#: src/js/app/Template.js:22
+#: src/js/app/stylekits/stylekits.js:301
+#: languages/ang-translations.php:82
+msgid "Preview"
+msgstr ""
+
+#. translators: translators: translators: translators: %1$s: Link to Style Kits Pro. %2$s: Go Pro text. translators: translators: %1$s: Link to Style Kits Pro. %2$s: Go Pro text.
+#: src/js/app/Template.js:25
+#: src/js/app/blocks/BlockList.js:237
+#: src/js/app/stylekits/stylekits.js:306
+#: languages/ang-translations.php:89
+msgid "Go Pro"
+msgstr ""
+
+#: src/js/app/Template.js:29
+#: src/js/app/blocks/BlockList.js:243
+#: src/js/app/stylekits/stylekits.js:374
+#: languages/ang-translations.php:95
+msgid "Import"
+msgstr ""
+
+#: src/js/app/Template.js:56
+#: src/js/app/blocks/BlockList.js:261
+#: src/js/app/stylekits/stylekits.js:326
+#: languages/ang-translations.php:101
+msgid "Pro"
+msgstr ""
+
+#: src/js/app/Templates.js:311
+#: languages/ang-translations.php:105
+msgid "This template requires an updated version, please update your plugin to latest version."
+msgstr ""
+
+#: src/js/app/Templates.js:411
+#: languages/ang-translations.php:109
+msgid "templates"
+msgstr ""
+
+#: src/js/app/api.js:205
+#: languages/ang-translations.php:113
+msgid "Template"
+msgstr ""
+
+#: src/js/app/api.js:208
+#: languages/ang-translations.php:117
+msgid "Block"
+msgstr ""
+
+#: src/js/app/api.js:216
+#: languages/ang-translations.php:121
+msgid "Add Style Kits"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:140
+#: src/js/app/filters.js:150
+#: languages/ang-translations.php:126
+msgid "Show All"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:145
+#: src/js/app/filters.js:155
+#: languages/ang-translations.php:131
+msgid "Latest"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:146
+#: src/js/app/filters.js:156
+#: languages/ang-translations.php:136
+msgid "Popular"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:157
+#: languages/ang-translations.php:140
+msgid "Back to all Blocks"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:173
+#: src/js/app/filters.js:190
+#: languages/ang-translations.php:145
+msgid "Back to all"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:174
+#: src/js/app/filters.js:191
+#: languages/ang-translations.php:150
+msgid "My Favorites"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:180
+#: languages/ang-translations.php:154
+msgid "Show Pro Blocks"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:194
+#: languages/ang-translations.php:158
+msgid "Group by Block type"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:210
+#: src/js/app/filters.js:229
+#: languages/ang-translations.php:163
+msgid "Filter"
+msgstr ""
+
+#: src/js/app/blocks/Filters.js:223
+#: src/js/app/filters.js:244
+#: languages/ang-translations.php:168
+msgid "Sort by"
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:171
+#: languages/ang-translations.php:172
+msgid "Loading blocks..."
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:191
+#: languages/ang-translations.php:176
+msgid "The block has been imported and is now available in the"
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:202
+#: languages/ang-translations.php:180
+msgid "Elementor section library"
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:216
+#: src/js/app/stylekits/stylekits.js:400
+#: languages/ang-translations.php:185
+msgid "Ok, thanks"
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:226
+#: languages/ang-translations.php:189
+msgid "blocks"
+msgstr ""
+
+#: src/js/app/blocks/blocks.js:230
+#: languages/ang-translations.php:193
+msgid "No blocks found."
+msgstr ""
+
+#: src/js/app/collection/Collection.js:152
+#: languages/ang-translations.php:197
+msgid "View Templates"
+msgstr ""
+
+#: src/js/app/filters.js:175
+#: languages/ang-translations.php:201
+msgid "Back to Kits"
+msgstr ""
+
+#: src/js/app/filters.js:177
+#: languages/ang-translations.php:205
+msgid "Template Kit"
+msgstr ""
+
+#: src/js/app/filters.js:197
+#: languages/ang-translations.php:209
+msgid "Show Pro Templates"
+msgstr ""
+
+#: src/js/app/filters.js:211
+#: languages/ang-translations.php:213
+msgid "Group by Template Kit"
+msgstr ""
+
+#: src/js/app/filters.js:256
+#: languages/ang-translations.php:217
+msgid "Search templates"
+msgstr ""
+
+#: src/js/app/modal.js:106
+#: src/js/app/modal/Preview.js:111
+#: languages/ang-translations.php:222
+msgid "Insert Layout"
+msgstr ""
+
+#: src/js/app/modal.js:96
+#: src/js/app/modal/Preview.js:100
+#: languages/ang-translations.php:227
+msgid "Back to Library"
+msgstr ""
+
+#: src/js/app/modal.js:99
+#: src/js/app/modal/Preview.js:103
+#: languages/ang-translations.php:232
+msgid "Open Preview in New Tab"
+msgstr ""
+
+#: src/js/app/modal/Preview.js:118
+#: languages/ang-translations.php:236
+msgid "Loading icon"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:102
+#: languages/ang-translations.php:240
+msgid "Default"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:106
+#: languages/ang-translations.php:244
+msgid "Installed"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:134
+#: languages/ang-translations.php:248
+msgid "Learn more about this in %s."
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:137
+#: languages/ang-translations.php:252
+msgid "Style Kits Docs"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:155
+#: languages/ang-translations.php:256
+msgid "Choose a Style Kit..."
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:172
+#: languages/ang-translations.php:260
+msgid "Next"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:188
+#: languages/ang-translations.php:264
+msgid "Change Style Kit"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:192
+#: languages/ang-translations.php:268
+msgid "Import this template to your library to make it available in your Elementor "
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:193
+#: languages/ang-translations.php:272
+msgid "Saved Templates"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:194
+#: languages/ang-translations.php:276
+msgid " list for future use."
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:214
+#: languages/ang-translations.php:280
+msgid "Import to Library"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:222
+#: languages/ang-translations.php:284
+msgid "Create a new page from this template to make it available as a draft page in your Pages list."
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:226
+#: languages/ang-translations.php:288
+msgid "Enter a Page Name"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:245
+#: languages/ang-translations.php:292
+msgid "Import to page"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:257
+#: languages/ang-translations.php:296
+msgid "All done! The template has been imported."
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:262
+#: languages/ang-translations.php:300
+msgid "Edit Template"
+msgstr ""
+
+#: src/js/app/popups/ImportTemplate.js:80
+#: languages/ang-translations.php:304
+msgid "Select a Style Kit to apply on this layout"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:171
+#: languages/ang-translations.php:308
+msgid "%s in WordPress dashboard."
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:174
+#: languages/ang-translations.php:312
+msgid "Manage your Style Kits"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:264
+#: languages/ang-translations.php:316
+msgid "These are some Style Kit presets that you can use as a starting point. Once you import a Style Kit, it will be added to your"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:264
+#: languages/ang-translations.php:320
+msgid "Style Kits list"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:265
+#: languages/ang-translations.php:324
+msgid "You will then be able to apply it on any Elementor page."
+msgstr ""
+
+#. translators: %s: Link text
+#. translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text translators: translators: %s: Link text
+#: src/js/app/stylekits/stylekits.js:266
+#: inc/elementor/class-ang-action.php:121
+#: languages/ang-translations.php:331
+msgid "Learn more"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:343
+#: languages/ang-translations.php:335
+msgid "A Style Kit already exists with the same name. To import it again please enter a new name below:"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:347
+#: languages/ang-translations.php:339
+msgid "Please try a different as a Style Kit with same name already exists."
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:351
+#: languages/ang-translations.php:343
+msgid "Enter a Style Kit Name"
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:386
+#: languages/ang-translations.php:347
+msgid "The Style Kit has been imported and is now available in the list of the available Style Kits."
+msgstr ""
+
+#: src/js/app/stylekits/stylekits.js:408
+#: languages/ang-translations.php:351
+msgid "Importing "
+msgstr ""
+
+#. Plugin Name of the plugin
+#. translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin translators: Plugin Name of the plugin
+#: inc/admin/class-admin.php:44
+#: inc/class-tracker.php:131
+#: inc/register-settings.php:22
+#: languages/ang-translations.php:359
+msgid "Style Kits for Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#. translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin translators: Plugin URI of the plugin Author URI of the plugin
+#: languages/ang-translations.php:365
+msgid "https://analogwp.com/"
+msgstr ""
+
+#. Description of the plugin
+#. translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin translators: Description of the plugin
+#: languages/ang-translations.php:370
+msgid "Style Kits adds intuitive styling controls in the Elementor editor that power-up your design workflow."
+msgstr ""
+
+#. Author of the plugin
+#. translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin translators: Author of the plugin
+#: languages/ang-translations.php:375
+msgid "AnalogWP"
+msgstr ""
+
+#: analogwp-templates.php:81
+#: analogwp-templates.php:91
+#: languages/ang-translations.php:380
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: analogwp-templates.php:278
+#: inc/elementor/class-finder-shortcuts.php:42
+#: inc/register-settings.php:58
+#: languages/ang-translations.php:386
+msgid "Settings"
+msgstr ""
+
+#: analogwp-templates.php:322
+#: languages/ang-translations.php:390
+msgid "Style Kits is not working because you need to activate the Elementor plugin."
+msgstr ""
+
+#: analogwp-templates.php:323
+#: languages/ang-translations.php:394
+msgid "Activate Elementor Now"
+msgstr ""
+
+#: analogwp-templates.php:330
+#: languages/ang-translations.php:398
+msgid "Style Kits is not working because you need to install the Elementor plugin."
+msgstr ""
+
+#: analogwp-templates.php:331
+#: languages/ang-translations.php:402
+msgid "Install Elementor Now"
+msgstr ""
+
+#. translators: %s: WordPress version
+#. translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: translators: translators: translators: translators: translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: translators: %s: WordPress version translators: translators: %s: WordPress version
+#: analogwp-templates.php:345
+#: languages/ang-translations.php:408
+msgid "Style Kits requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING."
+msgstr ""
+
+#. translators: 1: Style Kits for Elementor, 2: Link to plugin review
+#. translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review translators: translators: 1: Style Kits for Elementor, 2: Link to plugin review
+#: inc/admin/class-admin.php:43
+#: languages/ang-translations.php:414
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr ""
+
+#: inc/admin/class-admin.php:65
+#: languages/ang-translations.php:418
+msgid "View Documentation"
+msgstr ""
+
+#: inc/admin/class-admin.php:65
+#: inc/settings/views/html-admin-settings.php:61
+#: languages/ang-translations.php:423
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/class-admin.php:66
+#: languages/ang-translations.php:427
+msgid "Get Support"
+msgstr ""
+
+#: inc/api/class-local.php:126
+#: inc/api/class-local.php:319
+#: languages/ang-translations.php:432
+msgid "Invalid or expired license provided."
+msgstr ""
+
+#: inc/api/class-local.php:392
+#: languages/ang-translations.php:436
+msgid "Setting updated."
+msgstr ""
+
+#: inc/api/class-local.php:480
+#: languages/ang-translations.php:440
+msgid "Unable to create a post"
+msgstr ""
+
+#: inc/api/class-local.php:485
+#: languages/ang-translations.php:444
+msgid "Token saved."
+msgstr ""
+
+#: inc/api/class-local.php:503
+#: inc/api/class-local.php:533
+#: languages/ang-translations.php:449
+msgid "Please provide a valid post ID."
+msgstr ""
+
+#: inc/api/class-local.php:507
+#: languages/ang-translations.php:453
+msgid "Invalid Post ID"
+msgstr ""
+
+#: inc/api/class-local.php:560
+#: languages/ang-translations.php:457
+msgid "Invalid Style Kit ID."
+msgstr ""
+
+#: inc/api/class-local.php:588
+#: languages/ang-translations.php:461
+msgid "Error occured while requesting Style Kit data."
+msgstr ""
+
+#: inc/api/class-local.php:618
+#: languages/ang-translations.php:465
+msgid "Style Kit imported"
+msgstr ""
+
+#: inc/api/class-local.php:656
+#: languages/ang-translations.php:469
+msgid "Invalid token data returned"
+msgstr ""
+
+#: inc/api/class-local.php:674
+#: languages/ang-translations.php:473
+msgid "Invalid Block ID."
+msgstr ""
+
+#: inc/class-admin-settings.php:76
+#: languages/ang-translations.php:477
+msgid "Your settings have been saved."
+msgstr ""
+
+#: inc/class-admin-settings.php:133
+#: languages/ang-translations.php:481
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr ""
+
+#: inc/class-admin-settings.php:549
+#: inc/class-admin-settings.php:614
+#: languages/ang-translations.php:486
+msgid "Toggle"
+msgstr ""
+
+#: inc/class-base.php:41
+#: inc/class-base.php:51
+#: languages/ang-translations.php:491
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-cron.php:41
+#: languages/ang-translations.php:495
+msgid "Once Weekly"
+msgstr ""
+
+#: inc/class-elementor.php:42
+#: languages/ang-translations.php:499
+msgid "AnalogWP Classes"
+msgstr ""
+
+#: inc/class-quick-edit.php:76
+#: inc/class-quick-edit.php:161
+#: inc/elementor/class-post-type.php:33
+#: languages/ang-translations.php:505
+msgid "Style Kit"
+msgstr ""
+
+#. translators: %2$s Plugin Name %3%s Review text
+#. translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text translators: translators: %2$s Plugin Name %3%s Review text
+#: inc/class-tracker.php:130
+#: languages/ang-translations.php:511
+msgid "Hey! You have been using %1$s for over 2 weeks, we hope you enjoy it! If so, please leave a positive %2$s."
+msgstr ""
+
+#: inc/class-tracker.php:132
+#: languages/ang-translations.php:515
+msgid "review on WordPress.org"
+msgstr ""
+
+#. translators: Global Style Kit post title.
+#. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title. translators: translators: Global Style Kit post title.
+#: inc/class-utils.php:95
+#: languages/ang-translations.php:521
+msgid "Global: %s"
+msgstr ""
+
+#: inc/elementor/class-analog-settings.php:42
+#: languages/ang-translations.php:525
+msgid "Style Kits for Elementor Settings"
+msgstr ""
+
+#: inc/elementor/class-analog-settings.php:46
+#: languages/ang-translations.php:529
+msgid "Global Style Kit"
+msgstr ""
+
+#. translators: %s: Style Kit Documentation link
+#. translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link
+#: inc/elementor/class-analog-settings.php:51
+#: languages/ang-translations.php:535
+msgid "This setting has been moved to %s."
+msgstr ""
+
+#: inc/elementor/class-analog-settings.php:52
+#: languages/ang-translations.php:539
+msgid "Style Kit settings"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:103
+#: languages/ang-translations.php:543
+msgid "This will reset all the settings you configured previously under Page Style Settings from Style Kits."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:104
+#: languages/ang-translations.php:547
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:105
+#: languages/ang-translations.php:551
+msgid "Save Style Kit as"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:106
+#: languages/ang-translations.php:555
+msgid "Save"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:107
+#: languages/ang-translations.php:559
+msgid "Cancel"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:108
+#: languages/ang-translations.php:563
+msgid "Enter a title"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:109
+#: languages/ang-translations.php:567
+msgid "Insert Style Kit"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:110
+#: inc/elementor/class-ang-action.php:113
+#: languages/ang-translations.php:572
+msgid "Please select a Style Kit first."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:111
+#: inc/settings/class-settings-general.php:36
+#: languages/ang-translations.php:577
+msgid "— Select a Style Kit —"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:112
+#: languages/ang-translations.php:581
+msgid "Style Kit Updated."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:114
+#: inc/elementor/class-typography.php:707
+#: languages/ang-translations.php:586
+msgid "Update Style Kit"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:115
+#: languages/ang-translations.php:590
+msgid "This action will update the Style Kit with the latest changes, and will affect all the pages that the style kit is used on. Do you wish to proceed?"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:116
+#: languages/ang-translations.php:594
+msgid "Meet Style Kits by Style Kits for Elementor"
+msgstr ""
+
+#. translators: %s: Link to Style Kits documentation.
+#. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation. translators: translators: %s: Link to Style Kits documentation.
+#: inc/elementor/class-ang-action.php:119
+#: languages/ang-translations.php:600
+msgid "Take control of your design in the macro level, with local or global settings for typography and spacing. %s."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:123
+#: languages/ang-translations.php:604
+msgid "View Styles"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:125
+#: inc/elementor/class-typography.php:778
+#: languages/ang-translations.php:609
+msgid "Export CSS"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:126
+#: languages/ang-translations.php:613
+msgid "Copy CSS"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:127
+#: languages/ang-translations.php:617
+msgid "Style Kit Update Detected"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:128
+#: languages/ang-translations.php:621
+msgid "<p>The Style kit used by this page has been updated, click ‘Apply Changes’ to apply the latest changes.</p><p>Click Discard to keep your current page styles and detach the page from the Style Kit</p>"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:129
+#: languages/ang-translations.php:625
+msgid "Discard"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:130
+#: languages/ang-translations.php:629
+msgid "Apply Changes"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:131
+#: languages/ang-translations.php:633
+msgid "Ok, got it."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:132
+#: languages/ang-translations.php:637
+msgid "Go to Page Style"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:133
+#: languages/ang-translations.php:641
+msgid "This template offers global typography and spacing control, through the Page Style tab."
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:134
+#: languages/ang-translations.php:645
+msgid "Typography, column gaps and more, are controlled layout-wide at Page Styles Panel, giving you the flexibility you need over the design of this template. You can save the styles and apply them to any other page. <a href=\"#\" target=\"_blank\">Learn More.</a>"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:135
+#: languages/ang-translations.php:649
+msgid "CSS Variables"
+msgstr ""
+
+#: inc/elementor/class-ang-action.php:136
+#: languages/ang-translations.php:653
+msgid "Remove Page ID from the CSS"
+msgstr ""
+
+#: inc/elementor/class-colors.php:150
+#: languages/ang-translations.php:1830
+msgctxt "Section Title"
+msgid "Main Colors"
+msgstr ""
+
+#. translators: %1$s: Link to documentation, %2$s: Link text.
+#. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text.
+#: inc/elementor/class-colors.php:159
+#: languages/ang-translations.php:659
+msgid "Set the colors for Typography, accents and more."
+msgstr ""
+
+#. translators: %1$s: Link to documentation, %2$s: Link text.
+#. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text.
+#: inc/elementor/class-colors.php:159
+#: inc/elementor/class-typography.php:270
+#: inc/elementor/class-typography.php:330
+#: inc/elementor/class-typography.php:391
+#: inc/elementor/class-typography.php:451
+#: inc/elementor/class-typography.php:513
+#: languages/ang-translations.php:670
+msgid "Learn more."
+msgstr ""
+
+#: inc/elementor/class-colors.php:219
+#: languages/ang-translations.php:674
+msgid "Primary Accent"
+msgstr ""
+
+#: inc/elementor/class-colors.php:230
+#: languages/ang-translations.php:678
+msgid "The primary accent color applies on Links."
+msgstr ""
+
+#: inc/elementor/class-colors.php:238
+#: languages/ang-translations.php:682
+msgid "Secondary Accent"
+msgstr ""
+
+#: inc/elementor/class-colors.php:264
+#: languages/ang-translations.php:686
+msgid "The default Button color. You can also set button colors in the Buttons tab."
+msgstr ""
+
+#: inc/elementor/class-colors.php:272
+#: inc/elementor/class-typography.php:546
+#: inc/elementor/sections/background-color-classes.php:93
+#: inc/elementor/sections/background-color-classes.php:161
+#: languages/ang-translations.php:693
+msgid "Text Color"
+msgstr ""
+
+#: inc/elementor/class-colors.php:284
+#: inc/elementor/sections/background-color-classes.php:107
+#: inc/elementor/sections/background-color-classes.php:175
+#: languages/ang-translations.php:699
+msgid "Headings Color"
+msgstr ""
+
+#: inc/elementor/class-finder-shortcuts.php:23
+#: languages/ang-translations.php:703
+msgid "Style Kits for Elementor Shortcuts"
+msgstr ""
+
+#: inc/elementor/class-finder-shortcuts.php:36
+#: languages/ang-translations.php:707
+msgid "Templates Library"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:34
+#: languages/ang-translations.php:1847
+msgctxt "admin menu"
+msgid "Style Kits"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:35
+#: languages/ang-translations.php:1851
+msgctxt "add new on admin bar"
+msgid "Style Kit"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:36
+#: languages/ang-translations.php:1855
+msgctxt "book"
+msgid "Add New"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:37
+#: languages/ang-translations.php:711
+msgid "Add New Style Kit"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:38
+#: languages/ang-translations.php:715
+msgid "New Style Kit"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:39
+#: languages/ang-translations.php:719
+msgid "Edit Style Kit"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:40
+#: languages/ang-translations.php:723
+msgid "View Style Kit"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:42
+#: languages/ang-translations.php:727
+msgid "Search Style Kits"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:43
+#: languages/ang-translations.php:731
+msgid "Parent Style Kits:"
+msgstr ""
+
+#: inc/elementor/class-post-type.php:44
+#: languages/ang-translations.php:735
+msgid "No Style Kit found."
+msgstr ""
+
+#: inc/elementor/class-post-type.php:45
+#: languages/ang-translations.php:739
+msgid "No Style Kit found in Trash."
+msgstr ""
+
+#: inc/elementor/class-tools.php:184
+#: languages/ang-translations.php:743
+msgid "Export Style Kit"
+msgstr ""
+
+#: inc/elementor/class-tools.php:205
+#: languages/ang-translations.php:747
+msgid "Export"
+msgstr ""
+
+#: inc/elementor/class-tools.php:412
+#: languages/ang-translations.php:751
+msgid "Import Style Kits"
+msgstr ""
+
+#: inc/elementor/class-tools.php:415
+#: languages/ang-translations.php:755
+msgid "Choose an Analog template JSON file or a .zip archive of Analog Style Kits, and add them to the list of Style Kits available in your library."
+msgstr ""
+
+#: inc/elementor/class-tools.php:426
+#: languages/ang-translations.php:759
+msgid "Import Now"
+msgstr ""
+
+#: inc/elementor/class-tools.php:576
+#: languages/ang-translations.php:763
+msgid "Error occurred, the version selected is invalid. Try selecting different version."
+msgstr ""
+
+#: inc/elementor/class-tools.php:621
+#: languages/ang-translations.php:767
+msgid "Rollback to Previous Version"
+msgstr ""
+
+#. translators: %s: Style kit title.
+#. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title. translators: translators: %s: Style kit title.
+#: inc/elementor/class-tools.php:653
+#: languages/ang-translations.php:773
+msgid "Style Kit: %s <span style=\"color:#5C32B6;\">&#9679;</span>"
+msgstr ""
+
+#: inc/elementor/class-tools.php:678
+#: languages/ang-translations.php:777
+msgid "Apply Global Style Kit"
+msgstr ""
+
+#: inc/elementor/class-tools.php:723
+#: languages/ang-translations.php:781
+msgid "Invalid/empty Post ID."
+msgstr ""
+
+#: inc/elementor/class-typography.php:141
+#: languages/ang-translations.php:785
+msgid "Headings Typography"
+msgstr ""
+
+#: inc/elementor/class-typography.php:149
+#: languages/ang-translations.php:789
+msgid "These settings apply to all Headings in your layout. You can still override individual values at each element."
+msgstr ""
+
+#: inc/elementor/class-typography.php:164
+#: languages/ang-translations.php:793
+msgid "Default Headings Font"
+msgstr ""
+
+#. translators: %s: Heading 1-6 type
+#. translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type translators: translators: %s: Heading 1-6 type
+#: inc/elementor/class-typography.php:191
+#: languages/ang-translations.php:799
+msgid "Heading %s"
+msgstr ""
+
+#: inc/elementor/class-typography.php:216
+#: inc/elementor/class-typography.php:238
+#: languages/ang-translations.php:804
+msgid "Body Typography"
+msgstr ""
+
+#: inc/elementor/class-typography.php:224
+#: languages/ang-translations.php:808
+msgid "Recently Imported"
+msgstr ""
+
+#: inc/elementor/class-typography.php:262
+#: languages/ang-translations.php:812
+msgid "Heading Sizes"
+msgstr ""
+
+#: inc/elementor/class-typography.php:270
+#: languages/ang-translations.php:816
+msgid "Tweak the size of your Heading elements using these presets."
+msgstr ""
+
+#: inc/elementor/class-typography.php:277
+#: inc/elementor/class-typography.php:337
+#: languages/ang-translations.php:821
+msgid "XXL"
+msgstr ""
+
+#: inc/elementor/class-typography.php:278
+#: inc/elementor/class-typography.php:338
+#: inc/elementor/class-typography.php:524
+#: languages/ang-translations.php:827
+msgid "XL"
+msgstr ""
+
+#: inc/elementor/class-typography.php:279
+#: inc/elementor/class-typography.php:339
+#: inc/elementor/class-typography.php:376
+#: inc/elementor/class-typography.php:811
+#: languages/ang-translations.php:834
+msgid "Large"
+msgstr ""
+
+#: inc/elementor/class-typography.php:280
+#: inc/elementor/class-typography.php:340
+#: inc/elementor/class-typography.php:375
+#: inc/elementor/class-typography.php:810
+#: languages/ang-translations.php:841
+msgid "Medium"
+msgstr ""
+
+#: inc/elementor/class-typography.php:281
+#: inc/elementor/class-typography.php:341
+#: inc/elementor/class-typography.php:374
+#: inc/elementor/class-typography.php:809
+#: languages/ang-translations.php:848
+msgid "Small"
+msgstr ""
+
+#: inc/elementor/class-typography.php:322
+#: languages/ang-translations.php:852
+msgid "Text Sizes"
+msgstr ""
+
+#: inc/elementor/class-typography.php:330
+#: languages/ang-translations.php:856
+msgid "Tweak the size of text elements using these presets."
+msgstr ""
+
+#: inc/elementor/class-typography.php:373
+#: inc/elementor/class-typography.php:808
+#: languages/ang-translations.php:861
+msgid "Normal"
+msgstr ""
+
+#: inc/elementor/class-typography.php:377
+#: inc/elementor/class-typography.php:812
+#: languages/ang-translations.php:866
+msgid "Extra Large"
+msgstr ""
+
+#: inc/elementor/class-typography.php:383
+#: inc/elementor/class-typography.php:801
+#: languages/ang-translations.php:871
+msgid "Outer Section Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:391
+#: languages/ang-translations.php:875
+msgid "Add padding to the outer sections of your layouts by using these controls."
+msgstr ""
+
+#: inc/elementor/class-typography.php:433
+#: languages/ang-translations.php:879
+msgid "Default Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:434
+#: languages/ang-translations.php:883
+msgid "Narrow Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:435
+#: languages/ang-translations.php:887
+msgid "Extended Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:436
+#: languages/ang-translations.php:891
+msgid "Wide Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:437
+#: languages/ang-translations.php:895
+msgid "Wider Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:443
+#: languages/ang-translations.php:899
+msgid "Column Gaps"
+msgstr ""
+
+#: inc/elementor/class-typography.php:451
+#: languages/ang-translations.php:903
+msgid "Column Gap presets add padding to the columns of a section."
+msgstr ""
+
+#: inc/elementor/class-typography.php:478
+#: languages/ang-translations.php:907
+msgid "Space Between Widgets"
+msgstr ""
+
+#: inc/elementor/class-typography.php:479
+#: languages/ang-translations.php:911
+msgid "Sets the default space between widgets, overrides the default value set in Elementor > Style > Space Between Widgets."
+msgstr ""
+
+#: inc/elementor/class-typography.php:505
+#: languages/ang-translations.php:915
+msgid "Buttons"
+msgstr ""
+
+#: inc/elementor/class-typography.php:513
+#: languages/ang-translations.php:919
+msgid "Define the default styles for every button size."
+msgstr ""
+
+#: inc/elementor/class-typography.php:520
+#: languages/ang-translations.php:923
+msgid "XS"
+msgstr ""
+
+#: inc/elementor/class-typography.php:521
+#: languages/ang-translations.php:927
+msgid "S"
+msgstr ""
+
+#: inc/elementor/class-typography.php:522
+#: languages/ang-translations.php:931
+msgid "M"
+msgstr ""
+
+#: inc/elementor/class-typography.php:523
+#: languages/ang-translations.php:935
+msgid "L"
+msgstr ""
+
+#: inc/elementor/class-typography.php:536
+#: languages/ang-translations.php:939
+msgid "Typography"
+msgstr ""
+
+#: inc/elementor/class-typography.php:558
+#: languages/ang-translations.php:943
+msgid "Text Hover Color"
+msgstr ""
+
+#: inc/elementor/class-typography.php:570
+#: inc/elementor/sections/background-color-classes.php:79
+#: inc/elementor/sections/background-color-classes.php:147
+#: languages/ang-translations.php:949
+msgid "Background Color"
+msgstr ""
+
+#: inc/elementor/class-typography.php:582
+#: languages/ang-translations.php:953
+msgid "Background Hover Color"
+msgstr ""
+
+#: inc/elementor/class-typography.php:604
+#: languages/ang-translations.php:957
+msgid "Border Radius"
+msgstr ""
+
+#: inc/elementor/class-typography.php:626
+#: languages/ang-translations.php:961
+msgid "Padding"
+msgstr ""
+
+#: inc/elementor/class-typography.php:681
+#: languages/ang-translations.php:965
+msgid "You are editing the Global Style Kit."
+msgstr ""
+
+#: inc/elementor/class-typography.php:690
+#: languages/ang-translations.php:969
+msgid "A style kit is a collection of all the custom styles added at page styling settings. Your Style Kit is updated every time you click the Update Style Kit Button below."
+msgstr ""
+
+#: inc/elementor/class-typography.php:694
+#: languages/ang-translations.php:973
+msgid "Page Style Kit"
+msgstr ""
+
+#: inc/elementor/class-typography.php:704
+#: languages/ang-translations.php:977
+msgid "Update Your Style Kit"
+msgstr ""
+
+#: inc/elementor/class-typography.php:714
+#: languages/ang-translations.php:981
+msgid "Save all the styles as a Style Kit that you can apply on other pages or globally. Please note that only the custom styles added in the styles page are saved with the stylekit."
+msgstr ""
+
+#: inc/elementor/class-typography.php:718
+#: languages/ang-translations.php:985
+msgid "Save Style Kit as..."
+msgstr ""
+
+#: inc/elementor/class-typography.php:721
+#: languages/ang-translations.php:989
+msgid "Save as..."
+msgstr ""
+
+#. translators: %s: Link to Style Kits
+#. translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits translators: translators: %s: Link to Style Kits
+#: inc/elementor/class-typography.php:730
+#: languages/ang-translations.php:995
+msgid "You can set a Global Style Kit <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: inc/elementor/class-typography.php:756
+#: languages/ang-translations.php:999
+msgid "Tools"
+msgstr ""
+
+#: inc/elementor/class-typography.php:761
+#: languages/ang-translations.php:1003
+msgid "This will reset the Style Kit styles and detach the page from the Style Kit."
+msgstr ""
+
+#: inc/elementor/class-typography.php:765
+#: languages/ang-translations.php:1007
+msgid "Reset Style Kit"
+msgstr ""
+
+#: inc/elementor/class-typography.php:768
+#: languages/ang-translations.php:1011
+msgid "Reset"
+msgstr ""
+
+#: inc/elementor/class-typography.php:775
+#: languages/ang-translations.php:1015
+msgid "Export Style Kit CSS"
+msgstr ""
+
+#: inc/elementor/class-typography.php:802
+#: languages/ang-translations.php:1019
+msgid "A Style Kits control that adds padding to your outer sections. You can edit the values"
+msgstr ""
+
+#: inc/elementor/class-typography.php:807
+#: languages/ang-translations.php:1023
+msgid "No Padding"
+msgstr ""
+
+#: inc/elementor/sections/background-color-classes.php:55
+#: languages/ang-translations.php:1834
+msgctxt "Section Title"
+msgid "Background Colors"
+msgstr ""
+
+#: inc/elementor/sections/background-color-classes.php:64
+#: languages/ang-translations.php:1027
+msgid "Light"
+msgstr ""
+
+#: inc/elementor/sections/background-color-classes.php:71
+#: languages/ang-translations.php:1031
+msgid "Add the class <strong>sk-light-bg</strong> to a section or column to apply these colors."
+msgstr ""
+
+#: inc/elementor/sections/background-color-classes.php:132
+#: languages/ang-translations.php:1035
+msgid "Dark"
+msgstr ""
+
+#: inc/elementor/sections/background-color-classes.php:139
+#: languages/ang-translations.php:1039
+msgid "Add the class <strong>sk-dark-bg</strong> to a section or column to apply these colors."
+msgstr ""
+
+#: inc/elementor/tags/class-dark-background.php:14
+#: languages/ang-translations.php:1043
+msgid "Dark Background"
+msgstr ""
+
+#: inc/elementor/tags/class-light-background.php:14
+#: languages/ang-translations.php:1047
+msgid "Light Background"
+msgstr ""
+
+#: inc/register-settings.php:33
+#: languages/ang-translations.php:1051
+msgid "Style Kits Library"
+msgstr ""
+
+#: inc/register-settings.php:57
+#: inc/settings/views/html-admin-settings.php:26
+#: languages/ang-translations.php:1056
+msgid "Style Kits Settings"
+msgstr ""
+
+#: inc/register-settings.php:69
+#: languages/ang-translations.php:1060
+msgid "Manage Style Kits"
+msgstr ""
+
+#: inc/register-settings.php:195
+#: languages/ang-translations.php:1064
+msgid "Imported Count"
+msgstr ""
+
+#: inc/register-settings.php:207
+#: languages/ang-translations.php:1068
+msgid "Imported templates"
+msgstr ""
+
+#: inc/settings/class-settings-extensions.php:25
+#: languages/ang-translations.php:1072
+msgid "Extensions"
+msgstr ""
+
+#: inc/settings/class-settings-general.php:25
+#: languages/ang-translations.php:1076
+msgid "General"
+msgstr ""
+
+#: inc/settings/class-settings-general.php:42
+#: languages/ang-translations.php:1080
+msgid "Elementor Settings"
+msgstr ""
+
+#: inc/settings/class-settings-general.php:47
+#: languages/ang-translations.php:1859
+msgctxt "settings title"
+msgid "Global Style Kit"
+msgstr ""
+
+#. translators: %s: Style Kit Documentation link
+#. translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link
+#: inc/settings/class-settings-general.php:50
+#: languages/ang-translations.php:1086
+msgid "Choosing a Style Kit will make it global and apply site-wide. Learn more about %s."
+msgstr ""
+
+#: inc/settings/class-settings-general.php:51
+#: languages/ang-translations.php:1090
+msgid "Style kits"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:23
+#: languages/ang-translations.php:1094
+msgid "Misc"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:42
+#: languages/ang-translations.php:1098
+msgid "Usage Data Tracking"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:43
+#: languages/ang-translations.php:1102
+msgid "Opt-in to our anonymous plugin data collection and to updates"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:48
+#: languages/ang-translations.php:1106
+msgid "We guarantee no sensitive data is collected. "
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:48
+#: languages/ang-translations.php:1110
+msgid "More Info"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:51
+#: languages/ang-translations.php:1114
+msgid "Remove Data on Uninstall"
+msgstr ""
+
+#: inc/settings/class-settings-misc.php:52
+#: languages/ang-translations.php:1118
+msgid "Check this box to remove all data stored by Style Kit for Elementor plugin, including license info, user settings, import history etc. Any imported or manually saved Style Kits are not removed."
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:25
+#: languages/ang-translations.php:1122
+msgid "Version Control"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:40
+#: languages/ang-translations.php:1126
+msgid "Rollback Versions"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:41
+#: languages/ang-translations.php:1130
+msgid "If you are having issues with current version of Style Kits for Elementor, you can rollback to a previous stable version."
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:46
+#: languages/ang-translations.php:1134
+msgid "Rollback Style Kits"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:58
+#: languages/ang-translations.php:1138
+msgid "Reinstall this version"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:65
+#: languages/ang-translations.php:1142
+msgid "Beta Features"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:70
+#: languages/ang-translations.php:1146
+msgid "Become a beta tester"
+msgstr ""
+
+#: inc/settings/class-settings-version-control.php:71
+#: languages/ang-translations.php:1150
+msgid "Check this box to turn on beta updates for Style Kits and Style Kits Pro. The update will not be installed automatically, you always have the option to ignore it."
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:14
+#: languages/ang-translations.php:1154
+msgid "Style Kits Pro gives you access to <u>premium template kits, blocks and Style Kits</u>, <br>plus a number of extra design features to power-up your design workflow in Elementor."
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:16
+#: languages/ang-translations.php:1158
+msgid "<strong>User role management</strong> so you can restrict access to Style Kits for your clients or editors"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:17
+#: languages/ang-translations.php:1162
+msgid "Handy tools to <strong>highlight Elements</strong> using custom CSS or custom CSS classes"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:18
+#: languages/ang-translations.php:1166
+msgid "<strong>Tools to clean-up</strong> any of your templates and layouts from inline styles, and make them Style-Kit-ready"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:19
+#: languages/ang-translations.php:1170
+msgid "<strong>Unsplash integration</strong> so you can import images from Unsplash right into your WordPress media gallery"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:21
+#: languages/ang-translations.php:1174
+msgid "And many more meaningful features"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings-gopro.php:22
+#: languages/ang-translations.php:1178
+msgid "Explore Style Kits Pro"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:51
+#: languages/ang-translations.php:1182
+msgid "Save changes"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:62
+#: languages/ang-translations.php:1186
+msgid "Need help setting up? We have a number of handy articles to get you started."
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:63
+#: languages/ang-translations.php:1190
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:66
+#: languages/ang-translations.php:1194
+msgid "Join our Facebook group"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:67
+#: languages/ang-translations.php:1198
+msgid "Get insights, tips and updates in our facebook community. Let's take Elementor design to a whole new level."
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:68
+#: languages/ang-translations.php:1202
+msgid "Join the AnalogWP community"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:71
+#: languages/ang-translations.php:1206
+msgid "Sign up for updates"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:72
+#: languages/ang-translations.php:1210
+msgid "Sign up to Analog Newsletter and get notified about product updates, freebies and more."
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:75
+#: languages/ang-translations.php:1214
+msgid "Sign me up"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:77
+#: languages/ang-translations.php:1218
+msgid "By signing up you agree to our"
+msgstr ""
+
+#: inc/settings/views/html-admin-settings.php:77
+#: languages/ang-translations.php:1222
+msgid "privacy and terms"
+msgstr ""
+
+#: languages/ang-translations.php:1225
+msgid "Style Kits requires Elementor v2.9.0 or greater in order to work. Please update Elementor to the latest version."
+msgstr ""
+
+#: languages/ang-translations.php:1228
+msgid "Update Elementor Now"
+msgstr ""
+
+#: languages/ang-translations.php:1231
+msgid "Analog Templates is not working because you need to activate the Elementor plugin."
+msgstr ""
+
+#: languages/ang-translations.php:1234
+msgid "Analog Templates is not working because you need to install the Elementor plugin."
+msgstr ""
+
+#. translators: translators: translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: translators: translators: translators: translators: translators: %s: WordPress version translators: translators: translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version translators: translators: %s: WordPress version
+#: languages/ang-translations.php:1238
+msgid "Analog Templates requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING."
+msgstr ""
+
+#: languages/ang-translations.php:1241
+msgid "Unable to create a Kit"
+msgstr ""
+
+#: languages/ang-translations.php:1244
+msgid "Kit saved."
+msgstr ""
+
+#: languages/ang-translations.php:1247
+msgid "This will reset all the settings you configured previously under Page Style Settings from Analog Templates."
+msgstr ""
+
+#. translators: translators: translators: translators: %1$s: Link to documentation, %2$s: Link text. translators: translators: %1$s: Link to documentation, %2$s: Link text.
+#: languages/ang-translations.php:1251
+msgid "Set the accent colors of your layout."
+msgstr ""
+
+#. translators: translators: translators: translators: %s: Typography Panel link/text. translators: translators: %s: Typography Panel link/text. translators: translators: %s: Typography Panel link/text.
+#: languages/ang-translations.php:1255
+msgid "The primary accent color applies on links, icons, and other elements. You can also define the text link color in the %s."
+msgstr ""
+
+#: languages/ang-translations.php:1258
+msgid "Typography panel"
+msgstr ""
+
+#. translators: translators: translators: translators: %1$s: Button Panel link/text. %2$s: Button sizes panel link/text. translators: translators: %1$s: Button Panel link/text. %2$s: Button sizes panel link/text.
+#: languages/ang-translations.php:1262
+msgid "The default button color. You can also define button colors under the %1$s, and individually for each button size under %2$s."
+msgstr ""
+
+#: languages/ang-translations.php:1265
+msgid "Buttons panel"
+msgstr ""
+
+#: languages/ang-translations.php:1268
+msgid "Buttons Sizes panel"
+msgstr ""
+
+#: languages/ang-translations.php:1271
+msgid "Button Sizes"
+msgstr ""
+
+#: languages/ang-translations.php:1274
+msgid "Normal Styling"
+msgstr ""
+
+#: languages/ang-translations.php:1277
+msgid "Hover Styling"
+msgstr ""
+
+#: languages/ang-translations.php:1280
+msgid "A Style Kit is a saved configuration of Theme Styles, that you can optionally apply on any page. This will override the Global theme Styles for this page."
+msgstr ""
+
+#: languages/ang-translations.php:1283
+msgid "Edit Style Kit in Theme Style"
+msgstr ""
+
+#: languages/ang-translations.php:1286
+msgid "This will reset all the custom style values added in the Style tab, and detach this page from any Style kits"
+msgstr ""
+
+#: languages/ang-translations.php:1289
+msgid "Reset all styling"
+msgstr ""
+
+#: languages/ang-translations.php:1292
+msgid "Reset all"
+msgstr ""
+
+#: languages/ang-translations.php:1295
+msgid "Headings"
+msgstr ""
+
+#: languages/ang-translations.php:1298
+msgid "Headings Font"
+msgstr ""
+
+#: languages/ang-translations.php:1301
+msgid "You can set individual heading font and colors below."
+msgstr ""
+
+#: languages/ang-translations.php:1304
+msgid "No Kits found."
+msgstr ""
+
+#: languages/ang-translations.php:1307
+msgid "Title"
+msgstr ""
+
+#: languages/ang-translations.php:1310
+msgid "Published"
+msgstr ""
+
+#. translators: translators: translators: translators: %s: Kit Title translators: translators: %s: Kit Title translators: translators: %s: Kit Title translators: translators: %s: Kit Title translators: translators: %s: Kit Title translators: translators: %s: Kit Title
+#: languages/ang-translations.php:1314
+msgid "%s (Edit)"
+msgstr ""
+
+#: languages/ang-translations.php:1317
+msgid "Edit"
+msgstr ""
+
+#: languages/ang-translations.php:1320
+msgid "Trash"
+msgstr ""
+
+#: languages/ang-translations.php:1323
+msgid "Edit with Elementor"
+msgstr ""
+
+#: languages/ang-translations.php:1326
+msgid "Library"
+msgstr ""
+
+#: languages/ang-translations.php:1329
+msgid "An inter-connected collection of Template Kits <br/>and advanced design control is <u>coming soon</u> with Style Kits Pro."
+msgstr ""
+
+#: languages/ang-translations.php:1332
+msgid "You can <strong>sign up for an exclusive discount</strong> that we will send to your email when we are close to launch. Click the button below to see the Pro features and road map, and sign up for the exclusive discount."
+msgstr ""
+
+#: languages/ang-translations.php:1335
+msgid "More about Style Kits Pro"
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: %1$s: Button Panel link/text. %2$s: Button sizes panel link/text.
+#: languages/ang-translations.php:1339
+msgid "The default button color. You can also define button colors under the buttons panel %1$s, and individually for each button size under %2$s."
+msgstr ""
+
+#: languages/ang-translations.php:1342
+msgid "Sync Color Palettes and Style Kit colors by default"
+msgstr ""
+
+#: languages/ang-translations.php:1345
+msgid "The Elementor color palette will be populated with the Style Kit’s global colors"
+msgstr ""
+
+#: languages/ang-translations.php:1348
+msgid "Go PRO"
+msgstr ""
+
+#: languages/ang-translations.php:1351
+msgid "To import Pro templates, you’ll need an active "
+msgstr ""
+
+#: languages/ang-translations.php:1354
+msgid "Subscribe up to newsletter"
+msgstr ""
+
+#: languages/ang-translations.php:1357
+msgid "Template Settings"
+msgstr ""
+
+#: languages/ang-translations.php:1360
+msgid "Remove Styling from typographic elements"
+msgstr ""
+
+#: languages/ang-translations.php:1363
+msgid "This setting will remove any values that have been manually added in the templates. Existing templates are not affected. "
+msgstr ""
+
+#: languages/ang-translations.php:1366
+msgid "Export styles as custom CSS text."
+msgstr ""
+
+#: languages/ang-translations.php:1369
+msgid "Export Custom CSS"
+msgstr ""
+
+#: languages/ang-translations.php:1372
+msgid "An inter-connected collection of Template Kits and advanced design control is <u>coming soon</u> with Style Kits Pro."
+msgstr ""
+
+#: languages/ang-translations.php:1375
+msgid "Replace CSS selector with <code>selector</code> to make it easy to paste into custom CSS."
+msgstr ""
+
+#: languages/ang-translations.php:1378
+msgid "Opt-in to our anonymous plugin data collection and to updates. We guarantee no sensitive data is collected."
+msgstr ""
+
+#: languages/ang-translations.php:1381
+msgid "This setting will remove any values that have been manually added in the templates. Existing templates are not affected."
+msgstr ""
+
+#: languages/ang-translations.php:1384
+msgid "Text and Headings Color"
+msgstr ""
+
+#: languages/ang-translations.php:1387
+msgid "Applies on the text and headings in the layout."
+msgstr ""
+
+#: languages/ang-translations.php:1390
+msgid "Apply this color to sections or columns, using the <code>sk-light-bg</code>. The text inside will inherit the Text and titles color."
+msgstr ""
+
+#: languages/ang-translations.php:1393
+msgid "Apply this color to sections or columns, using the <code>sk-dark-bg</code>. The text inside will inherit the <em>Text over Dark Background</em> color that can be set below."
+msgstr ""
+
+#: languages/ang-translations.php:1396
+msgid "Text over dark background"
+msgstr ""
+
+#: languages/ang-translations.php:1399
+msgid "This color will apply on the text in a section or column with the Dark Background Color, as it has been set above."
+msgstr ""
+
+#: languages/ang-translations.php:1402
+msgid "Template Kits are"
+msgstr ""
+
+#: languages/ang-translations.php:1405
+msgid "coming soon with Style Kits Pro."
+msgstr ""
+
+#: languages/ang-translations.php:1408
+msgid "Sign up for an exclusive launch discount."
+msgstr ""
+
+#: languages/ang-translations.php:1411
+msgid "The Block has been imported and is now available in the list of the available Sections."
+msgstr ""
+
+#: languages/ang-translations.php:1414
+msgid "Rollback Version"
+msgstr ""
+
+#: languages/ang-translations.php:1417
+msgid "Theme License"
+msgstr ""
+
+#: languages/ang-translations.php:1420
+msgid "Enter your theme license key received upon purchase from <a target=\"_blank\" href=\"https://analogwp.com/account/\">AnalogWP</a>."
+msgstr ""
+
+#: languages/ang-translations.php:1423
+msgid "License Key"
+msgstr ""
+
+#: languages/ang-translations.php:1426
+msgid "License Action"
+msgstr ""
+
+#: languages/ang-translations.php:1429
+msgid "Deactivate License"
+msgstr ""
+
+#: languages/ang-translations.php:1432
+msgid "Activate License"
+msgstr ""
+
+#: languages/ang-translations.php:1435
+msgid "License status is unknown."
+msgstr ""
+
+#: languages/ang-translations.php:1438
+msgid "Renew?"
+msgstr ""
+
+#: languages/ang-translations.php:1441
+msgid "unlimited"
+msgstr ""
+
+#: languages/ang-translations.php:1444
+msgid "License key is active."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date
+#: languages/ang-translations.php:1448
+msgid "Expires %s."
+msgstr ""
+
+#: languages/ang-translations.php:1451
+msgid "Lifetime License."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit translators: translators: %1$s: active sites, %2$s: sites limit
+#: languages/ang-translations.php:1455
+msgid "You have %1$s / %2$s sites activated."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name translators: translators: %s: product name
+#: languages/ang-translations.php:1459
+msgid "License key expired %s."
+msgstr ""
+
+#: languages/ang-translations.php:1462
+msgid "License key has expired."
+msgstr ""
+
+#: languages/ang-translations.php:1465
+msgid "License keys do not match. <br> Enter your theme license key received upon purchase from <a target=\"_blank\" href=\"https://analogwp.com/account/\">AnalogWP</a>."
+msgstr ""
+
+#: languages/ang-translations.php:1468
+msgid "License is inactive."
+msgstr ""
+
+#: languages/ang-translations.php:1471
+msgid "License key is disabled."
+msgstr ""
+
+#: languages/ang-translations.php:1474
+msgid "Site is inactive."
+msgstr ""
+
+#: languages/ang-translations.php:1477
+msgid "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+msgstr ""
+
+#: languages/ang-translations.php:1480
+msgid "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\" %6$s>update now</a>."
+msgstr ""
+
+#: languages/ang-translations.php:1483
+msgid "An error occurred, please try again."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date translators: translators: %s: expiration date
+#: languages/ang-translations.php:1487
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: languages/ang-translations.php:1490
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: languages/ang-translations.php:1493
+msgid "Invalid license."
+msgstr ""
+
+#: languages/ang-translations.php:1496
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email translators: translators: %s: site name/email
+#: languages/ang-translations.php:1500
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: languages/ang-translations.php:1503
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: languages/ang-translations.php:1506
+msgid "License"
+msgstr ""
+
+#: languages/ang-translations.php:1509
+msgid "License Status"
+msgstr ""
+
+#: languages/ang-translations.php:1512
+msgid "Pro license"
+msgstr ""
+
+#: languages/ang-translations.php:1515
+msgid "If you own an AnalogPro License, then please enter your license key here."
+msgstr ""
+
+#: languages/ang-translations.php:1518
+msgid "If you do not have a license key, you can get one from "
+msgstr ""
+
+#: languages/ang-translations.php:1521
+msgid "<strong>You are editing the style kit that has been set as global.</strong> You can optionally choose a different Style Kit for this page below."
+msgstr ""
+
+#: languages/ang-translations.php:1524
+msgid "Global Stylekit Settings Saved. It's recommended to close any open elementor tabs in your browser, and re-open them, for the effect to apply."
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link translators: translators: %s: Style Kit Documentation link
+#: languages/ang-translations.php:1528
+msgid "Choosing a Style Kit will make it global and apply site-wide. Learn more about <a href=\"%s\" target=\"_blank\">Style kits</a>."
+msgstr ""
+
+#: languages/ang-translations.php:1531
+msgid "You will then be able to apply on any page."
+msgstr ""
+
+#: languages/ang-translations.php:1534
+msgid "The Style Kit has been imported to your library."
+msgstr ""
+
+#: languages/ang-translations.php:1537
+msgid "%s has been imported and is now available in the Style Kits dropdown"
+msgstr ""
+
+#: languages/ang-translations.php:1540
+msgid "Do not apply link color on active titles"
+msgstr ""
+
+#: languages/ang-translations.php:1543
+msgid "Blimey! Your template has been imported."
+msgstr ""
+
+#: languages/ang-translations.php:1546
+msgid "Premium template kits are coming soon with Style Kits Pro. You can only preview these layouts for now but feel free to sign up to our mailing list if you want to learn when they become available."
+msgstr ""
+
+#: languages/ang-translations.php:1549
+msgid "View Kit"
+msgstr ""
+
+#: languages/ang-translations.php:1552
+msgid "Choose"
+msgstr ""
+
+#: languages/ang-translations.php:1555
+msgid "Global: "
+msgstr ""
+
+#: languages/ang-translations.php:1558
+msgid "Access an interconnected library of Template Kits, blocks and additional design control with Style kits Pro."
+msgstr ""
+
+#: languages/ang-translations.php:1561
+msgid "Template Kits with theme builder templates."
+msgstr ""
+
+#: languages/ang-translations.php:1564
+msgid "Blocks Library."
+msgstr ""
+
+#: languages/ang-translations.php:1567
+msgid "Global design control."
+msgstr ""
+
+#: languages/ang-translations.php:1570
+msgid "Advanced Style Kit control."
+msgstr ""
+
+#: languages/ang-translations.php:1573
+msgid "Back to library"
+msgstr ""
+
+#: languages/ang-translations.php:1576
+msgid "Elevate your Elementor design with Analog Pro"
+msgstr ""
+
+#: languages/ang-translations.php:1579
+msgid "Step up your workflow with unlimited design resources for your Elementor-powered projects."
+msgstr ""
+
+#: languages/ang-translations.php:1582
+msgid "Why Pro"
+msgstr ""
+
+#: languages/ang-translations.php:1585
+msgid "Access to all template library"
+msgstr ""
+
+#: languages/ang-translations.php:1588
+msgid "Templates for singles, archives, popups and more"
+msgstr ""
+
+#: languages/ang-translations.php:1591
+msgid "Multi-niche, human made design that makes sense"
+msgstr ""
+
+#: languages/ang-translations.php:1594
+msgid "Unlimited license for peace of mind"
+msgstr ""
+
+#: languages/ang-translations.php:1597
+msgid "* Requires Elementor Pro"
+msgstr ""
+
+#: languages/ang-translations.php:1600
+msgid "Please update Analog Template plugin to latest version."
+msgstr ""
+
+#: languages/ang-translations.php:1603
+msgid "Enter your email"
+msgstr ""
+
+#: languages/ang-translations.php:1606
+msgid "Sending..."
+msgstr ""
+
+#: languages/ang-translations.php:1609
+msgid "Sign up to newsletter"
+msgstr ""
+
+#: languages/ang-translations.php:1612
+msgid "Docs"
+msgstr ""
+
+#: languages/ang-translations.php:1615
+msgid "Follow on Social"
+msgstr ""
+
+#: languages/ang-translations.php:1618
+msgid "Elevate to Analog Pro"
+msgstr ""
+
+#: languages/ang-translations.php:1621
+msgid "Do more with Analog Pro, the design library for complete Elementor-powered sites."
+msgstr ""
+
+#: languages/ang-translations.php:1624
+msgid "Access to all templates"
+msgstr ""
+
+#: languages/ang-translations.php:1627
+msgid "New designs every week"
+msgstr ""
+
+#: languages/ang-translations.php:1630
+msgid "Flexible Licensing"
+msgstr ""
+
+#: languages/ang-translations.php:1633
+msgid "Pro Elements, theme builder layouts"
+msgstr ""
+
+#: languages/ang-translations.php:1636
+msgid "Requires Elementor Pro"
+msgstr ""
+
+#: languages/ang-translations.php:1639
+msgid "More Details"
+msgstr ""
+
+#: languages/ang-translations.php:1642
+msgid "An error occured"
+msgstr ""
+
+#: languages/ang-translations.php:1645
+msgid "Imported "
+msgstr ""
+
+#: languages/ang-translations.php:1648
+msgid "Settings updated."
+msgstr ""
+
+#: languages/ang-translations.php:1651
+msgid "Deactivate"
+msgstr ""
+
+#: languages/ang-translations.php:1654
+msgid "Activate"
+msgstr ""
+
+#: languages/ang-translations.php:1657
+msgid "Plugin Settings"
+msgstr ""
+
+#: languages/ang-translations.php:1660
+msgid "Pro License"
+msgstr ""
+
+#: languages/ang-translations.php:1663
+msgid "Connection timeout, please try again."
+msgstr ""
+
+#: languages/ang-translations.php:1666
+msgid "Processing..."
+msgstr ""
+
+#: languages/ang-translations.php:1669
+msgid "If you do not have a license key, you can get one from"
+msgstr ""
+
+#: languages/ang-translations.php:1672
+msgid "Reinstall version %s"
+msgstr ""
+
+#: languages/ang-translations.php:1675
+msgid "Style Kits Settings Page"
+msgstr ""
+
+#: languages/ang-translations.php:1678
+msgid "License keys do not match. <br><br> Enter your theme license key received upon purchase from <a target=\"_blank\" href=\"https://analogwp.com/account/\">AnalogWP</a>."
+msgstr ""
+
+#: languages/ang-translations.php:1681
+msgid "filter"
+msgstr ""
+
+#: languages/ang-translations.php:1684
+msgid "sort by"
+msgstr ""
+
+#: languages/ang-translations.php:1687
+msgid "show only free"
+msgstr ""
+
+#. translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: translators: %s: Style kit title.
+#: languages/ang-translations.php:1691
+msgid "Style Kit: %s <span style=\"color:#3152FF;\">&#9679;</span>"
+msgstr ""
+
+#: languages/ang-translations.php:1694
+msgid "This padding applies <strong>only on the Outer Sections</strong> of your layout, and not on Inner Section widgets."
+msgstr ""
+
+#: languages/ang-translations.php:1697
+msgid "Set the default values of the column gaps. Based on Elementor&apos;s default sizes."
+msgstr ""
+
+#: languages/ang-translations.php:1700
+msgid "Create the styles for each button size"
+msgstr ""
+
+#: languages/ang-translations.php:1703
+msgid "View Library"
+msgstr ""
+
+#: languages/ang-translations.php:1706
+msgid "Kits"
+msgstr ""
+
+#: languages/ang-translations.php:1709
+msgid "Below are the available Style Kits. When you choose to import a Style Kit, it will be added to your available"
+msgstr ""
+
+#: languages/ang-translations.php:1712
+msgid "Importing Style Kit "
+msgstr ""
+
+#: languages/ang-translations.php:1715
+msgid "Blimey! Your Style Kit has been imported to library."
+msgstr ""
+
+#: languages/ang-translations.php:1718
+msgid "Normal Padding"
+msgstr ""
+
+#: languages/ang-translations.php:1721
+msgid "Small Padding"
+msgstr ""
+
+#: languages/ang-translations.php:1724
+msgid "Medium Padding"
+msgstr ""
+
+#: languages/ang-translations.php:1727
+msgid "Large Padding"
+msgstr ""
+
+#: languages/ang-translations.php:1730
+msgid "Extra Large Padding"
+msgstr ""
+
+#: languages/ang-translations.php:1733
+msgid "No Gap"
+msgstr ""
+
+#: languages/ang-translations.php:1736
+msgid "Sets the primary brand color, applies on Links."
+msgstr ""
+
+#: languages/ang-translations.php:1739
+msgid "Sets the default color for Buttons. You can also apply button colors in the Global buttons tab."
+msgstr ""
+
+#: languages/ang-translations.php:1742
+msgid "Text over light background"
+msgstr ""
+
+#: languages/ang-translations.php:1745
+msgid "Applies on the text and titles over a section or column with light bg"
+msgstr ""
+
+#: languages/ang-translations.php:1748
+msgid "Applies on the text and titles over a section or column with dark bg"
+msgstr ""
+
+#: languages/ang-translations.php:1751
+msgid "Apply the class <strong>sk-light-bg</strong> to a section or column to apply this color as a background. Text will inherit the <strong>Text over Light bg</strong> color."
+msgstr ""
+
+#: languages/ang-translations.php:1754
+msgid "Apply the class <strong>sk-dark-bg</strong> to a section or column to apply this color as a background. Text will inherit the <strong>Text over Dark bg</strong> color."
+msgstr ""
+
+#: languages/ang-translations.php:1757
+msgid "Narrow"
+msgstr ""
+
+#: languages/ang-translations.php:1760
+msgid "Extended"
+msgstr ""
+
+#: languages/ang-translations.php:1763
+msgid "Wide"
+msgstr ""
+
+#: languages/ang-translations.php:1766
+msgid "Wider"
+msgstr ""
+
+#: languages/ang-translations.php:1769
+msgid "Outer Section Gaps"
+msgstr ""
+
+#: languages/ang-translations.php:1772
+msgid "A handcrafted design library for Elementor templates."
+msgstr ""
+
+#: languages/ang-translations.php:1775
+msgid "Outer Section Gap"
+msgstr ""
+
+#: languages/ang-translations.php:1778
+msgid "Set the padding <strong>only for the outer section</strong>, does not apply on inner section widgets, in case you have any. You can tweak the section gap"
+msgstr ""
+
+#: languages/ang-translations.php:1781
+msgid "Set the padding <strong>only for the outer section</strong>, does not apply on inner section widgets, in case you have any. You can tweak the section gap here."
+msgstr ""
+
+#: languages/ang-translations.php:1784
+msgid "AnalogWP Templates"
+msgstr ""
+
+#: languages/ang-translations.php:1787
+msgid "Analog Templates"
+msgstr ""
+
+#: languages/ang-translations.php:1790
+msgid "AnalogWP Settings"
+msgstr ""
+
+#: languages/ang-translations.php:1793
+msgid "Meet Style Kits by AnalogWP"
+msgstr ""
+
+#: languages/ang-translations.php:1796
+msgid "Page Styles"
+msgstr ""
+
+#: languages/ang-translations.php:1799
+msgid "Font Size"
+msgstr ""
+
+#: languages/ang-translations.php:1802
+msgid "Line Height"
+msgstr ""
+
+#: languages/ang-translations.php:1805
+msgid "AnalogWP Shortcuts"
+msgstr ""
+
+#: languages/ang-translations.php:1808
+msgid "Applies to all links by default"
+msgstr ""
+
+#: languages/ang-translations.php:1811
+msgid "Adds a background color to all buttons on page."
+msgstr ""
+
+#: languages/ang-translations.php:1814
+msgid "Text and Headings (Dark)"
+msgstr ""
+
+#: languages/ang-translations.php:1817
+msgid "Applies on the text and titles over light bg"
+msgstr ""
+
+#: languages/ang-translations.php:1820
+msgid "Text and Headings (Light)"
+msgstr ""
+
+#: languages/ang-translations.php:1823
+msgid "Applies on the text and titles over dark bg"
+msgstr ""
+
+#: languages/ang-translations.php:1826
+msgid "If you are having issues with current version of Analog Templates, you can rollback to a previous stable version."
+msgstr ""
+
+#: languages/ang-translations.php:1837
+msgctxt "Section Title"
+msgid "Accent Colors"
+msgstr ""
+
+#: languages/ang-translations.php:1840
+msgctxt "Section Title"
+msgid "Background Color Classes"
+msgstr ""
+
+#: languages/ang-translations.php:1843
+msgctxt "Section Title"
+msgid "Global Colors"
+msgstr ""
+
+#: languages/ang-translations.php:1862
+msgctxt "settings title"
+msgid "Sync Color Palettes"
+msgstr ""
