@@ -50,8 +50,8 @@ class HelperProviderCoreUC_EL{
 							'rewrite' => false,
 							
 							'show_ui' => true,
-							'show_in_menu' => false,			
-							'show_in_nav_menus' => false,
+							'show_in_menu' => false,		//set to true for show
+							'show_in_nav_menus' => false,	//set to true for show
 		
 							'exclude_from_search' => true,
 							'capability_type' => 'post',

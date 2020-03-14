@@ -501,6 +501,17 @@ img.ug-sepia-effect{
 	z-index:2;	
 }
 
+.ug-gallery-wrapper .ug-textpanel-link,
+.ug-gallery-wrapper .ug-textpanel-link:visited{
+	color:inherit;
+	text-decoration:none;
+}
+
+.ug-gallery-wrapper .ug-textpanel-link:hover{
+	text-decoration:underline;
+}
+
+
 .ug-gallery-wrapper .ug-textpanel-description{
 	font-size:14px;
 	color:white;

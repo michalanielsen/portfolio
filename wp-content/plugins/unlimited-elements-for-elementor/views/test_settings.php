@@ -9,12 +9,10 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 
 dmp("test");
 
-$font = new UniteFontManagerUC();
+//$font = new UniteFontManagerUC();
+//$font->fetchIcons();
 
-$font->fetchIcons();
 
-
-/*
 $webAPI = new UniteCreatorWebAPI();
 
 $response = $webAPI->checkUpdateCatalog();
@@ -29,4 +27,3 @@ $arrCatalog = $webAPI->getCatalogData();
 dmp($lastAPIData);
 dmp($arrCatalog);
 exit();
-*/

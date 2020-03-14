@@ -2519,13 +2519,23 @@ class Instafeed extends Powerpack_Widget {
                 'prevEl'             => '.swiper-button-prev-'.esc_attr( $this->get_id() ),
             ];
         }
+		
+		$elementor_bp_lg		= get_option( 'elementor_viewport_lg' );
+		$elementor_bp_md		= get_option( 'elementor_viewport_md' );
+		$bp_desktop				= !empty($elementor_bp_lg) ? $elementor_bp_lg : 1025;
+		$bp_tablet				= !empty($elementor_bp_md) ? $elementor_bp_md : 768;
+		$bp_mobile				= 320;
         
         $slider_options['breakpoints'] = [
-            '768'   => [
+            $bp_desktop   => [
+                'slidesPerView'      => ( $settings['items']['size'] !== '' ) ? absint( $settings['items']['size'] ) : 2,
+                'spaceBetween'       => ( $settings['margin']['size'] !== '' ) ? $settings['margin']['size'] : 10,
+            ],
+            $bp_tablet   => [
                 'slidesPerView'      => ( $settings['items_tablet']['size'] !== '' ) ? absint( $settings['items_tablet']['size'] ) : 2,
                 'spaceBetween'       => ( $settings['margin_tablet']['size'] !== '' ) ? $settings['margin_tablet']['size'] : 10,
             ],
-            '480'   => [
+            $bp_mobile   => [
                 'slidesPerView'      => ( $settings['items_mobile']['size'] !== '' ) ? absint( $settings['items_mobile']['size'] ) : 1,
                 'spaceBetween'       => ( $settings['margin_mobile']['size'] !== '' ) ? $settings['margin_mobile']['size'] : 10,
             ],
@@ -2636,11 +2646,7 @@ class Instafeed extends Powerpack_Widget {
         }
         
         if ( ! empty( $settings['insta_profile_url']['url'] ) ) {
-            $this->add_render_attribute( 'instagram-profile-link', 'href', $settings['insta_profile_url']['url'] );
-
-            if ( ! empty( $settings['insta_profile_url']['is_external'] ) ) {
-                $this->add_render_attribute( 'instagram-profile-link', 'target', '_blank' );
-            }
+			$this->add_link_attributes( 'instagram-profile-link', $settings['insta_profile_url'] );
         }
         
         $pp_widget_options = [

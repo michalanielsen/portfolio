@@ -649,6 +649,9 @@ class UniteCreatorElementorWidget extends Widget_Base {
     			
     			$arrControl["size_units"] = array("px","%");
     			
+    			$isResponsive = UniteFunctionsUC::getVal($param, "is_responsive");
+    			$isResponsive = UniteFunctionsUC::strToBool($isResponsive);
+    			
     			//set default value
     			$arrDefaultValue = array();
     			$arrDefaultValue["top"] = UniteFunctionsUC::getVal($param, "desktop_top");
@@ -656,11 +659,35 @@ class UniteCreatorElementorWidget extends Widget_Base {
     			$arrDefaultValue["left"] = UniteFunctionsUC::getVal($param, "desktop_left");
     			$arrDefaultValue["right"] = UniteFunctionsUC::getVal($param, "desktop_right");
     			
+    			
     			$unit = UniteFunctionsUC::getVal($param, "units");
     			if(!empty($unit))
     				$arrDefaultValue["unit"] = $unit;
     			
-    			$arrControl["default"] = $arrDefaultValue;
+    			if($isResponsive == true){
+    				
+    				$arrTabletDefaults = array();
+    				$arrTabletDefaults["top"] = UniteFunctionsUC::getVal($param, "tablet_top");
+    				$arrTabletDefaults["bottom"] = UniteFunctionsUC::getVal($param, "tablet_bottom");
+    				$arrTabletDefaults["left"] = UniteFunctionsUC::getVal($param, "tablet_left");
+    				$arrTabletDefaults["right"] = UniteFunctionsUC::getVal($param, "tablet_right");
+    				
+    				$arrMobileDefaults = array();
+    				$arrMobileDefaults["top"] = UniteFunctionsUC::getVal($param, "mobile_top");
+    				$arrMobileDefaults["bottom"] = UniteFunctionsUC::getVal($param, "mobile_bottom");
+    				$arrMobileDefaults["left"] = UniteFunctionsUC::getVal($param, "mobile_left");
+    				$arrMobileDefaults["right"] = UniteFunctionsUC::getVal($param, "mobile_right");
+    				
+    				$arrControl["uc_responsive"] = true;
+    				$arrControl["default"] = $arrDefaultValue;
+    				$arrControl["desktop_default"] = $arrDefaultValue;
+    				$arrControl["tablet_default"] = $arrTabletDefaults;
+    				$arrControl["mobile_default"] = $arrMobileDefaults;
+    				
+    			}
+    			else{
+    				$arrControl["default"] = $arrDefaultValue;
+    			}
     			
     			//set selector
     			$arrSelectors = array();
@@ -670,6 +697,7 @@ class UniteCreatorElementorWidget extends Widget_Base {
     			if($type == UniteCreatorDialogParam::PARAM_PADDING)
     				$attribute = "padding";
     			
+    		    				
     			if(!empty($selector)){
     				$selector = "{{WRAPPER}} $selector";
     				$selectorContent = $attribute.': {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};';
@@ -832,8 +860,6 @@ class UniteCreatorElementorWidget extends Widget_Base {
     	if($forItems == true)
     		$arrControl["name"] = $name;
     	
-    	
-    	
     	//add description
     	if(!empty($description))
     		$arrControl["description"] = $description;
@@ -856,7 +882,7 @@ class UniteCreatorElementorWidget extends Widget_Base {
     	
     	//condition
     	if(!empty($elementorCondition)){
-    		$arrControl["condition"] = $elementorCondition;    	
+    		$arrControl["condition"] = $elementorCondition;
     	}
     	
     	
@@ -978,7 +1004,7 @@ class UniteCreatorElementorWidget extends Widget_Base {
     		break;
     		default:
     			$arrControl = $this->getControlArrayUC($param);
-				
+				    			
     			$type = UniteFunctionsUC::getVal($param, "type");
     			
     			switch($type){
@@ -993,7 +1019,19 @@ class UniteCreatorElementorWidget extends Widget_Base {
     					
     				break;
     				default:
-    					$this->add_control($name, $arrControl);    					
+    					
+    					//add control (responsive or not)
+    					if(isset($arrControl["uc_responsive"])){
+    						
+    						unset($arrControl["uc_responsive"]);
+    						$this->add_responsive_control($name, $arrControl);
+    						
+    					}else{
+    						
+    						$this->add_control($name, $arrControl);
+    						
+    					}
+    					    					
     				break;
     			}
     		break;

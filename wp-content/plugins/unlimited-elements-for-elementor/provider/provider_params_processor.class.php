@@ -489,7 +489,7 @@ class UniteCreatorParamsProcessor extends UniteCreatorParamsProcessorWork{
 		
 		//run custom query if available
 		$args = UniteFunctionsWPUC::getPostsArgs($filters);
-				
+		
 		HelperUC::addDebug("Posts Query", $args);
 		
 		$args = $this->getPostListData_getCustomQueryFilters($args, $value, $name, $data);

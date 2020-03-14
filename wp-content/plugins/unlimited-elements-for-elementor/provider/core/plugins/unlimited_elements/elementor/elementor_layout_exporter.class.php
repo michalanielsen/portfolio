@@ -659,13 +659,11 @@ class UniteCreatorLayoutsExporterElementor extends UniteCreatorLayoutsExporter{
 		$template_data = $objLocal->get_data( array(
 			'template_id' => $template_id,
 		));
-		
-		if ( empty( $template_data['content'] ) ) {
-			UniteFunctionsUC::throwError("The template is empty");
-		}
-
-		$content = $template_data['content'];
 				
+		$content = UniteFunctionsUC::getVal($template_data, "content");
+		if(empty($content))
+			$content = array();
+		
 		$content = $this->process_export_import_content( $content, 'on_export' );
 		
 		$template_data["content"] = $content;
@@ -763,7 +761,7 @@ class UniteCreatorLayoutsExporterElementor extends UniteCreatorLayoutsExporter{
 	/**
 	 * export layout file
 	 */
-	private function exportElementorLayoutZip($arrContent, $exportName = null){
+	private function exportElementorLayoutZip($arrContent, $exportName = null, $isReturnData = false){
 		
 		try{
 			
@@ -794,6 +792,13 @@ class UniteCreatorLayoutsExporterElementor extends UniteCreatorLayoutsExporter{
 						
 			$this->deleteExportLayoutFolder();
 			
+			if($isReturnData == true){
+				$arrData = $this->getExportedFileData();
+				
+				return($arrData);
+			}
+			
+			
 			$this->downloadExportFile();
 			exit();
 			
@@ -815,7 +820,7 @@ class UniteCreatorLayoutsExporterElementor extends UniteCreatorLayoutsExporter{
 	/**
 	 * export elementor post by id
 	 */
-	public function exportElementorPost($postID, $exportName = null){
+	public function exportElementorPost($postID, $exportName = null, $isReturnData = false){
 		
 		$this->exportPostID = $postID;
 		
@@ -836,22 +841,25 @@ class UniteCreatorLayoutsExporterElementor extends UniteCreatorLayoutsExporter{
 		
 		$content = $templateData["content"];
 						
-		$this->exportElementorLayoutZip($content, $exportName);
+		$arrData = $this->exportElementorLayoutZip($content, $exportName, true);
 		
+		return($arrData);
 	}
 	
 	
 	/**
 	 * export elementor inited layout
 	 */
-	public function exportElementorLayout(){
+	public function exportElementorLayout($isReturnData = false){
 		
 		$this->validateInited();
 		
 		$postID = $this->objLayout->getID();
 		$exportName = $this->objLayout->getExportLayoutName();
 		
-		$this->exportElementorPost($postID, $exportName);
+		$arrData = $this->exportElementorPost($postID, $exportName, $isReturnData);
+		
+		return($arrData);
 	}
 		
 	

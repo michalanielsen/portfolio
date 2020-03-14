@@ -25,7 +25,7 @@ class Tutor_Lms_Course_Carousel extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bdt-wi-tutor-lms-course-carousel bdt-new';
+		return 'bdt-wi-tutor-lms-course-carousel';
 	}
 
 	public function get_categories() {

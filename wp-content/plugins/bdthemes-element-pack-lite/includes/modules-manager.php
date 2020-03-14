@@ -74,22 +74,34 @@ final class Manager {
 			'scroll-button',
 			'slider',
 			'toggle',
-			'trailer-box'
+			'trailer-box',
+			'twitter-grid'
 		];
 
-		$cf_seven          = element_pack_option( 'contact-form-seven', 'element_pack_third_party_widget', 'on' );
-		$we_forms          = element_pack_option( 'we-forms', 'element_pack_third_party_widget', 'on' );
-		$tutor_lms          = element_pack_option( 'tutor-lms', 'element_pack_third_party_widget', 'on' );
+		$tutor_lms    = element_pack_option( 'tutor-lms', 'element_pack_third_party_widget', 'on' );
+		$cf_seven     = element_pack_option( 'contact-form-seven', 'element_pack_third_party_widget', 'on' );
+		$we_forms     = element_pack_option( 'we-forms', 'element_pack_third_party_widget', 'on' );
+		$fluent_forms = element_pack_option( 'fluent-forms', 'element_pack_third_party_widget', 'on' );
+		$ninja_forms       = element_pack_option( 'ninja-forms', 'element_pack_third_party_widget', 'on' );
+
+		if ( is_plugin_active( 'tutor/tutor.php' ) and 'on' === $tutor_lms ) {
+			$modules[] = 'tutor-lms';
+		}
 
 		if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) and 'on' === $cf_seven ) {
 			$modules[] = 'contact-form-seven';
 		}
+
 		if ( is_plugin_active( 'weforms/weforms.php' ) and 'on' === $we_forms ) {
 			$modules[] = 'we-forms';
 		}
 
-		if ( is_plugin_active( 'tutor/tutor.php' ) and 'on' === $tutor_lms ) {
-			$modules[] = 'tutor-lms';
+		if ( is_plugin_active( 'fluentform/fluentform.php' ) and 'on' === $fluent_forms ) {
+			$modules[] = 'fluent-forms';
+		}
+
+		if ( is_plugin_active( 'ninja-forms/ninja-forms.php' ) and 'on' === $ninja_forms ) {
+			$modules[] = 'ninja-forms';
 		}
 
 		// Fetch all modules data

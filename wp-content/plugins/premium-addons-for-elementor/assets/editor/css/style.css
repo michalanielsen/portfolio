@@ -108,6 +108,7 @@
     line-height: 1.2;
     font-size: 12px;
 }
+.elementor-panel .elementor-control-section_pa_docs .elementor-panel-heading-title.elementor-panel-heading-title,
 .elementor-control-raw-html.editor-pa-doc a {
     color: #0f6aa7;
 }

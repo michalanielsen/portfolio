@@ -355,6 +355,18 @@ class UniteCreatorLayout extends UniteCreatorLayoutWork{
 		
 	}
 	
+	/**
+	 * get parent id
+	 */
+	public function getParentID(){
+		
+		$this->validateInited();
+		
+		$parentID = $this->post->post_parent;
+		
+		return($parentID);
+	}
+	
 	
 	/**
 	 * check if layout exists by title
@@ -508,6 +520,7 @@ class UniteCreatorLayout extends UniteCreatorLayoutWork{
 		return(false);
 	}
 	
+	
 	/**
 	 * get edit layout url
 	 */
@@ -520,6 +533,19 @@ class UniteCreatorLayout extends UniteCreatorLayoutWork{
 		return($urlEdit);
 	}
 	
+	/**
+	 * get edit layout url
+	 */
+	public function getUrlViewPost(){
+		
+		$this->validateInited();
+		
+		$urlView = get_permalink($this->id);
+		
+		return($urlView);
+	}
+	
+	
 	
 	/**
 	 * get page image
@@ -530,14 +556,27 @@ class UniteCreatorLayout extends UniteCreatorLayoutWork{
 
 		$attachmentID = UniteFunctionsWPUC::getFeaturedImageID($this->id);
 		
-		if(empty($attachmentID))
-			return(null);
+		$urlPreview = null;
 		
-		if($getThumb == false)			
-			$urlPreview = UniteFunctionsWPUC::getUrlAttachmentImage($attachmentID, UniteFunctionsWPUC::THUMB_MEDIUM);
-		else
-			$urlPreview = UniteFunctionsWPUC::getUrlAttachmentImage($attachmentID);
+		if(!empty($attachmentID)){
+			if($getThumb == false)			
+				$urlPreview = UniteFunctionsWPUC::getUrlAttachmentImage($attachmentID, UniteFunctionsWPUC::THUMB_MEDIUM);
+			else
+				$urlPreview = UniteFunctionsWPUC::getUrlAttachmentImage($attachmentID);
+		}
+				
+		return($urlPreview);
+	}
+	
+	/**
+	 * get default image preview
+	 */
+	public function getDefaultPreviewImage(){
 		
+		$typeName = $this->objLayoutType->typeName;
+		
+		$filenameDefaultPreview = "preview_$typeName.jpg";			
+		$urlPreview = GlobalsUC::$urlPlugin."images/".$filenameDefaultPreview;
 		
 		return($urlPreview);
 	}

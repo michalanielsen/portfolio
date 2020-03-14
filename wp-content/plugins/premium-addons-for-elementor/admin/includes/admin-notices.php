@@ -14,8 +14,6 @@ class Admin_Notices {
     
     private static $papro = 'premium-addons-pro';
     
-    private static $pbg = 'premium-blocks-for-gutenberg';
-    
     /**
     * Constructor for the class
     */
@@ -27,6 +25,8 @@ class Admin_Notices {
         
         add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
         
+        add_action( 'wp_ajax_pa_reset_admin_notice', array( $this, 'reset_admin_notice' ) );
+        
         add_action( 'wp_ajax_pa_dismiss_admin_notice', array( $this, 'dismiss_admin_notice' ) );
         
     }
@@ -37,6 +37,8 @@ class Admin_Notices {
     public function init() {
 
         $this->handle_review_notice();
+        
+        $this->handle_hscroll_notice();
         
     }
     
@@ -54,6 +56,8 @@ class Admin_Notices {
         if ( false == $response ) {
             $this->get_review_notice();
         }
+        
+        $this->get_hscroll_notice();
         
     }
 
@@ -83,25 +87,26 @@ class Admin_Notices {
     }
    
     /**
+     * Checks if Premium Horizontal Scroll message is dismissed.
      * 
-     * Checks if Premium Gutenberg message is dismissed.
-     * 
+     * @since 3.11.7
      * @access public
-     * @return void
      * 
-    */
-    public function handle_pbg_notice() {
-        if ( ! isset( $_GET['pbg'] ) ) {
+     * @return void
+     */
+    public function handle_hscroll_notice() {
+        
+        if ( ! isset( $_GET['hscroll'] ) ) {
             return;
         }
 
-        if ( 'opt_out' === $_GET['pbg'] ) {
+        if ( 'opt_out' === $_GET['hscroll'] ) {
             check_admin_referer( 'opt_out' );
 
-            update_option( 'pbg_notice', '1' );
+            update_option( 'hscroll_notice', '1' );
         }
 
-        wp_redirect( remove_query_arg( 'pbg' ) );
+        wp_redirect( remove_query_arg( 'hscroll' ) );
         exit;
     }
     
@@ -202,46 +207,40 @@ class Admin_Notices {
         
     }
     
+    
     /**
      * 
-     * Shows an admin notice for Premium Gutenberg.
+     * Shows admin notice for Premium Horizontal Scroll.
      * 
-     * @since 2.7.6
+     * @since 3.11.7
+     * @access public
+     * 
      * @return void
-     * 
      */
-    public function get_pbg_notice() {
+    public function get_hscroll_notice() {
         
-        $pbg_path = sprintf( '%1$s/%1$s.php', self::$pbg);
+        $hscroll_notice = get_option( 'hscroll_notice' );
         
-        if( ! defined('PREMIUM_BLOCKS_VERSION' ) ) {
-
-            if ( ! Helper_Functions::is_plugin_installed( $pbg_path ) && self::check_user_can( 'install_plugins' ) ) {
-
-                $pbg_notice = get_option( 'pbg_notice' );
-
-                $install_url = wp_nonce_url( self_admin_url( sprintf( 'update.php?action=install-plugin&plugin=%s', self::$pbg ) ), 'install-plugin_premium-blocks-for-gutenberg' );
-
-                if ( '1' === $pbg_notice ) {
-                    return;
-                } else if ( '1' !== $pbg_notice ) {
-                    $optout_url = wp_nonce_url( add_query_arg( 'pbg', 'opt_out' ), 'opt_out' );
-
-                    ?>
-<div class="error">
-                <p style="display: flex; align-items: center; padding:10px 10px 10px 0;">
-                    <img src="<?php echo PREMIUM_ADDONS_URL .'admin/images/premium-blocks-logo.png'; ?>" style="margin-right: 0.8em; width: 40px;">
-                    <span><strong><?php echo __('Premium Blocks for Gutenberg', 'premium-addons-for-elementor'); ?>&nbsp;</strong><?php echo __('is Now Available.','premium-addons-for-elementor'); ?>&nbsp;</span>
-                    <a href="<?php echo $install_url; ?>" style="flex-grow: 2;"><span class="button-primary" style="margin-left:5px;"><?php echo __('Install it Now.','premium-addons-for-elementor'); ?></span></a>
-                    <a href="<?php echo $optout_url; ?>" style="text-decoration: none; margin-left: 1em; float:right; "><span class="dashicons dashicons-dismiss"></span></a>
-                </p>
-</div>
-
-                <?php }
-
-            }
+        if( '1' === $hscroll_notice )
+            return;
         
-        }
+        $theme = Helper_Functions::get_installed_theme();
+    
+        $notice_url = sprintf( 'https://premiumaddons.com/elementor-horizontal-scroll-widget/?utm_source=hscroll-notification&utm_medium=wp-dash&utm_campaign=get-pro&utm_term=%s', $theme );
+    
+        $templates_message = '<div class="pa-text-wrap">';
+
+        $templates_message .= '<img class="pa-notice-logo" src="' . PREMIUM_ADDONS_URL .'admin/images/premium-addons-logo.png' . '">';
+
+        $templates_message .= '<strong>' . __('Premium Horizontal Scroll','premium-addons-for-elementor') . '&nbsp</strong><span>' . __('widget is now available in Premium Addons Pro.', 'premium-addons-for-elementor') . '&nbsp</span><a href="' . esc_url( $notice_url ) . '" target="_blank">' . __('Check it out now', 'premium-addons-for-elementor') . '</a>';
+
+        $templates_message .= '<div class="pa-notice-close" data-notice="hscroll"><span class="dashicons dashicons-dismiss"></span></div>';
+
+        $templates_message .= '</div>';
+
+        $this->render_admin_notices( $templates_message );
+
+        
         
     }
     
@@ -264,9 +263,9 @@ class Admin_Notices {
      * 
      * @return void
      */
-    private function render_admin_notices( $message, $class = '' ) {
+    private function render_admin_notices( $message, $class = '', $handle = '' ) {
         ?>
-            <div class="error pa-new-feature-notice <?php echo $class; ?>">
+            <div class="error pa-new-feature-notice <?php echo $class; ?>" data-notice="<?php echo $handle; ?>">
                 <?php echo $message; ?>
             </div>
         <?php
@@ -299,7 +298,7 @@ class Admin_Notices {
      * 
      * @return void
      */
-    public function dismiss_admin_notice() {
+    public function reset_admin_notice() {
         
         $key = isset( $_POST['notice'] ) ? $_POST['notice'] : '';
         
@@ -318,6 +317,34 @@ class Admin_Notices {
         }
         
     }
+    
+    /**
+     * Dismiss admin notice
+     * 
+     * @since 3.11.7
+     * @access public
+     * 
+     * @return void
+     */
+    public function dismiss_admin_notice() {
+        
+        $key = isset( $_POST['notice'] ) ? $_POST['notice'] : '';
+        
+        if ( ! empty( $key ) ) {
+            
+            update_option( 'hscroll_notice', '1' );
+            
+            wp_send_json_success();
+            
+        } else {
+            
+            wp_send_json_error();
+            
+        }
+        
+    }
+    
+    
 
     public static function get_instance() {
         if( self::$instance == null ) {

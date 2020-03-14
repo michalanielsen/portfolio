@@ -813,12 +813,21 @@ function UCManagerActionsAddons(){
 		if(itemID == null)
 			return(false);
 		
+		
 		if(g_temp.isLayout == false){
 			
 			var urlPreview = g_ucAdmin.getUrlView("testaddon", "id="+itemID+"&preview=1");
 			
 		}else{
-			var urlPreview = g_ucAdmin.getUrlView("layout_preview", "id="+itemID, true);
+			
+			//in case of layout
+			
+			var objItem = g_objItems.getSelectedItem();
+			var urlPreview = objItem.data("urlview");
+			
+			if(!urlPreview)
+				var urlPreview = g_ucAdmin.getUrlView("layout_preview", "id="+itemID, true);
+			
 		}
 		
 		window.open(urlPreview);
@@ -1825,6 +1834,36 @@ function UCManagerActionsAddons(){
 	}
 	
 	/**
+	 * on update click
+	 */
+	function onUpdateCatalogClick(){
+		
+		var objButton = jQuery(this);
+		var objIcon = objButton.find("i");
+		objIcon.addClass("fa-spin");
+		
+		var data = {force:true};
+		
+		g_ucAdmin.ajaxRequest("check_catalog", data, function(response){
+			
+			trace(response);
+			
+			objIcon.removeClass("fa-spin");
+			
+			var message = g_ucAdmin.getVal(response,"message");
+			var errorMessage = g_ucAdmin.getVal(response,"error_message");
+			
+			if(errorMessage)
+				message += errorMessage;
+			
+			alert(message);
+						
+		});
+		
+		
+	}
+	
+	/**
 	 * on item action menu click
 	 */
 	function onItemActionMenuClick(event){
@@ -1882,6 +1921,10 @@ function UCManagerActionsAddons(){
 			
 		}
 		
+		//update catalog button
+		var objButtonUpdate = g_objWrapper.find(".manager-button-update-catalog");
+		if(objButtonUpdate.length)
+			objButtonUpdate.on("click", onUpdateCatalogClick);
 	}
 	
 	

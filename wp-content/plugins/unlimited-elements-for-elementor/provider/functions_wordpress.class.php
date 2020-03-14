@@ -106,7 +106,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 		public static function getPostTypeTaxomonies($postType){
 			
 			$arrTaxonomies = get_object_taxonomies(array( 'post_type' => $postType ), 'objects');
-			
+					
 			$arrNames = array();
 			foreach($arrTaxonomies as $key=>$objTax){
 				$name = $objTax->labels->singular_name;
@@ -190,7 +190,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 				foreach($arrTax as $taxName => $taxTitle){
 					
 					$cats = self::getCategoriesAssoc($taxName, false, $name);
-										
+					
 					if(!empty($cats))
 					foreach($cats as $catID=>$catTitle){
 						
@@ -433,6 +433,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			$args["hide_empty"] = $hideEmpty;
 			$args["taxonomy"] = $taxonomy;
 			$args["count"] = true;
+			$args["number"] = 5000;
 			
 			if(!empty($orderBy)){
 				$args["orderby"] = $orderBy;
@@ -639,7 +640,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			
 			$args = array("taxonomy"=>$taxonomy);
 			$args["hide_empty"] = false;
-			$args["number"] = 100;
+			$args["number"] = 5000;
 			
 			$cats = get_categories($args);
 			
@@ -1118,7 +1119,6 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			if(!empty($addParams))
 				$query = array_merge($query, $addParams);	
 			
-			//dmp($query);exit();
 				
 			$arrPosts = get_posts($query);
 			
@@ -1182,6 +1182,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 				$arrSearchItem["taxonomy"] = $taxName;
 				$arrSearchItem["field"] = "id";
 				$arrSearchItem["terms"] = $catID;
+				$arrSearchItem["include_children"] = false;
 				
 				$arrQuery[] = $arrSearchItem;
 			}
@@ -1938,7 +1939,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			
 			$role = "";
 			if(!empty($arrRoles))
-				$role = implode($arrRoles, ",");
+				$role = implode(",",$arrRoles);
 			
 			$arrData["role"] = $role;
 			

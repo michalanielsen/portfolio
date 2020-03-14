@@ -190,11 +190,19 @@ class Premium_Videobox extends Widget_Base {
             [
                 'label'         => __('Autoplay', 'premium-addons-for-elementor'),
                 'type'          => Controls_Manager::SWITCHER,
-                'condition'   => [
-                    'premium_video_box_video_type' => 'self'
-                ]
             ]
         );
+        
+        $this->add_control('autoplay_notice',
+			[
+				'raw'           => __( 'Please note that autoplay option works only when Overlay option is disabled', 'premium-addons-for-elementor' ),
+                'type'          => Controls_Manager::RAW_HTML,
+                'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
+                'condition'     => [
+                    'premium_video_box_self_autoplay'   => 'yes'
+                ]    
+			]
+		);
         
         $this->add_control('premium_video_box_loop',
             [
@@ -204,22 +212,24 @@ class Premium_Videobox extends Widget_Base {
         );
         
         $this->add_control('premium_video_box_start',
-				[
-					'label'       => __( 'Start Time', 'premium-addons-for-elementor' ),
-					'type'        => Controls_Manager::NUMBER,
-					'description' => __( 'Specify a start time (in seconds)', 'premium-addons-for-elementor' ),
-                    'condition'   => [
-						'premium_video_box_video_type!' => 'vimeo'
-					]
-				]
-			);
+            [
+                'label'     => __( 'Start Time', 'premium-addons-for-elementor' ),
+                'type'      => Controls_Manager::NUMBER,
+                'separator' => 'before',
+                'description'=> __( 'Specify a start time (in seconds)', 'premium-addons-for-elementor' ),
+                'condition'  => [
+                    'premium_video_box_video_type!' => 'vimeo'
+                ]
+            ]
+        );
 
         $this->add_control('premium_video_box_end',
             [
-                'label'       => __( 'End Time', 'premium-addons-for-elementor' ),
-                'type'        => Controls_Manager::NUMBER,
-                'description' => __( 'Specify an end time (in seconds)', 'premium-addons-for-elementor' ),
-                'condition'   => [
+                'label'         => __( 'End Time', 'premium-addons-for-elementor' ),
+                'type'          => Controls_Manager::NUMBER,
+                'description'   => __( 'Specify an end time (in seconds)', 'premium-addons-for-elementor' ),
+                'separator'     => 'after',
+                'condition'     => [
                     'premium_video_box_video_type!' => 'vimeo'
                 ]
             ]
@@ -744,6 +754,8 @@ class Premium_Videobox extends Widget_Base {
         
         $related = $settings['premium_video_box_suggested_videos'];
         
+        $autoplay = $settings['premium_video_box_self_autoplay'];
+        
         $mute = $settings['premium_video_box_mute'];
         
         $loop = $settings['premium_video_box_loop'];
@@ -758,6 +770,12 @@ class Premium_Videobox extends Widget_Base {
         $options .= 'yes' === $loop ? '1' : '0';
         $options .= '&controls=';
         $options .= 'yes' === $controls ? '1' : '0';
+        
+        if( 'self' !== $video_type ) {
+            if ( 'yes' === $autoplay && ! $this->has_image_overlay() ) {
+                $options .= '&autoplay=1';
+            }
+        }
         
         if( 'vimeo' === $video_type ) {
             $options .= '&color=' . str_replace('#', '', $settings['vimeo_controls_color'] );
@@ -812,8 +830,6 @@ class Premium_Videobox extends Widget_Base {
             
             $video_params = '';
             
-            $autoplay = $settings['premium_video_box_self_autoplay'];
-            
             if( $controls ) {
                 $video_params .= 'controls ';
             }
@@ -863,7 +879,8 @@ class Premium_Videobox extends Widget_Base {
         </div>
             <div class="premium-video-box-image-container" style="background-image: <?php echo $image; ?>;">
         </div>
-        <?php if( $settings['premium_video_box_play_icon_switcher'] == 'yes' ) : ?>
+        
+        <?php if( 'yes' === $settings['premium_video_box_play_icon_switcher'] && 'yes' !== $autoplay ) : ?>
             <div class="premium-video-box-play-icon-container">
                 <i class="premium-video-box-play-icon fa fa-play fa-lg"></i>
             </div>
@@ -985,6 +1002,14 @@ class Premium_Videobox extends Widget_Base {
 		</div>
 		<?php } ?>
         <?php
+    }
+    
+    private function has_image_overlay() {
+        
+        $settings = $this->get_settings_for_display();
+
+		return ! empty( $settings['premium_video_box_image']['url'] ) && 'yes' === $settings['premium_video_box_image_switcher'];
+        
     }
     
 }

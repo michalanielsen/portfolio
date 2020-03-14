@@ -28,7 +28,7 @@ class UniteCreatorWebAPIWork{
 	const EXPIRE_NEVER = "never";
 	
 	
-	private function a_INIT(){}
+	private function a______INIT__________(){}
 	
 	
 	/**

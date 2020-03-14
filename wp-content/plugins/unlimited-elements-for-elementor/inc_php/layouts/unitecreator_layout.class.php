@@ -118,7 +118,7 @@ class UniteCreatorLayoutWork extends UniteElementsBaseUC{
 	}
 	
 	
-	private function a_STATIC_FUNCTIONS(){}
+	private function a_________STATIC_FUNCTIONS________(){}
 	
 	
 	
@@ -824,7 +824,7 @@ class UniteCreatorLayoutWork extends UniteElementsBaseUC{
 		return($data);
 	}
 	
-	private function a_MAPPING(){}
+	private function a______MAPPING_______(){}
 	
 	/**
 	 * modify columns settings
@@ -1229,6 +1229,15 @@ class UniteCreatorLayoutWork extends UniteElementsBaseUC{
 		return($this->id);
 	}
     
+	/**
+	 * get parent ID
+	 */
+	public function getParentID(){
+		
+		dmp("getParentID - function for override");
+		exit();
+	}
+
 	
 	/**
 	 * get layout type
@@ -1654,6 +1663,16 @@ class UniteCreatorLayoutWork extends UniteElementsBaseUC{
 	public function getUrlEditPost(){
 		
 		dmp("getUrlEditPost function for override");
+		exit();
+	}
+	
+	
+	/**
+	 * get edit layout url
+	 */
+	public function getUrlViewPost(){
+		
+		dmp("getUrlViewPost function for override");
 		exit();
 	}
 	

@@ -1,25 +1,31 @@
-[21/Feb/2020:19:38:12] (ℹ️): WordPress Instance Info:
-[21/Feb/2020:19:38:12] (ℹ️): Home URL : https://michalasoendergaard.dk
-[21/Feb/2020:19:38:12] (ℹ️): Site URL : https://michalasoendergaard.dk
-[21/Feb/2020:19:38:12] (ℹ️): WordPress Version : 5.3.2
-[21/Feb/2020:19:38:12] (ℹ️): Onboarding Version : 1.8.2
-[21/Feb/2020:19:38:12] (ℹ️): Multisite : No
-[21/Feb/2020:19:38:12] (ℹ️): Server Info : Apache
-[21/Feb/2020:19:38:12] (ℹ️): PHP Version : 7.3.15
-[21/Feb/2020:19:38:12] (ℹ️): HTTPS : Yes
-[21/Feb/2020:19:38:12] (ℹ️): PHP Max Execution Time : 50
-[21/Feb/2020:19:38:12] (ℹ️): PHP Max Input Vars : 5000
-[21/Feb/2020:19:38:12] (ℹ️): Max Upload Size : 100663296
-[21/Feb/2020:19:38:12] (ℹ️): Plugins:
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Apollo13 Framework Extensions : v1.8.2 (Apollo13Themes)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Elementor : v2.9.2 (Elementor.com)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Image optimization service by Optimole : v2.2.8 (Optimole)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Gutenberg Blocks and Template Library by Otter : v1.3.3 (ThemeIsle)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Really Simple SSL : v3.2.9 (Rogier Lankhorst, Mark Wolters)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Rife Elementor Extensions &amp; Templates : v1.1.2 (Apollo13Themes)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Orbit Fox Companion : v2.9.2 (Themeisle)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] TranslatePress - Multilingual : v1.6.6 (Cozmoslabs, Razvan Mocanu, Madalin Ungureanu, Cristophor Hurduban)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Visualizer: Tables and Charts for WordPress : v3.4.2 (Themeisle)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] Weglot Translate : v3.1.6 (Weglot Translate team)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] WP Product Review Lite : v3.7.2 (ThemeIsle)
-[21/Feb/2020:19:38:12] (ℹ️): [PLUGIN] WPForms Lite : v1.5.8.2 (WPForms)
+[12/Mar/2020:15:15:35] (ℹ️): WordPress Instance Info:
+[12/Mar/2020:15:15:35] (ℹ️): Home URL : https://michalasoendergaard.dk
+[12/Mar/2020:15:15:35] (ℹ️): Site URL : https://michalasoendergaard.dk
+[12/Mar/2020:15:15:35] (ℹ️): WordPress Version : 5.3.2
+[12/Mar/2020:15:15:35] (ℹ️): Onboarding Version : 1.8.2
+[12/Mar/2020:15:15:35] (ℹ️): Multisite : No
+[12/Mar/2020:15:15:35] (ℹ️): Server Info : Apache
+[12/Mar/2020:15:15:35] (ℹ️): PHP Version : 7.3.15
+[12/Mar/2020:15:15:35] (ℹ️): HTTPS : Yes
+[12/Mar/2020:15:15:35] (ℹ️): PHP Max Execution Time : 50
+[12/Mar/2020:15:15:35] (ℹ️): PHP Max Input Vars : 5000
+[12/Mar/2020:15:15:35] (ℹ️): Max Upload Size : 100663296
+[12/Mar/2020:15:15:35] (ℹ️): Plugins:
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Akismet Anti-Spam : v4.1.3 (Automattic)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Style Kits for Elementor : v1.6.2 (AnalogWP)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Apollo13 Framework Extensions : v1.8.3 (Apollo13Themes)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Element Pack Lite - Addon for Elementor : v1.6.0 (BdThemes)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Elementor : v2.9.6 (Elementor.com)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Essential Addons for Elementor : v3.8.4 (WPDeveloper)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Elementor Button Plus : v1.2.4 (FlickDevs)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Happy Elementor Addons : v2.7.2 (weDevs)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Image optimization service by Optimole : v2.2.9 (Optimole)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Gutenberg Blocks and Template Library by Otter : v1.4.1 (ThemeIsle)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Post Grid Elementor Addon : v1.0.5 (maneshtimilsina)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] PowerPack Lite for Elementor : v1.2.8.7 (IdeaBox Creations)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Premium Addons for Elementor : v3.11.7 (Leap13)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Really Simple SSL : v3.2.9 (Rogier Lankhorst, Mark Wolters)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Rife Elementor Extensions &amp; Templates : v1.1.2 (Apollo13Themes)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Scroll Top : v1.0.4 (Idenovasi)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] Unlimited Elements for Elementor : v1.4.25 (Unlimited Elements)
+[12/Mar/2020:15:15:35] (ℹ️): [PLUGIN] WEN Skill Charts : v1.4 (WEN Themes)

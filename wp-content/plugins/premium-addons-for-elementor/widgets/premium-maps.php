@@ -386,7 +386,7 @@ class Premium_Maps extends Widget_Base {
     
         $this->end_controls_section();
         
-        $this->start_controls_section('docs',
+        $this->start_controls_section('section_pa_docs',
             [
                 'label'         => __('Helpful Documentations', 'premium-addons-pro'),
             ]

@@ -13,9 +13,9 @@ class UniteCreatorAddonType_Elementor_Template extends UniteCreatorAddonType_Lay
 	/**
 	 * init the addon type
 	 */
-	protected function init(){
+	protected function initChild(){
 		
-		parent::init();
+		parent::initChild();
 		
 		$this->typeName = GlobalsUnlimitedElements::ADDONSTYPE_ELEMENTOR_TEMPLATE;
 				
@@ -26,11 +26,13 @@ class UniteCreatorAddonType_Elementor_Template extends UniteCreatorAddonType_Lay
 		$this->allowDuplicateTitle = false;
 		$this->defaultBlankTemplate = false;
 		
-		$this->allowWebCatalog = false;
-		$this->allowManagerWebCatalog = false;
+		$this->allowWebCatalog = true;
+		$this->allowManagerWebCatalog = true;
+		$this->allowManagerLocalLayouts = false;
+				
 		$this->showDescriptionField = false;
 		
-		$this->allowNoCategory = false;
+		$this->allowNoCategory = true;
 		$this->defaultCatTitle = __("Main", "unlimited_elements");
 		
 		$this->postType = GlobalsUnlimitedElements::POSTTYPE_UNLIMITED_ELEMENS_LIBRARY;

@@ -37,7 +37,7 @@ class UniteCreatorManager{
 	protected $hasHeaderLine = false;
 	protected $headerLineText = null;
 	protected $addClass = null;
-	
+	protected $putUpdateCatalogButton = false;
 	
 	protected function a_______REWRITE_FUNCTIONS________(){}
 	
@@ -529,6 +529,11 @@ class UniteCreatorManager{
 							<span id="status_text" class="status_text" style="display:none;"></span>
 						</div>
 							
+						<?php if($this->putUpdateCatalogButton == true):?>
+						<a href="javascript:void(0)" class="manager-button-update-catalog" title="<?php _e("Update Catalog","unlimited_elements")?>">
+						<i class="fas fa-sync"></i>
+						</a>
+						<?php endif?>
 						</div>
 		<?php 
 	}

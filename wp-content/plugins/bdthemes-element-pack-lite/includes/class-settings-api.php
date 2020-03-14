@@ -714,15 +714,15 @@ if ( !class_exists( 'ElementPack_Settings_API' ) ) :
 
             $html = '<ul class="bdt-tab" bdt-tab="animation: bdt-animation-slide-bottom-small;">';
 
-            $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="%1$s" data-tab-index="0">%2$s</a></li>', 'element_pack_welcome', 'Dashboard' );
+            $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="bdt-%1$s" data-tab-index="0">%2$s</a></li>', 'element_pack_welcome', 'Dashboard' );
 
 
             $count = 1;
 
             foreach ( $this->settings_sections as $tab ) {
-                $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="%1$s" data-tab-index="%2$s">%3$s</a></li>', $tab['id'], $count++, $tab['title'] );
+                $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="bdt-%1$s" data-tab-index="%2$s">%3$s</a></li>', $tab['id'], $count++, $tab['title'] );
             }
-            $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="%1$s" data-tab-index="5">%2$s</a></li>', 'element_pack_get_pro', 'Get Pro' );
+            $html .= sprintf( '<li><a href="#%1$s" class="bdt-tab-item" id="bdt-%1$s" data-tab-index="5">%2$s</a></li>', 'element_pack_get_pro', 'Get Pro' );
 
             $html .= '</ul>';
 

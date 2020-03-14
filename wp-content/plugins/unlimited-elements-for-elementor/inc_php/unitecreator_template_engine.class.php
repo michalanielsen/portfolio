@@ -19,7 +19,7 @@ class UniteCreatorTemplateEngineWork{
 	
 	
 	/**
-	 * init twig
+	 * init twig	
 	 */
 	public function __construct(){
 		
@@ -590,6 +590,14 @@ class UniteCreatorTemplateEngineWork{
 	public function setArrItems($arrItems){
 		
 		$this->arrItems = $arrItems;
+		
+		$numItems = 0;
+		if(is_array($arrItems))
+			$numItems = count($arrItems);
+		
+		//add number of items
+		$this->arrParams["uc_num_items"] = count($arrItems);
+		
 	}
 	
 	

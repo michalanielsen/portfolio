@@ -16,13 +16,20 @@ class UniteCreatorAddonType_Layout extends UniteCreatorAddonType{
 	const LAYOUT_PARAMS_TYPE_SCREENSHOT = "screenshot";
 	
 	public $isTemplate = false, $displayType = self::DISPLAYTYPE_TABLE;
-	public $layoutTypeForCategory = "layout", $allowImportFromCatalog = true;
+	public $layoutTypeForCategory = "layout", $allowImportFromCatalog = true, $allowManagerLocalLayouts = true;
 	public $showPageSettings = true, $defaultBlankTemplate = false;
 	public $paramsSettingsType = null, $paramSettingsTitle = null, $showParamsTopBarButton = false;
 	public $putScreenshotOnGridSave = false;
 	public $arrLayoutBrowserAddonTypes = null;
 	public $postType = null, $isBloxPage = true;
 	
+		
+	/**
+	 * construct
+	 */
+	public function __construct($typeName = ""){
+		parent::__construct($typeName);
+	}
 	
 	/**
 	 * init the addon type

@@ -270,7 +270,7 @@ class UniteCreatorLayoutsWork extends UniteElementsBaseUC{
 				
 		$where = "";
 		if(!empty($arrWhere))
-			$where = implode($arrWhere," and ");
+			$where = implode(" and ", $arrWhere);
 			
 		$records = $this->db->fetch(GlobalsUC::$table_layouts, $where, "catid, ordering");
 		
@@ -290,8 +290,9 @@ class UniteCreatorLayoutsWork extends UniteElementsBaseUC{
 		if($objAddonType->isLayout == false)
 			UniteFunctionsUC::throwError("Wrong layout type");
 		
-		if($catID === 0)
+		if($catID === 0){
 			$catID = "zero";
+		}
 		
 		$arrRecords = $this->getCatLayouts($catID, $objAddonType, true);
 		
@@ -581,6 +582,7 @@ class UniteCreatorLayoutsWork extends UniteElementsBaseUC{
 	 */
 	public function duplicateLayoutFromData($data){
 
+		
 		$redirectToLayout = UniteFunctionsUC::getVal($data, "redirect_to_layout");
 		$redirectToLayout = UniteFunctionsUC::strToBool($redirectToLayout);
 		

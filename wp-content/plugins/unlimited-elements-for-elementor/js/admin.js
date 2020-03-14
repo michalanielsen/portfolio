@@ -2466,7 +2466,7 @@ function UniteAdminUC(){
 		var data = {};
 		if(g_ucCatalogAddonType)
 			data["addontype"] = g_ucCatalogAddonType;
-				
+		
 		setTimeout(function(){
 			t.ajaxRequest("check_catalog", data, function(response){});
 		}, 5000);

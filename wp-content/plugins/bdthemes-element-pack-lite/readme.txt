@@ -1,11 +1,11 @@
 === Element Pack Lite - Addon for Elementor ===
 Contributors: bdthemes, selimmw, mohammaadfarid
 Donate link: http://bdthemes.com/
-Tags: elementor, elementor addon, pack, addon, widget, ultimate, essential, element, bdthemes
+Tags: elementor, elementor addon, pack, addons, widget, ultimate, essential, element, bdthemes, addons for elementor
 Requires at least: 4.9.0
 Tested up to: 5.3.2
 Requires PHP: 5.6.0
-Stable tag: 1.4.0
+Stable tag: 1.6.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,11 +39,15 @@ Element Pack for Elementor includes the most commonly used elements (called widg
 15. [Progress Pie](https://elementpack.pro/demo/element/progress-pie/) - After Before Middle Text Example,Line Width Example,Delay Example,Duration Example,Background Example with element pack pro plugin. 
 16. [Scroll Button](https://elementpack.pro/demo/element/scroll-button/) - With examples like -Scroll Down Example,Scroll Up Example,Duration Example,Offset Example (50px),Before Icon Position Example and others 
 17. [Trailer Box](https://elementpack.pro/demo/element/trailer-box/) - Product With Trailer Box,Salon Product With Trailer Box,Fashion With Trailer Box Element pack pro widget WordPress plugin
-18. [Contact Form 7](https://elementpack.pro/demo/element/contact-form-7/) - You can easily integrate contact form 7 plugin using Element Pack Plugin for Elementor. There are dozens of different design to choose from to design a form
-19. [WeForms](https://elementpack.pro/demo/element/weform/) - weForm an amazing 3rd party tool which are now supports element pack. you can chagne the style and customize its design.
-20. [Logo Grid](https://elementpack.pro/demo/element/logo-grid) - Logo grid gives you easily manage your client or partners business logo show beautifully.
-21. [Tutor LMS Course Grid](https://elementpack.pro/demo/element/tutor-lms-course-grid) - a new way to match your designs. Now you can show Widget Equal Height on elementor page builder, helps you to match the design.
-22. [Tutor LMS Course Carousel](https://elementpack.pro/demo/element/tutor-lms-course-carousel) - a new way to match your designs. Now you can show Widget Equal Height on elementor page builder, helps you to match the design.
+18. [Logo Grid](https://elementpack.pro/demo/element/logo-grid) - Logo grid gives you easily manage your client or partners business logo show beautifully.
+19. [Tutor LMS Course Grid](https://elementpack.pro/demo/element/tutor-lms-course-grid) - a new way to match your designs. Now you can show Widget Equal Height on elementor page builder, helps you to match the design.
+20. [Tutor LMS Course Carousel](https://elementpack.pro/demo/element/tutor-lms-course-carousel) - a new way to match your designs. Now you can show Widget Equal Height on elementor page builder, helps you to match the design.
+21. [Twitter Grid](https://elementpack.pro/demo/element/twitter-grid/ ) - Twitter Grid examples page Default Twitter grid, row, Columns and other examples.
+22. [Contact Form 7](https://elementpack.pro/demo/element/contact-form-7/) - You can easily integrate contact form 7 plugin using Element Pack Plugin for Elementor. There are dozens of different design to choose from to design a form
+23. [WeForms](https://elementpack.pro/demo/element/weform/) - weForm an amazing 3rd party tool which are now supports element pack. you can chagne the style and customize its design.
+24. [Fluent Forms](https://elementpack.pro/demo/element/fluent-forms/) - You can easily integrate Fluent Forms plugin using Element Pack Plugin for Elementor. There are dozens of different design to choose from to design a form.
+25. [Ninja Forms](https://elementpack.pro/demo/element/ninja-forms/) - To collect more subscriber &  to make sure your visitors more return on your site-Ninja Forms is a must have plugin.Modify its looks and feel.
+
 More widgets are coming soon...
 
 = Pro Version Widgets =
@@ -127,7 +131,7 @@ More widgets are coming soon...
 100. [Download Monitor](https://elementpack.pro/demo/element/download-monitor/) - Now you can provide an interface for your downabell files and the other elements for your visitors, with more engagement.
 101. [Event Calendar Countdown](https://elementpack.pro/demo/element/event-calendar-countdown/) - Event Calendar Countdown  style can be customized with color,border,background color, padding margin and position with  element pack pro plugins dashboard. 
 102. [Event Carousel](https://elementpack.pro/demo/element/event-carousel/) - 
-103. [Event Grid](https://elementpack.pro/demo/element/event-grid/) - 
+103. [Event Grid](https://elementpack.pro/demo/element/event-grid/) - Consist of customize grid, column number with image or without images and many other options.You must need this if you're bulding a event based sites.
 104. [Easy Digital Downloads](https://elementpack.pro/demo/element/easy-digital-downloads/) - Easy digital downloads product display with price, modified style, border options. It gives your site another level of functionality.
 105. [Easy Digital Downloads History](https://elementpack.pro/demo/element/easy-digital-downloads-history/) - Easy Digital Downloads History customizations options, tbody background color  to match with your brand color and website design
 106. [Easy Digital Downloads Purchase History](https://elementpack.pro/demo/element/easy-digital-downloads-purchase-history/) - Easy Digital Downloads Purchase History : modifications and other options like border color, background color matching modules.
@@ -136,7 +140,6 @@ More widgets are coming soon...
 109. [Instagram Feed](https://elementpack.pro/demo/element/instagram-feed/) - Example of Instagram feed widget  showing on the websites and it comes with lightbox effect image gallery.  
 110. [Layer Slider](https://elementpack.pro/demo/element/layer-slider/) - One of the best  WordPress slider in market with lots of options and features. Its shortcode supports elementor page builder.
 111. [Mailchimp For WordPress](https://elementpack.pro/demo/element/mailchimp-for-wordpress/) - Mailchimp For WordPress can sky rocket your subscriber list if you use it on your site. Can integrate it with elementor page builder.
-112. [Ninja Forms](https://elementpack.pro/demo/element/ninja-forms/) - To collect more subscriber &  to make sure your visitors more return on your site-Ninja Forms is a must have plugin.Modify its looks and feel.
 113. [QuForm](https://elementpack.pro/demo/element/quform/) - Quform is an advanced WordPress plugin that allows you to quickly and easily build multiple forms. And its compatible with element pack pro
 114. [Revolution Slider](https://elementpack.pro/demo/element/revolution-slider/) - Slider Revolution is an innovative, responsive jQuery Slider Plugin. And it works great with elementor page builder with a beautiful way.
 115. [TablePress](https://elementpack.pro/demo/element/tablepress/) - TablePress allows you to easily create and manage beautiful tables. You can embed the tables into posts, pages, or text widgets with a simple Shortcode. 
@@ -191,6 +194,19 @@ e.g.
 6. Trailer box widget example.
 
 == Changelog ==
+
+= 1.6.0 =
+
+* Added: Ninja Forms widget unlock from pro
+
+= 1.5.1 =
+
+* Fixed: uikit framework css loading issue fixed
+
+= 1.5.0 =
+
+* Added: Twitter Grid widget Added
+* Added: Fluent Forms widget Added
 
 = 1.4.0 =
 

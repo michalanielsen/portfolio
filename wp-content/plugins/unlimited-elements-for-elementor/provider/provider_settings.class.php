@@ -404,7 +404,7 @@ class UniteCreatorSettings extends UniteCreatorSettingsWork{
 		$addCurrentPosts = UniteFunctionsUC::strToBool($addCurrentPosts);
 		
 		$arrPostTypes = UniteFunctionsWPUC::getPostTypesWithCats(GlobalsProviderUC::$arrFilterPostTypes);
-		
+				
 		$isWpmlExists = UniteCreatorWpmlIntegrate::isWpmlExists();
 		
 		/*
@@ -566,6 +566,7 @@ class UniteCreatorSettings extends UniteCreatorSettingsWork{
 		
 		if(!empty($arrGlobalElementorCondition))
 			$params["elementor_condition"] = $arrCustomOnlyCondition;
+		
 		
 		$this->addMultiSelect($name."_category", $arrCats, esc_html__("Include By Term", "unlimited_elements"), $category, $params);
 

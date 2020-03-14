@@ -535,7 +535,7 @@ class Premium_Vscroll extends Widget_Base {
                 'label'         => __('Dots', 'premium-addons-for-elementor'),
             ]
         );
-        
+                
         $this->add_control('dots_color',
             [
                 'label'         => __( 'Dots Color', 'premium-addons-for-elementor' ),
@@ -575,6 +575,17 @@ class Premium_Vscroll extends Widget_Base {
                 'selectors'     => [
                     '{{WRAPPER}} .premium-vscroll-dots .premium-vscroll-nav-link span'  => 'border-color: {{VALUE}};',
                 ]
+            ]
+        );
+        
+        $this->add_responsive_control('dots_border_radius',
+            [
+                'label'         => __('Border Radius', 'premium-addons-pro'),
+                'type'          => Controls_Manager::DIMENSIONS,
+                'size_units'    => ['px', 'em', '%'],
+                'selectors'     => [
+                    '{{WRAPPER}} .premium-vscroll-dots .premium-vscroll-nav-link span' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}'
+                ],
             ]
         );
         

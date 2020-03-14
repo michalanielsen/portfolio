@@ -143,6 +143,7 @@ class UnlimitedElementsPluginUC extends UniteCreatorPluginBase{
 		$this->registerAddonType(GlobalsUnlimitedElements::ADDONSTYPE_ELEMENTOR, $objAddonTypeElementor);
 		
 		$objAddonTypeElementorTempalte = new UniteCreatorAddonType_Elementor_Template();
+						
 		$this->registerAddonType(GlobalsUnlimitedElements::ADDONSTYPE_ELEMENTOR_TEMPLATE, $objAddonTypeElementorTempalte);
 		
 		$objAddonTypeCustomPostTypes = new UniteCreatorAddonType_CustomPostType();

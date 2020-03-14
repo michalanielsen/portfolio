@@ -578,6 +578,24 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			return($arrDuplicate);
 		}
 		
+		/**
+		 * iterate array recursive, run callback on every array
+		 */
+		public static function iterateArrayRecursive($arr, $callback){
+			
+			if(is_array($arr) == false)
+				return(false);
+				
+			call_user_func($callback, $arr);	
+			
+			foreach($arr as $item){
+				
+				if(is_array($item))
+					self::iterateArrayRecursive($item, $callback);
+			}
+				
+		}
+		
 		
 		public static function z_____________STRINGS_____________(){}
 		

@@ -5,7 +5,7 @@ Donate Link: https://premiumaddons.com/?utm_source=wp-repo&utm_medium=link&utm_c
 Requires at Least: 4.5
 Tested Up To: 5.3.2
 Requires PHP: 5.4
-Stable Tag: 3.11.5
+Stable Tag: 3.11.7
 License: GPL v3.0
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -174,6 +174,22 @@ Premium Addons for Elementor is 100% Ads Free, Ads can only be detected from You
 14. Premium Progress Bar Widget for Elementor
 
 == Changelog ==
+
+= 3.11.7 =
+
+- Tweak: Added `Border Radius` option for navigation dots in Vertical Scroll widget.
+- Tweak: Added `Hover CSS Filters` option for post featured image in Blog widget.
+- Tweak: Default overlay color for post featured image removed in Blog widget.
+
+= 3.11.6 =
+
+- Tweak: Added `Vertical Offset` option for below slides navigation dots in Carousel widget.
+- Tweak: Added `Get Content From Post Excerpt/Full Content` option in Blog widget.
+- Tweak: Added `Full Width` option for read more button in Blog widget.
+- Tweak: Added `Autoplay` option for Youtube/Vimeo videos in Video Box widget.
+- Tweak: Added `Normal/Hover background color, padding and border` options for read more button in Blog widget.
+- Fixed: Post content in Blog widget not showing if post custom excerpt contains empty spaces.
+- Fixed: Carousel navigation dots position conflict with some themes.
 
 = 3.11.5 =
 

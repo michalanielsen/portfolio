@@ -201,8 +201,8 @@ class Element_Pack_Loader {
 	public function enqueue_site_styles() {
 
 		$direction_suffix = is_rtl() ? '.rtl' : '';
-
-		wp_enqueue_style( 'element-pack-site', BDTEP_URL . 'assets/css/element-pack-site' . $direction_suffix . '.css', [], BDTEP_VER );		
+		wp_enqueue_style( 'bdt-uikit', BDTEP_ASSETS_URL . 'css/bdt-uikit' . $direction_suffix . '.css', [], '3.2' );
+		wp_enqueue_style( 'element-pack-site', BDTEP_ASSETS_URL . 'css/element-pack-site' . $direction_suffix . '.css', [], BDTEP_VER );		
 	}
 
 
@@ -299,8 +299,6 @@ class Element_Pack_Loader {
 
 	}
 
-
-	
 
 	// Load WPML compatibility instance
 	public function wpml_compatiblity() {

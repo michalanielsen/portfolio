@@ -495,7 +495,10 @@ class UniteCreatorOutputWork extends HtmlOutputBaseUC{
 			return(false);
 			
 		$css = "";
-				
+
+		$arrValuesTablet = array();
+		$arrValuesMobile = array();
+		
 		//make the css
 		foreach($arrValues as $name => $value){
 			
@@ -507,13 +510,60 @@ class UniteCreatorOutputWork extends HtmlOutputBaseUC{
 			if(is_numeric($value) == false)
 				continue;
 			
+			if(strpos($name, "tablet_") !== false){
+				$name = str_replace("tablet_", "", $name);
+				$arrValuesTablet[$name] = $value;
+				continue;
+			}
+			
+			if(strpos($name, "mobile_") !== false){
+				$name = str_replace("mobile_", "", $name);				
+				$arrValuesMobile[$name] = $value;
+				continue;
+			}
+			
 			$css .= "{$type}-{$name}:{$value}{$unit};";			
 		}
 		
+		
+		
+		if(!empty($arrValuesTablet)){
+			
+			foreach($arrValuesTablet as $name=>$value)
+				$cssTablet .= "{$type}-{$name}:{$value}{$unit};";
+
+		}
+		
+		
+		//create mobile css
+		$cssMobile = "";
+		
+		if(!empty($arrValuesMobile)){
+			
+			foreach($arrValuesMobile as $name=>$value)
+				$cssMobile .= "{$type}-{$name}:{$value}{$unit};";		
+		}
+				
 		if(empty($css))
 			return(false);
 		
 		$style = "{$selector}{{$css}}";
+		
+		if(!empty($cssTablet)){
+			
+			$styleTablet = "{$selector}{{$cssTablet}}";
+			$styleTablet = HelperHtmlUC::wrapCssMobile($styleTablet, true);
+			
+			$style .= "\n".$styleTablet;
+		}
+		
+		if(!empty($cssMobile)){
+			
+			$styleMobile = "{$selector}{{$cssMobile}}";
+			$styleMobile = HelperHtmlUC::wrapCssMobile($styleMobile);
+			
+			$style .= "\n".$styleMobile;
+		}
 		
 		return($style);
 				
@@ -1135,7 +1185,7 @@ class UniteCreatorOutputWork extends HtmlOutputBaseUC{
 					
 					$datasetType = UniteFunctionsUC::getVal($paramDataset, "dataset_type");
 					$datasetQuery = UniteFunctionsUC::getVal($paramDataset, "dataset_{$datasetType}_query");
-										
+					
 					$arrRecords = array();
 					$arrItemData = UniteProviderFunctionsUC::applyFilters(UniteCreatorFilters::FILTER_GET_DATASET_RECORDS, $arrRecords, $datasetType, $datasetQuery);
 					
@@ -1144,7 +1194,6 @@ class UniteCreatorOutputWork extends HtmlOutputBaseUC{
 						$paramName = $paramDataset["name"];
 						$arrItemData = $this->normalizeItemsData($arrItemData, $paramName);
 					}
-					
 					
 				break;
 				default:

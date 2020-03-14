@@ -23,37 +23,67 @@
 
     /****** Premium Video Box Handler ******/
     var PremiumVideoBoxWidgetHandler = function ($scope, $) {
-        var $videoBoxElement = $scope.find(".premium-video-box-container"),
-            videoContainer = $videoBoxElement.find(".premium-video-box-video-container"),
-            type = $videoBoxElement.data("type"),
+        
+        var $videoBoxElement    = $scope.find(".premium-video-box-container"),
+            $videoContainer     = $videoBoxElement.find(".premium-video-box-video-container"),
+            type                = $videoBoxElement.data("type"),
             video, vidSrc, checkRel;
-        $videoBoxElement.on("click", function (e) {
+    
+    
+            
+        if( "self" === type ) {
+            
+            video = $videoContainer.find("video");
+            vidSrc = video.attr("src");
+            
+        } else {
+            
+            vidSrc = $videoContainer.data("src");
+            
+            if( -1 !== vidSrc.indexOf( "autoplay=1" ) ) {
+                playVideo();
+            } else {
+                vidSrc = vidSrc + "&autoplay=1";
+            }
+
+        }
+            
+        
+        function playVideo() {
+            
             if ("self" === type) {
-                video = videoContainer.find("video");
-                vidSrc = video.attr("src");
+                
                 $(video).get(0).play();
-                videoContainer.css({
+                
+                $videoContainer.css({
                     opacity: "1",
                     visibility: "visible"
                 });
+                
             } else {
-                vidSrc = videoContainer.data("src");
-                vidSrc = vidSrc + "&autoplay=1";
-                var iframe = $("<iframe/>");
+                
+                var $iframe = $("<iframe/>");
+                
                 checkRel = vidSrc.indexOf("rel=0");
-                iframe.attr("src", vidSrc);
-                iframe.attr("frameborder", "0");
-                iframe.attr("allowfullscreen", "1");
-                iframe.attr("allow", "autoplay;encrypted-media;");
-                videoContainer.css("background", "#000");
-                videoContainer.html(iframe);
+                $iframe.attr("src", vidSrc);
+                $iframe.attr("frameborder", "0");
+                $iframe.attr("allowfullscreen", "1");
+                $iframe.attr("allow", "autoplay;encrypted-media;");
+                $videoContainer.css("background", "#000");
+                $videoContainer.html( $iframe );
             }
+            
             $videoBoxElement.find(
                 ".premium-video-box-image-container, .premium-video-box-play-icon-container"
             ).remove();
 
             if ("vimeo" === type)
                 $videoBoxElement.find(".premium-video-box-vimeo-wrap").remove();
+        }
+            
+    
+        $videoBoxElement.on("click", function () {
+            playVideo();
         });
     };
 

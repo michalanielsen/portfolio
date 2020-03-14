@@ -374,7 +374,6 @@ class UniteCreatorDialogParamElementor extends UniteCreatorDialogParam{
 	}
 	
 	
-	
 	/**
 	 * put dimentions param
 	 * type can be padding or margin
@@ -384,7 +383,7 @@ class UniteCreatorDialogParamElementor extends UniteCreatorDialogParam{
 		$title = __("Margins","unlimited_elements");
 		if($type == "padding")
 			$title = "Padding";
-
+		
 		$extra = array();
 		$extra["output_names"] = true;
 		
@@ -401,7 +400,7 @@ class UniteCreatorDialogParamElementor extends UniteCreatorDialogParam{
 		
 		?>
 		
-		<label for="<?php echo esc_attr($checkID)?>" style="display:none">
+		<label for="<?php echo esc_attr($checkID)?>">
 			<input id="<?php echo esc_attr($checkID)?>" type="checkbox" class="uc-param-checkbox uc-control" data-controlled-selector=".uc-responsive-controls,.uc-label-desktop" name="is_responsive">
 			<?php _e("Responsive Control", "unlimited_elements")?>
 		</label>
@@ -449,8 +448,6 @@ class UniteCreatorDialogParamElementor extends UniteCreatorDialogParam{
 		<?php $this->addHtmlSelector()?>
 		
 		<?php
-		
-		
 	}	
 	
 	

@@ -1,5 +1,15 @@
 
 
+version 1.4.25
+
+-feature: added "responsive controls" to margin and padding setting
+-feature: made "refresh catalog" button
+-feature: added "num_items" variable to the widget editor
+-change: removed the "default fonts" from widget defaults screen
+-bug fix: fixed some php bug in "implode" function
+-bug fix: fixed posts from sub categories in post list
+
+
 version 1.4.24
 
 -feature: made "export with images" option in templates

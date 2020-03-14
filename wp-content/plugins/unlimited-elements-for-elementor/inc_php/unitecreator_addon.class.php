@@ -1593,11 +1593,10 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			
 			$this->arrHtmlConfigOptions = $options;
 			
+			
 			$arrParams = $this->objProcessor->processParamsForOutput($this->params);
 			
-						
 			//add config
-			
 			$objSettings = new UniteCreatorSettings();
 			
 			$source = UniteFunctionsUC::getVal($this->arrHtmlConfigOptions, "source");
@@ -1605,8 +1604,6 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 				$objSettings->setCurrentAddon($this);
 				$objSettings->addGlobalParam("source", "addon", UniteSettingsUC::TYPE_IMAGE);
 			}
-			
-			
 			
 			if(!empty($this->params) || $this->hasItems){
 				
@@ -1639,6 +1636,14 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			
 			if(empty($arrFontParamNames))
 				$isFontsPanelEnabled = false;
+
+			//disable fonts panel by setting
+			
+			$isDisableFonts = UniteFunctionsUC::getVal($this->arrHtmlConfigOptions, "disable_fonts");
+			$isDisableFonts = UniteFunctionsUC::strToBool($isDisableFonts);
+			if($isDisableFonts == true)
+				$isFontsPanelEnabled = false;
+
 			
 			if($isFontsPanelEnabled == true){
 				

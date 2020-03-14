@@ -7,12 +7,10 @@
 
 namespace Elementor\TemplateLibrary;
 
-use Analog;
 use Analog\API\Remote;
-use Elementor\TemplateLibrary\Source_Remote;
+use Analog\Formatter;
+use Analog\Plugin;
 use Elementor\TemplateLibrary\Classes\Images;
-use Elementor\Api;
-use Elementor\Plugin;
 use Analog\Utils;
 
 /**
@@ -52,19 +50,19 @@ class Analog_Importer extends Source_Remote {
 			return $data;
 		}
 
-		Plugin::$instance->editor->set_edit_mode( true );
+		Plugin::elementor()->editor->set_edit_mode( true );
 
 		// Remove Typography options if opted in.
 		if ( isset( $args['options']['remove_typography'] ) && true === $args['options']['remove_typography'] ) {
 			require_once ANG_PLUGIN_DIR . 'inc/class-formatter.php';
-			$data['content'] = \Analog\Formatter::remove_typography_data_recursive( $data['content'] );
+			$data['content'] = Formatter::remove_typography_data_recursive( $data['content'] );
 		}
 
 		$data['content'] = $this->replace_elements_ids( $data['content'] );
 		$data['content'] = $this->process_export_import_content( $data['content'], 'on_import' );
 
 		$post_id  = $args['editor_post_id'];
-		$document = Plugin::$instance->documents->get( $post_id );
+		$document = Plugin::elementor()->documents->get( $post_id );
 		if ( $document ) {
 			$data['content'] = $document->get_elements_raw_data( $data['content'], true );
 		}

@@ -44,3 +44,8 @@
 .unite-setting-post-type{
 	height:70px;
 }
+
+.elementor-control-post_list_category .select2-search__field{
+	min-width:150px !important;
+}
+

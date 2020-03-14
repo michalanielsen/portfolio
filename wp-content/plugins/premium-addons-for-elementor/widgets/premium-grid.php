@@ -345,7 +345,7 @@ class Premium_Grid extends Widget_Base {
                 'type'            => Controls_Manager::RAW_HTML,
                 'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 			]
-		);  
+		);
         
         $this->add_control('premium_gallery_shuffle',
             [
@@ -972,7 +972,7 @@ class Premium_Grid extends Widget_Base {
 
 		$this->end_controls_section();
         
-        $this->start_controls_section('docs',
+        $this->start_controls_section('section_pa_docs',
             [
                 'label'         => __('Helpful Documentations', 'premium-addons-pro'),
             ]

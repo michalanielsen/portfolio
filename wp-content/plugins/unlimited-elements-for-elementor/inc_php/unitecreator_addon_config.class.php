@@ -14,6 +14,7 @@ class UniteCreatorAddonConfig extends HtmlOutputBaseUC{
 	private $startAddon;
 	private $selectedTab = null;
 	private $isSourceAddon = false;
+	private $isFontsPanelEnabled = true;
 	
 	
 	/**
@@ -59,13 +60,11 @@ class UniteCreatorAddonConfig extends HtmlOutputBaseUC{
 	}
 	
 	
-
-	
 	/**
 	 * get item settings html
 	 */
 	private function getHtmlSettings($putMode = false){
-		
+				
 		$html = "";
 		
 		$html .= 	self::TAB3."<div class='uc-addon-config-settings unite-settings'>".self::BR;
@@ -80,6 +79,9 @@ class UniteCreatorAddonConfig extends HtmlOutputBaseUC{
 			$params = array();
 			if($this->isSourceAddon == true)
 				$params["source"] = "addon";
+			
+			if($this->isFontsPanelEnabled == false)
+				$params["disable_fonts"] = true;
 			
 			if($putMode == true)
 			
@@ -104,7 +106,7 @@ class UniteCreatorAddonConfig extends HtmlOutputBaseUC{
 	
 	
 	
-	private function a_OTHERS(){}
+	private function a___________OTHERS____________(){}
 	
 	
 	/**
@@ -240,6 +242,14 @@ class UniteCreatorAddonConfig extends HtmlOutputBaseUC{
 		
 	}
 	
+	/**
+	 * disable fonts panel in the config
+	 */
+	public function disableFontsPanel(){
+		
+		$this->isFontsPanelEnabled = false;
+		
+	}
 		
 	
 }

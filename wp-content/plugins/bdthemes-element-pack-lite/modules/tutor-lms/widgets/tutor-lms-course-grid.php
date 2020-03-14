@@ -27,7 +27,7 @@ class Tutor_Lms_Course_Grid extends Widget_Base {
 	}
 
 	public function get_icon() {
-		return 'bdt-wi-tutor-lms-course-grid bdt-new';
+		return 'bdt-wi-tutor-lms-course-grid';
 	}
 
 	public function get_categories() {

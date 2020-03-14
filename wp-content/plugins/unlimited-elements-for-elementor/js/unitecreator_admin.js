@@ -758,11 +758,13 @@ function UniteCreatorAdmin(){
 		if(hasItems == true){
 			var paramPutItems = {type:"uc_function", name:"put_items()"};
 			var paramPutItems2 = {type:"uc_function", name:"put_items2()"};
+			var paramNumItems = {type:"text", name:"uc_num_items"};
 			
 			//add to top of the params
 			
 			arrParams.unshift(paramPutItems2);
 			arrParams.unshift(paramPutItems);
+			arrParams.unshift(paramNumItems);
 		}
 		
 				

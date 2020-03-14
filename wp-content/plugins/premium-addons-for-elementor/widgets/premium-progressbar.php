@@ -54,49 +54,50 @@ class Premium_Progressbar extends Widget_Base {
 
         /* Start Progress Content Section */
         $this->start_controls_section('premium_progressbar_labels',
-                [
-                    'label'         => __('Progress Bar Settings', 'premium-addons-for-elementor'),
-                    ]
-                );
+            [
+                'label'         => __('Progress Bar Settings', 'premium-addons-for-elementor'),
+            ]
+        );
+        
         $this->add_control('premium_progressbar_select_label', 
-                [
-                    'label'         => __('Number of Labels', 'premium-addons-for-elementor'),
-                    'type'          => Controls_Manager::SELECT,
-                    'default'       =>'left_right_labels',
-                    'options'       => [
-                        'left_right_labels'    => __('Left & Right Labels', 'premium-addons-for-elementor'),
-                        'more_labels'          => __('Multiple Labels', 'premium-addons-for-elementor'),
-                        ],
-                ]
+            [
+                'label'         => __('Number of Labels', 'premium-addons-for-elementor'),
+                'type'          => Controls_Manager::SELECT,
+                'default'       =>'left_right_labels',
+                'options'       => [
+                    'left_right_labels'    => __('Left & Right Labels', 'premium-addons-for-elementor'),
+                    'more_labels'          => __('Multiple Labels', 'premium-addons-for-elementor'),
+                ],
+            ]
         );
         
         /*Left Label*/ 
         $this->add_control('premium_progressbar_left_label',
-                [
-                    'label'         => __('Title', 'premium-addons-for-elementor'),
-                    'type'          => Controls_Manager::TEXT,
-                    'dynamic'       => [ 'active' => true ],
-                    'default'       => __('My Skill','premium-addons-for-elementor'),
-                    'label_block'   => true,
-                    'condition'     =>[
-                        'premium_progressbar_select_label' => 'left_right_labels'
-                    ]
+            [
+                'label'         => __('Title', 'premium-addons-for-elementor'),
+                'type'          => Controls_Manager::TEXT,
+                'dynamic'       => [ 'active' => true ],
+                'default'       => __('My Skill','premium-addons-for-elementor'),
+                'label_block'   => true,
+                'condition'     =>[
+                    'premium_progressbar_select_label' => 'left_right_labels'
                 ]
-                );
+            ]
+        );
 
         /*Right Label*/ 
         $this->add_control('premium_progressbar_right_label',
-                [
-                    'label'         => __('Percentage', 'premium-addons-for-elementor'),
-                    'type'          => Controls_Manager::TEXT,
-                    'dynamic'       => [ 'active' => true ],
-                    'default'       => __('50%','premium-addons-for-elementor'),
-                    'label_block'   => true,
-                    'condition'     =>[
-                        'premium_progressbar_select_label' => 'left_right_labels'
-                    ]
+            [
+                'label'         => __('Percentage', 'premium-addons-for-elementor'),
+                'type'          => Controls_Manager::TEXT,
+                'dynamic'       => [ 'active' => true ],
+                'default'       => __('50%','premium-addons-for-elementor'),
+                'label_block'   => true,
+                'condition'     =>[
+                    'premium_progressbar_select_label' => 'left_right_labels'
                 ]
-                );
+            ]
+        );
         
         $repeater = new REPEATER();
         
@@ -138,57 +139,56 @@ class Premium_Progressbar extends Widget_Base {
         );
         
         $this->add_control('premium_progress_bar_space_percentage_switcher',
-                [
-                    'label'      => __('Enable Percentage', 'premium-addons-for-elementor'),
-                    'type'       => Controls_Manager::SWITCHER,
-                    'default'     => 'yes',
-                    'description' => __('Enable percentage for labels','premium-addons-for-elementor'),
-                    'condition'   => [
-                        'premium_progressbar_select_label'=>'more_labels',
-                        ]
+            [
+                'label'      => __('Enable Percentage', 'premium-addons-for-elementor'),
+                'type'       => Controls_Manager::SWITCHER,
+                'default'     => 'yes',
+                'description' => __('Enable percentage for labels','premium-addons-for-elementor'),
+                'condition'   => [
+                    'premium_progressbar_select_label'=>'more_labels',
                 ]
+            ]
         );
         
         $this->add_control('premium_progressbar_select_label_icon', 
-                [
-                    'label'         => __('Labels Indicator', 'premium-addons-for-elementor'),
-                    'type'          => Controls_Manager::SELECT,
-                    'default'       =>'line_pin',
-                    'options'       => [
-                        ''            => __('None','premium-addons-for-elementor'),
-                        'line_pin'    => __('Pin', 'premium-addons-for-elementor'),
-                        'arrow'       => __('Arrow','premium-addons-for-elementor'),
-                        ],
-                    'condition'     =>[
-                        'premium_progressbar_select_label' => 'more_labels'
-                    ]
+            [
+                'label'         => __('Labels Indicator', 'premium-addons-for-elementor'),
+                'type'          => Controls_Manager::SELECT,
+                'default'       =>'line_pin',
+                'options'       => [
+                    ''            => __('None','premium-addons-for-elementor'),
+                    'line_pin'    => __('Pin', 'premium-addons-for-elementor'),
+                    'arrow'       => __('Arrow','premium-addons-for-elementor'),
+                ],
+                'condition'     =>[
+                    'premium_progressbar_select_label' => 'more_labels'
                 ]
+            ]
         );
         
         $this->add_control('premium_progressbar_more_labels_align',
-                [
-                    'label'         => __('Labels Alignment','premuim-addons-for-elementor'),
-                    'type'          => Controls_Manager::CHOOSE,
-                    'options'       => [
-                            'left'      => [
-                                        'title'=> __( 'Left', 'premium-addons-for-elementor' ),
-                                        'icon' => 'fa fa-align-left',   
-                                    ],
-                            'center'     => [
-                                        'title'=> __( 'Center', 'premium-addons-for-elementor' ),
-                                        'icon' => 'fa fa-align-center',
-                                    ],
-                            'right'     => [
-                                        'title'=> __( 'Right', 'premium-addons-for-elementor' ),
-                                        'icon' => 'fa fa-align-right',
-                                    ],
+            [
+                'label'         => __('Labels Alignment','premuim-addons-for-elementor'),
+                'type'          => Controls_Manager::CHOOSE,
+                'options'       => [
+                    'left'      => [
+                        'title'=> __( 'Left', 'premium-addons-for-elementor' ),
+                        'icon' => 'fa fa-align-left',   
                     ],
-                    'default'       => 'center',
-                    'condition'     =>[
-                        'premium_progressbar_select_label' => 'more_labels'
-                    ]
-                    
+                    'center'     => [
+                        'title'=> __( 'Center', 'premium-addons-for-elementor' ),
+                        'icon' => 'fa fa-align-center',
+                    ],
+                    'right'     => [
+                        'title'=> __( 'Right', 'premium-addons-for-elementor' ),
+                        'icon' => 'fa fa-align-right',
+                    ],
+                ],
+                'default'       => 'center',
+                'condition'     =>[
+                    'premium_progressbar_select_label' => 'more_labels'
                 ]
+            ]
         );
     
         /*Progressbar Width*/

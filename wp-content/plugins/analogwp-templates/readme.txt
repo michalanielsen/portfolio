@@ -1,73 +1,58 @@
-=== Style Kits for Elementor ===
+=== Style Kits - Advanced Theme Styles for Elementor ===
 Contributors: analogwp, mauryaratan
 Requires at least: 5.0
-Requires PHP: 5.4
-Tested up to: 5.3.2
-Stable tag: 1.5.6
+Requires PHP: 5.6
+Tested up to: 5.4
+Stable tag: 1.6.2
 Tags: elementor, landing page, design, website builder, templates, page builder
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Style Kits adds intuitive styling controls in the Elementor editor that power-up your design workflow with unparalleled flexibility.
+Style Kits extends the flexibility of Elementor Theme Styles and introduces the first library of Theme-Style-ready template kits and blocks that will transform your design workflow in Elementor.
 
 == Description ==
 
-[Style Kits for Elementor](https://analogwp.com/?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=analogwp) (formerly Analog Templates for Elementor) adds a number of intuitive styling controls in the Elementor editor that allow you to apply styles globally or per page.
+[Style Kits](https://analogwp.com/?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=analogwp) extends the flexibility of Elementor Theme Styles and introduces the first library of Theme-Style-ready template kits and blocks.
 
-Stop manually adding / copying / pasting styles across layouts and experience macro control of the most essential aspects of your layout system:
+https://www.youtube.com/watch?v=ItcKsNztJJU
 
-https://www.youtube.com/watch?v=FZfTG3l-7T8
+### Advanced Theme Styles
 
-- Body text
-- Headings
-- Headings and text sizes
+Style Kits adds meaningful UI controls to Theme Styles for the most important variables of your layout system in Elementor:
+
 - Column Gaps
-- Buttons
-- Templates Library
-  - 145+ Templates
-  - 15+ Theme Style Kits
-  - 90+ Blocks
-- [Helpers Tools](https://www.youtube.com/watch?v=VmYtvvmQbnI) (Pro) to increase your productivity
-  - Reset inline styles, from any template
-  - Reset Colors and Typography styles
-  - Highlight elements with custom CSS classes on page
-  - Highlight elements with custom CSS on page
+- Outer Section Padding
+- Buttons Colors (per size)
+- Accent colors
+- Background classes and many more...
 
-#### Typography
+#### Theme Style Presets
 
-Edit the styles for Body and Headings and see the effect taking place in your design immediately, right from within the Editor.
+Get an unfair design advantage by importing read-made theme style presets for pre-configured styling on typography, colors, forms, spacing and more. Design more consistent layouts through global styling.
 
-#### Column Gap controls
+#### Theme-style-ready template kits and blocks library
 
-Achieve site-wide spacing consistency through the column gap controls.
+The first-of-it's-kind template library for Elementor.
 
-Apply the native column gaps on your outer and inner sections and manage the spacing of your layout system from a single place.
+In the Style Kits library, each template kit comes with its own theme style preset. Mix-and-match theme styles and layouts and enjoy built-in design consistency.
 
-#### Save your page Styles as a Style Kit and apply on any page, or globally
+### Boost your design workflow with Style Kits Pro
 
-All your custom page styles can be saved as a Stylekit and then apply it on any page.
-
-You can also make a Global Style Kit, and it will apply on your entire site.
-
-#### Button Styles
-
-Now you have a single source of control for your different button sizes. Set the button styles on your Style kit and enjoy consistent, site-wide button control.
-
-#### A collection of fine-tuned, Style-kit powered templates. For free.
-
-Trigger the template gallery popup, preview and import any of the templates in our collection.
-
-In most of the templates, styles are managed from the Style Kit panel, so you can experience design-macro control right away.
-
-#### The perfect addition to Elementor Hello Theme
-
-Hello Elementor is a great, lightweight theme but it lacks basic typography controls. Now with Style Kits, you can set the rules for your Typography save them as a global Style Kit and enjoy site-wide typographic control.
+- **Unlimited access** to a hand-made library of premium Template Kits, Theme Style Presets and Blocks that adapt to your existing Theme Styles.
+- **Inline style cleanup tools** that reset your layouts from inline styles. Turn your existing pages into theme-style-friendly layouts with a few clicks.
+- **Smart highlight tools** that help you identify elements with custom classes or custom CSS applied to them.
+- **Advanced Theme Style tools.** Enjoy more design flexibility in the editor with more UI controls in theme styles.
+- **User Role management**
+- **Unsplash integration**
+- **Dynamic colors** (Requires Elementor Pro v2.9+)
+- **Cards** (Soon)
 
 **Find us**:
 - [Visit the AnalogWP Website](https://analogwp.com/?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=analogwp)
 - [Follow on Twitter](https://twitter.com/AnalogWP/)
 - [Like us on Facebook](https://www.facebook.com/analogwp)
-- [Join the AnalogWP community](https://www.facebook.com/groups/analogwp/)
+- [Join our Facebook community](https://www.facebook.com/groups/analogwp/)
+- [Documentation](https://docs.analogwp.com/)
 
 == Installation ==
 
@@ -123,6 +108,29 @@ Our dedicated support team has your back. Please reach out via our website at ht
 19. "Tools" panel inside Elementor style tab.
 
 == Changelog ==
+
+= 1.6.2 - March 09, 2020 =
+- New: Style Kits settings are moved to Settings tab from Style
+- New: Added links to edit Kit directly in Kits table.
+- New: Merged Heading/Text sizes section into new Typographic sizes section
+- Tweak: Added 'Instances' column in Kits table to show Kits usage
+
+= 1.6.1 - March 04, 2020 =
+- Fix: Fatal error with PHP5.6
+- Fix: Avoid duplicate queries in Post state
+
+= 1.6.0 - March 03, 2020 =
+- New: Style Kits integrated into Theme Styles. All existing Style Kits, are automatically converted to native Theme Style Kits
+- New: Added welcome screen for Theme Styles
+- New: Added latest Google fonts missing in Elementor
+- New: Added link to Theme Style panel in right-click menu
+- New: When resetting a Kit, you can revert from History screen
+- Tweak: Theme Style panel title to show Kit name
+- Tweak: Style Kits menu to show Theme Style Kits
+- Tweak: Use transient cache when fetching Kits
+- Tweak: Admin notices to show Analog logo
+- Tweak: Remove x button from Style Kit selector
+- Improve: Remove custom control for SK actions, now uses default Elementor button control
 
 = 1.5.6 - Feb 12, 2020 =
 - Fix: Compatibility with Elementor v2.9
@@ -362,7 +370,7 @@ Our dedicated support team has your back. Please reach out via our website at ht
 * Improve: Add visual notification when a setting is changed on Settings page.
 * Improve: Add a visual indicator in notification based on notification timeout duration on Settings page.
 
-= 1.2 - April 25, 2019=
+= 1.2 - April 25, 2019 =
 * New: Introducing [Style Kits](https://analogwp.com/style-kits-for-elementor/?utm_medium=wp.org&utm_source=wordpressorg&utm_campaign=readme&utm_content=analogwp). 🎉
 * New: Added Elementor Finder shortcuts to quickly navigate to Style Kits settings/library.
 * New: Added a new settings to assign global style kit under Elementor > Settings > Styles > Global Style kit.
@@ -419,3 +427,9 @@ Fixes an issue with incorrect Kit selected during Template imports.
 
 = 1.5.5 =
 Fixes a conflict with Elementor Extras plugin
+
+= 1.6.0 =
+Integrates with Elementor Theme Styles
+
+= 1.6.1 =
+Fixes an error with PHP5.6 or earlier

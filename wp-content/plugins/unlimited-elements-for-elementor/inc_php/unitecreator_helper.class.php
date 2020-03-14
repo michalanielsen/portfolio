@@ -447,9 +447,6 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			//in case of array take "url" from the array
 			if(is_array($url)){
 				
-				if(array_key_exists("url", $url) == false)
-					UniteFunctionsUC::throwError("URLtoRelative error: url key not found in array");
-				
 				$strUrl = UniteFunctionsUC::getVal($url, "url");
 				if(empty($strUrl))
 					return($url);

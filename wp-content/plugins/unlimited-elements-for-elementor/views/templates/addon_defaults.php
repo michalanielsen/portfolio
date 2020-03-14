@@ -48,10 +48,10 @@ if(!empty($objAddonType->addonView_urlBack))
 		
 		<span class="hor_sap30"></span>
 		
-		<a href="<?php echo esc_attr($urlEditAddon)?>" class="unite-button-secondary" ><?php esc_html_e("Edit This Addon", "unlimited_elements")?></a>
+		<a href="<?php echo esc_attr($urlEditAddon)?>" class="unite-button-secondary" ><?php esc_html_e("Edit This Widget", "unlimited_elements")?></a>
 		<span class="hor_sap15"></span>
 		
-		<a class="unite-button-secondary uc-button-cat-sap" href="<?php echo esc_attr($urlBack)?>"><?php esc_html_e("Back to Addons List", "unlimited_elements");?></a>
+		<a class="unite-button-secondary uc-button-cat-sap" href="<?php echo esc_attr($urlBack)?>"><?php esc_html_e("Back to Widgets List", "unlimited_elements");?></a>
 		
 </div>
 

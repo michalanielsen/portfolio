@@ -1049,6 +1049,31 @@ function element_pack_ninja_forms_options() {
     return $form_options;
 }
 
+function element_pack_fluent_forms_options() {
+
+    {
+
+        $options = array();
+
+        if(defined('FLUENTFORM')) {
+            global $wpdb;
+            
+            $result = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}fluentform_forms" );
+            if($result) {
+                $options[0] = esc_html__('Select Form', 'bdthemes-element-pack');
+                foreach($result as $form) {
+                    $options[$form->id] = $form->title;
+                }
+            }else {
+                $options[0] = esc_html__('Form Not Found!', 'bdthemes-element-pack');
+            }
+        }
+
+        return $options;
+
+    }
+}
+
 function element_pack_we_forms_options() {
 
     if ( class_exists( 'WeForms' ) ) {

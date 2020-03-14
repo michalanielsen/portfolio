@@ -1,0 +1,75 @@
+#: back-button-widget.php:144
+msgid "Go Pro"
+msgstr ""
+
+#: includes/alg-back-button-functions.php:28
+#: includes/alg-back-button-functions.php:48
+#: includes/class-alg-back-button-wp-widget.php:79
+msgid "Back"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:25
+msgid "Add back button to your site."
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:27
+msgid "Back Button"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:66
+msgid "Title"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:70
+msgid "Before button"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:74
+msgid "After button"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:78
+msgid "Button label"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:82
+msgid "Button HTML class"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:83
+#: includes/class-alg-back-button-wp-widget.php:88
+#, php-format
+msgid "E.g. try %s"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:87
+msgid "Button HTML style"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:92
+msgid "Button type"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:96
+msgid "Button"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:97
+msgid "Simple text"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:101
+msgid "Button JS function"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:110
+msgid "Hide on front page"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:114
+msgid "No"
+msgstr ""
+
+#: includes/class-alg-back-button-wp-widget.php:115
+msgid "Yes"
+msgstr ""

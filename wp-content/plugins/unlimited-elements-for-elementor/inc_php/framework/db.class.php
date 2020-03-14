@@ -144,7 +144,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			foreach($arrItems as $key=>$itemID)
 				$arrItems[$key] = (int)$itemID;
 						
-			$strItemsIDs = implode($arrItems,",");
+			$strItemsIDs = implode(",", $arrItems);
 						
 			$this->delete($table,"id in($strItemsIDs)");
 		}

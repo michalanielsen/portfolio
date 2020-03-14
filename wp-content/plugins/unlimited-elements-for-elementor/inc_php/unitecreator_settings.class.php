@@ -617,7 +617,31 @@ class UniteCreatorSettingsWork extends UniteSettingsAdvancedUC{
 				$addValue["right"] = UniteFunctionsUC::getVal($param, "{$prefix}right");
 				$addValue["units"] = UniteFunctionsUC::getVal($param, "units");
 				
+				$isResponsive = UniteFunctionsUC::getVal($param, "is_responsive");
+				$isResponsive = UniteFunctionsUC::strToBool($isResponsive);
+				
+				if($isResponsive == true){
+					
+					$addValue["is_responsive"] = true;
+					
+					$prefix = "tablet_";
+					
+					$addValue[$prefix."top"] = UniteFunctionsUC::getVal($param, "{$prefix}top");
+					$addValue[$prefix."bottom"] = UniteFunctionsUC::getVal($param, "{$prefix}bottom");
+					$addValue[$prefix."left"] = UniteFunctionsUC::getVal($param, "{$prefix}left");
+					$addValue[$prefix."right"] = UniteFunctionsUC::getVal($param, "{$prefix}right");
+					$addValue[$prefix."units"] = UniteFunctionsUC::getVal($param, "units");
+					
+					$prefix = "mobile_";
+					$addValue[$prefix."top"] = UniteFunctionsUC::getVal($param, "{$prefix}top");
+					$addValue[$prefix."bottom"] = UniteFunctionsUC::getVal($param, "{$prefix}bottom");
+					$addValue[$prefix."left"] = UniteFunctionsUC::getVal($param, "{$prefix}left");
+					$addValue[$prefix."right"] = UniteFunctionsUC::getVal($param, "{$prefix}right");
+					$addValue[$prefix."units"] = UniteFunctionsUC::getVal($param, "units");
+				}
+				
 				$this->addDimentionsSetting($name, $addValue, $title, $extra);
+				
 			break;
 			case UniteCreatorDialogParam::PARAM_SLIDER:
 				

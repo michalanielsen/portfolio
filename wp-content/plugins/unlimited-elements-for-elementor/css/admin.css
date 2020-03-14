@@ -948,7 +948,7 @@ ul.unite-context-menu li a:focus {
 
 
 .unite-inputs input[type="text"], .unite-inputs textarea {
-	padding: 0 8px;
+	padding: 5px 8px;
 	border: 1px solid lightgray;	
 }
 
@@ -2060,12 +2060,14 @@ table.unite_table_settings_wide .setting_onecell_text {
 	padding-bottom:13px !important;
 }
 
-#----------SETTING-DIMENTIONS---------------- {}
+#----------SETTING-DIMENTIONS----------------{}
 
 
 .unite-settings-table-dimentions th{
 	margin:0px;
 	padding:0px;
+	padding-left:5px;
+	padding-right:5px;
 }
 
 

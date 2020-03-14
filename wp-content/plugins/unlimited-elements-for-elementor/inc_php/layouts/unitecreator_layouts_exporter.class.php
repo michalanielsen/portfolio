@@ -92,23 +92,24 @@ class UniteCreatorLayoutsExporterWork extends UniteCreatorExporterBase{
 	}
 	
 	
-	
 	/**
 	 * create layout category copy path
 	 * return created path
 	 */
 	private function createCategoryCopyPath(){
-		
+				
 		$catName = $this->objLayout->getCatNameForExport();
-		
+				
 		$arrCat = $this->objLayout->getCategory();
+		
+		$catID = UniteFunctionsUC::getVal($arrCat, "id");
 		
 		if(empty($catName))
 			UniteFunctionsUC::throwError("Category should not be empty");
 		
 		$catID = UniteFunctionsUC::getVal($arrCat, "id");
 		if(empty($catID))
-			UniteFunctionsUC::throwError("Category should not be empty");
+			UniteFunctionsUC::throwError("Category should have id");
 				
 		$path = $this->pathExportLayouts.$catName."/";
 		
@@ -125,7 +126,7 @@ class UniteCreatorLayoutsExporterWork extends UniteCreatorExporterBase{
 		UniteFunctionsUC::validateDir($this->pathExportLayouts, "Export Layouts");
 		
 		//make layout folder
-		$this->pathExportLayout = $this->pathExportLayouts."layout_".UniteFunctionsUC::getRandomString(10)."/";
+		$this->pathExportLayout = $this->pathExportLayouts."template_".UniteFunctionsUC::getRandomString(10)."/";
 		UniteFunctionsUC::mkdirValidate($this->pathExportLayout, "Export Layout");
 		
 		//make inner paths
@@ -194,9 +195,9 @@ class UniteCreatorLayoutsExporterWork extends UniteCreatorExporterBase{
 	 */
 	protected function getExportPrefix(){
 		
-		$prefix = "layout_";
+		$prefix = "template_";
 		if(!empty($this->addonsType))
-			$prefix = "layout_".$this->addonsType."_";
+			$prefix = "template_".$this->addonsType."_";
 		else{
 			$exportPrefix = $this->objLayoutType->exportPrefix;
 			
@@ -273,7 +274,7 @@ class UniteCreatorLayoutsExporterWork extends UniteCreatorExporterBase{
 	/**
 	 * get export file data
 	 */
-	private function getExportedFileData(){
+	protected function getExportedFileData(){
 		
 		$filepath = $this->pathExportZip;
 		$urlFile = HelperUC::pathToFullUrl($filepath);
@@ -340,16 +341,20 @@ class UniteCreatorLayoutsExporterWork extends UniteCreatorExporterBase{
 	
 		}catch(Exception $e){
 	
-			$prefix = "Export Layout Error: ";
+			$prefix = "Export Template Error: ";
 			if(!empty($this->objLayout)){
 				$title = $this->objLayout->getTitle();
-				$prefix = "Export Layout (<b>$title</b>) Error: ";
+				$prefix = "Export Template (<b>$title</b>) Error: ";
 	
 			}
 	
 			$message = $prefix.$e->getMessage();
 	
 			echo esc_html($message);
+			
+			if(GlobalsUC::SHOW_TRACE == true)			
+				dmp($e->getTraceAsString());
+			
 			exit();
 		}
 	

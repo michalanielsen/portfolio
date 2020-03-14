@@ -11,7 +11,7 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 		
 		public static $inDev = false;
 		
-		const SHOW_TRACE = false;
+		const SHOW_TRACE = true;
 		const SHOW_TRACE_FRONT = false;
 		
 		const ENABLE_TRANSLATIONS = false;

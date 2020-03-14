@@ -175,16 +175,12 @@ class Premium_Carousel extends Widget_Base {
 				'label'             => __( 'Vertical Offset', 'premium-addons-for-elementor' ),
 				'type'              => Controls_Manager::SLIDER,
                 'size_units'        => ['px', 'em', '%'],
-                'default'           => [
-                    'unit'  => '%',
-                    'size'  => 50
-                ],
                 'selectors'         => [
                     '{{WRAPPER}} .premium-carousel-dots-above ul.slick-dots' => 'top: {{SIZE}}{{UNIT}}',
+                    '{{WRAPPER}} .premium-carousel-dots-below ul.slick-dots' => 'bottom: {{SIZE}}{{UNIT}}',
                 ],
                 'condition'     => [
                     'premium_carousel_dot_navigation_show'  => 'yes',
-                    'premium_carousel_dot_position'         => 'above'
                 ]
 			]
 		);
@@ -252,7 +248,7 @@ class Premium_Carousel extends Widget_Base {
         
         $this->start_controls_section('premium_carousel_slides_settings',
 			[
-				'label' => __( 'Slides\' Settings' , 'premium-addons-for-elementor' )
+				'label' => __( 'Slides Settings' , 'premium-addons-for-elementor' )
 			]
 		);
         
@@ -314,14 +310,13 @@ class Premium_Carousel extends Widget_Base {
 				'condition'		=> [
 					'premium_carousel_autoplay' => 'yes'
 				],
-				'separator'		=> 'after'
 			]
 		);
 
         $this->add_control('premium_carousel_animation_list', 
             [
                 'label'         => __('Animations', 'premium-addons-for-elementor'),
-                'type'          => Controls_Manager::ANIMATION,
+                'type'          => Controls_Manager::HIDDEN,
                 'render_type'   => 'template'
             ]
             );
@@ -424,7 +419,7 @@ class Premium_Carousel extends Widget_Base {
         
         $this->end_controls_section();
         
-        $this->start_controls_section('docs',
+        $this->start_controls_section('section_pa_docs',
             [
                 'label'         => __('Helpful Documentations', 'premium-addons-pro'),
             ]
@@ -999,6 +994,7 @@ class Premium_Carousel extends Widget_Base {
 		$extra_class = ! empty ( $settings['premium_carousel_extra_class'] ) ? ' ' . $settings['premium_carousel_extra_class'] : '';
 		
 		$animation_class = $settings['premium_carousel_animation_list'];
+        
 		$animation = ! empty( $animation_class ) ? 'animated ' . $animation_class : 'null';
         
         $tablet_breakpoint = ! empty ( $settings['premium_carousel_tablet_breakpoint'] ) ? $settings['premium_carousel_tablet_breakpoint'] : 1025;

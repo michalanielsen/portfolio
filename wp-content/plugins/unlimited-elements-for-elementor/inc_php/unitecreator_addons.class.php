@@ -127,7 +127,6 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		
 		$addonType = UniteFunctionsUC::getVal($params, "addontype");
 		
-		
 		$filterActive = UniteFunctionsUC::getVal($params, "filter_active");
 		if(!empty($filterActive))
 			$arrWhere[] = self::getFilterActiveWhere($filterActive, null, $addonType);
@@ -136,7 +135,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		
 		$where = "";
 		if(!empty($arrWhere))
-			$where = implode($arrWhere," and ");
+			$where = implode(" and ", $arrWhere);
 		
 		$response = $this->db->fetch(GlobalsUc::$table_addons, $where, $order);
 		
@@ -236,7 +235,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		
 		$where = "";
 		if(!empty($arrWhere))
-			$where = implode($arrWhere," and ");
+			$where = implode(" and ",$arrWhere);
 				
 		$records = $this->db->fetch(GlobalsUC::$table_addons, $where, "catid, ordering");
 				
@@ -482,7 +481,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		
 		
 		if(!empty($arrWhere))
-			$query .= " where ".implode($arrWhere," and ");
+			$query .= " where ".implode(" and ",$arrWhere);
 
 		
 		$response = $this->db->fetchSql($query);
@@ -682,7 +681,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		foreach($arrAddons as $key=>$itemID)
 			$arrAddons[$key] = (int)$itemID;
 		
-		$strAddonIDs = implode($arrAddons,",");
+		$strAddonIDs = implode(",",$arrAddons);
 		$this->db->delete(GlobalsUC::$table_addons,"id in($strAddonIDs)");
 	}
 	
@@ -1013,7 +1012,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 		if(empty($arrIDs))
 			return(fale);
 		
-		$strIDs = implode($arrIDs,",");
+		$strIDs = implode("," , $arrIDs);
 		
 		UniteFunctionsUC::validateIDsList($strIDs,"id's list");
 		
@@ -1091,7 +1090,7 @@ class UniteCreatorAddons extends UniteElementsBaseUC{
 	 * @param $data
 	 */
 	public function moveAddonsFromData($data){
-		
+				
 		$targetCatID = UniteFunctionsUC::getVal($data, "targetCatID");
 		$selectedCatID = UniteFunctionsUC::getVal($data, "selectedCatID");
 		$targetParentID = UniteFunctionsUC::getVal($data, "parentID");

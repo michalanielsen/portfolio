@@ -4,7 +4,7 @@ Plugin Name: Unlimited Elements for Elementor
 Plugin URI: http://unlimited-elements.com
 Description: Unlimited Elements - Huge Widgets Pack for Elementor Page Builder, with html/css/js widget creator and editor
 Author: Unlimited Elements
-Version: 1.4.24
+Version: 1.4.25
 Author URI: http://unlimited-elements.com
 */
 

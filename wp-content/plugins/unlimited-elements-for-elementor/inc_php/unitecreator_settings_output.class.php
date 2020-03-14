@@ -577,9 +577,113 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			else
 				parent::drawMp3Input($setting);
 		}
-	
+		
+		
 		private function a________DRAW_DIMENTIONS_SETTING_______(){}
 		
+		
+		/**
+		 * draw row of dimention setting
+		 */
+		private function drawDimentionsSetting_drawRow($setting, $arrValues, $prefix = "", $prefixTitle=""){
+			
+			$name = UniteFunctionsUC::getVal($setting, "name");
+			
+			$top = UniteFunctionsUC::getVal($arrValues, $prefix."top");
+			$bottom = UniteFunctionsUC::getVal($arrValues, $prefix."bottom");
+			$left = UniteFunctionsUC::getVal($arrValues, $prefix."left");
+			$right = UniteFunctionsUC::getVal($arrValues, $prefix."right");
+			
+			$units = UniteFunctionsUC::getVal($arrValues, "units");
+			
+			$optionUnitsPX = "selected";
+			$optionPercent = "";
+			
+			if($units == "%"){
+				$optionUnitsPX = "";
+				$optionPercent = "selected";				
+			}
+			
+			$isOutputNames = UniteFunctionsUC::getVal($setting, "output_names");
+			$isOutputNames = UniteFunctionsUC::strToBool($isOutputNames);
+			
+			$nameTop = "";
+			$nameBottom = "";
+			$nameLeft = "";
+			$nameRight = "";
+			
+			$posPrefix = $prefix;
+			$drawUnits = false;
+			
+			if(empty($prefix)){
+				$posPrefix = "";
+				$prefix = "_";
+				$drawUnits = true;
+			} 
+			
+			
+			if($isOutputNames === true){
+				
+				$nameTop = $name.$prefix."top";
+				$nameBottom = $name.$prefix."bottom";
+				$nameLeft = $name.$prefix."left";
+				$nameRight = $name.$prefix."right";
+			}
+			
+			if(!empty($prefixTitle))
+				$prefixTitle .= " - ";
+			
+			
+			
+			?>
+					<tr>
+						<th>
+							<?php echo $prefixTitle.__("Top","unlimited_elements")?>
+						</th>
+						<th>
+							<?php echo $prefixTitle.__("Right","unlimited_elements")?>
+						</th>
+						<th>
+							<?php echo $prefixTitle.__("Bottom","unlimited_elements")?>
+						</th>
+						<th>
+							<?php echo $prefixTitle.__("Left","unlimited_elements")?>
+						</th>
+						<th>
+							<?php if($drawUnits == true):?>
+						
+							<?php echo $prefixTitle.__("Units","unlimited_elements")?>
+							
+							<?php endif?>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<input data-pos="<?php echo $posPrefix?>top" type="text" value="<?php echo $top?>" name="<?php echo $nameTop?>" class="unite-input-dimentions unite-input-dimentions-top">
+						</td>
+						<td>
+							<input data-pos="<?php echo $posPrefix?>right" type="text" value="<?php echo $right?>" name="<?php echo $nameRight?>" class="unite-input-dimentions unite-input-dimentions-right">				
+						</td>
+						<td>
+							<input data-pos="<?php echo $posPrefix?>bottom" type="text" value="<?php echo $bottom?>" name="<?php echo $nameBottom?>" class="unite-input-dimentions unite-input-dimentions-bottom">
+						</td>
+						<td>
+							<input data-pos="<?php echo $posPrefix?>left" type="text" value="<?php echo $left?>" name="<?php echo $nameLeft?>" class="unite-input-dimentions unite-input-dimentions-left">
+						</td>
+						<td>
+							<?php if($drawUnits == true):?>
+							
+							<select class="unite-setting-dimentions-select-units unite-input-dimentions" >
+								<option value="px" <?php echo $optionUnitsPX?>>PX</option>
+								<option value="%" <?php echo $optionPercent?>>%</option>
+							</select>
+							
+							<?php endif?>
+						</td>
+					</tr>
+			
+			<?php 
+		}
 		
 		/**
 		 * draw dimentions setting
@@ -589,90 +693,41 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 			$arrValues = UniteFunctionsUC::getVal($setting, "value");
 			$id = UniteFunctionsUC::getVal($setting, "id");
 			$name = UniteFunctionsUC::getVal($setting, "name");
+
+			//clear values
+			$arrNames = array(
+				"top","bottom","left","right","units",
+				"tablet_top","tablet_bottom","tablet_left","tablet_right",
+				"mobile_top","mobile_bottom","mobile_left","mobile_right"
+			);
 			
-			$top = UniteFunctionsUC::getVal($arrValues, "top");
-			$bottom = UniteFunctionsUC::getVal($arrValues, "bottom");
-			$left = UniteFunctionsUC::getVal($arrValues, "left");
-			$right = UniteFunctionsUC::getVal($arrValues, "right");
-			$units = UniteFunctionsUC::getVal($arrValues, "units");
-			
-			$top = htmlspecialchars($top);
-			$bottom = htmlspecialchars($bottom);
-			$left = htmlspecialchars($left);
-			$right = htmlspecialchars($right);
-			$units = htmlspecialchars($units);
-						
-			$top = trim($top);
-			$bottom = trim($bottom);
-			$left = trim($left);
-			$right = trim($right);
-			$units = trim($units);
-			
-			$optionUnitsPX = "selected";
-			$optionPercent = "";
-			
-			if($units == "%"){
-				$optionUnitsPX = "";
-				$optionPercent = "selected";				
-			}
+			foreach($arrNames as $key){
 				
-			$isOutputNames = UniteFunctionsUC::getVal($setting, "output_names");
-			$isOutputNames = UniteFunctionsUC::strToBool($isOutputNames);
-			
-			$nameTop = "";
-			$nameBottom = "";
-			$nameLeft = "";
-			$nameRight = "";
-			
-			if($isOutputNames === true){
-				$nameTop = $name."_top";
-				$nameBottom = $name."_bottom";
-				$nameLeft = $name."_left";
-				$nameRight = $name."_right";
+				if(isset($arrValues[$key]) == false)
+					continue;
+					
+				$arrValues[$key] = trim($arrValues[$key]);
+				$arrValues[$key] = htmlspecialchars($arrValues[$key]);
 			}
 			
 			
+			$isResponsive = UniteFunctionsUC::getVal($arrValues, "is_responsive");
+			$isResponsive = UniteFunctionsUC::strToBool($isResponsive);
+						
+						
 			?>
 			<div class="unite-setting-input-object" data-name="<?php echo $name?>" data-settingtype="dimentions">
 				
 				<table class="unite-settings-table-dimentions ">
-					<tr>
-						<th>
-							<?php _e("Top","unlimited_elements")?>
-						</th>
-						<th>
-							<?php _e("Right","unlimited_elements")?>
-						</th>
-						<th>
-							<?php _e("Bottom","unlimited_elements")?>
-						</th>
-						<th>
-							<?php _e("Left","unlimited_elements")?>
-						</th>
-						<th>
-							<?php _e("Units","unlimited_elements")?>
-						</th>
-					</tr>
-					<tr>
-						<td>
-							<input data-pos="top" type="text" value="<?php echo $top?>" name="<?php echo $nameTop?>" class="unite-input-dimentions unite-input-dimentions-top">
-						</td>
-						<td>
-							<input data-pos="right" type="text" value="<?php echo $right?>" name="<?php echo $nameRight?>" class="unite-input-dimentions unite-input-dimentions-right">				
-						</td>
-						<td>
-							<input data-pos="bottom" type="text" value="<?php echo $bottom?>" name="<?php echo $nameBottom?>" class="unite-input-dimentions unite-input-dimentions-bottom">
-						</td>
-						<td>
-							<input data-pos="left" type="text" value="<?php echo $left?>" name="<?php echo $nameLeft?>" class="unite-input-dimentions unite-input-dimentions-left">
-						</td>
-						<td>
-							<select class="unite-setting-dimentions-select-units unite-input-dimentions" >
-								<option value="px" <?php echo $optionUnitsPX?>>PX</option>
-								<option value="%" <?php echo $optionPercent?>>%</option>
-							</select>
-						</td>
-					</tr>
+					
+					<?php $this->drawDimentionsSetting_drawRow($setting,$arrValues); ?>
+					<?php 
+						if($isResponsive == true){
+							$this->drawDimentionsSetting_drawRow($setting, $arrValues, "tablet_", "Tablet");
+							$this->drawDimentionsSetting_drawRow($setting, $arrValues, "mobile_", "Mobile");
+						}
+					?>
+					
 				</table>
 			</div>
 			

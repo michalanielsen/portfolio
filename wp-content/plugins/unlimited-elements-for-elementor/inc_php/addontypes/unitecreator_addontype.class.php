@@ -102,7 +102,7 @@ class UniteCreatorAddonType{
 	 * constructor
 	 */
 	public function __construct($typeName = ""){
-		
+				
 		$this->init();
 		
 		if(!empty($typeName))
@@ -118,7 +118,8 @@ class UniteCreatorAddonType{
 	 * get addon type object
 	 */
 	public static function getAddonTypeObject($type, $isLayout = false){
-
+		
+		
 		if(empty($type)){
 			
 			if($isLayout == true)

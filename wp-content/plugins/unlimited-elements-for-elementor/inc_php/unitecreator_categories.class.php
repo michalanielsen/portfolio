@@ -67,7 +67,7 @@ class UniteCreatorCategoriesWork extends UniteElementsBaseUC{
 	}
 	
 	
-	private function a_GETTERS(){}
+	private function a___________GETTERS__________(){}
 	
 	
 	/**
@@ -87,10 +87,10 @@ class UniteCreatorCategoriesWork extends UniteElementsBaseUC{
 		}else{
 			
 			$objLayouts = new UniteCreatorLayouts();
-			//$numAddonsZero = $objLayouts->getNumCatLayouts(0, $objAddonType);
+			$numAddonsZero = $objLayouts->getNumCatLayouts(0, $objAddonType);
 			
-			$numAddonsZero = 0;
 		}
+		
 		
 		//all
 		$arrCatAll = array();
@@ -291,7 +291,6 @@ class UniteCreatorCategoriesWork extends UniteElementsBaseUC{
 				
 		$arrCats = $this->db->fetchSql($query);
 		
-		
 		if(empty($arrCats))
 			$arrCats = array();
 		
@@ -416,9 +415,9 @@ class UniteCreatorCategoriesWork extends UniteElementsBaseUC{
 	 * addtype: empty (empty category), new (craete new category)
 	 */
 	public function getCatsShort($addType = "", $type, $addTypeToTitle = false){
-		
+				
 		$arrCats = $this->getCatRecords($type);
-		
+				
 		$arrCatsOutput = $this->getFirstCatByAddType($addType);
 		
 		foreach($arrCats as $cat){

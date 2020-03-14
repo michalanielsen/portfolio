@@ -34,7 +34,7 @@ class UniteCreatorAddonDefaultsView{
 		
 		$addonTitle = $this->addon->getTitle();
 		
-		$headerTitle = esc_html__("Addon Defaults","unlimited_elements");
+		$headerTitle = esc_html__("Widget Defaults","unlimited_elements");
 		$headerTitle .= " - ".$addonTitle;
 		
 		return($headerTitle);
@@ -75,7 +75,7 @@ class UniteCreatorAddonDefaultsView{
 		$addonID = UniteFunctionsUC::getGetVar("id","",UniteFunctionsUC::SANITIZE_ID);
 		
 		if(empty($addonID))
-			UniteFunctionsUC::throwError("Addon ID not given");
+			UniteFunctionsUC::throwError("Widget ID not given");
 		
 		$this->addonID = $addonID;
 		
@@ -109,6 +109,8 @@ class UniteCreatorAddonDefaultsView{
 		
 		$addonConfig->setSourceAddon();
 		$addonConfig->startWithPreview($isPreviewMode);
+		$addonConfig->disableFontsPanel();
+		
 		
 		$this->isPreviewMode = $isPreviewMode;
 		

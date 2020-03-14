@@ -552,6 +552,17 @@ class Toggle extends Widget_Base {
 				</div>
 			</div>
 		</div>
+
+<script>
+	(function($){
+	    $('a').click(function(event){
+			  event.preventDefault()
+		});
+	}(jQuery));
+	
+
+</script>
+
 		<?php
 	}
 }

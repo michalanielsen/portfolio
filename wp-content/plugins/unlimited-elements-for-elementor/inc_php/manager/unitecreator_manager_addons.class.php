@@ -35,9 +35,12 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 	protected $objBrowser;
 	protected $urlBuy;
 	protected $pluginName;
+	protected $putUpdateCatalogButton = true;
 	private $urlAjax;
 	private $product;		//product for web api
 	private $putItemButtonsType = "multiple";
+	private $isInsideParent = false;
+	
 	
 	/**
 	 * construct the manager
@@ -79,14 +82,15 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		if(GlobalsUC::$enableWebCatalog == false)
 			return(self::FILTER_CATALOG_INSTALLED);
 		
+		
 		if($this->objAddonType->allowWebCatalog == false)
 			return(self::FILTER_CATALOG_INSTALLED);
 		
 		$filterCatalog = HelperUC::getState(self::STATE_FILTER_CATALOG);
 		if(empty($filterCatalog))
 			$filterCatalog = $this->defaultFilterCatalog;
-
-					
+		
+		
 		return($filterCatalog);
 	}
 	
@@ -262,10 +266,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		$this->filterAddonType = $addonType;
 		
 		$this->objAddonType = UniteCreatorAddonType::getAddonTypeObject($addonType, $this->isLayouts);
-				
-		//dmp($this->objAddonType);
-		//exit();
-		
+						
 		$this->initByAddonType();
 	}
 	
@@ -369,10 +370,12 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		$data["description"] = $objLayout->getDescription();
 		$data["url_icon"] = $objLayout->getIcon();
 		$data["url_preview"] = $objLayout->getPreviewImage(true);
+		$data["url_preview_default"] = $objLayout->getDefaultPreviewImage();
 		$data["id"] = $objLayout->getID();
 		$data["is_active"] = true;		//no setting in layout yet
 		$data["add_html"] = "";
 		$data["url_edit"] = $objLayout->getUrlEditPost();
+		$data["url_view_post"] = $objLayout->getUrlViewPost();
 		$data["is_group"] = $objLayout->isGroup();
 		
 		
@@ -540,15 +543,19 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		$description = UniteFunctionsUC::getVal($data, "description");
 		$urlIcon = UniteFunctionsUC::getVal($data, "url_icon");
 		$urlPreview = UniteFunctionsUC::getVal($data, "url_preview");
+		$urlPreviewDefault = UniteFunctionsUC::getVal($data, "url_preview_default");
+		
 		$itemID = UniteFunctionsUC::getVal($data, "id");
 		$isActive = UniteFunctionsUC::getVal($data, "is_active");
 		$addHtml = UniteFunctionsUC::getVal($data, "add_html");
 		$isweb = UniteFunctionsUC::getVal($data, "isweb");
 		$fontIcon = UniteFunctionsUC::getVal($data, "font_icon");
 		$urlEdit = UniteFunctionsUC::getVal($data, "url_edit");
+		$urlViewPost = UniteFunctionsUC::getVal($data, "url_view_post");
 		$isGroup = UniteFunctionsUC::getVal($data, "is_group");
 		$isGroup = UniteFunctionsUC::strToBool($isGroup);
 		
+				
 		$liAddHTML = "";
 		
 		$state = null;
@@ -577,7 +584,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 			//add group if available
 			if($isGroup == true){
 				
-				$stateLabel = __("Group","unlimited_elements");
+				$stateLabel = __("Template Kit","unlimited_elements");
 				$htmlState = "<div class='uc-state-label uc-state-group'>
 					<div class='uc-state-label-text'>{$stateLabel}</div>
 				</div>";
@@ -598,12 +605,32 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		
 		$htmlPreview = "";
 		
+		$class = "uc-addon-thumbnail";
+		$classThumb = "";
+		$styleThumb = "";
+		
+		
+		if(empty($urlPreview)){
+			$classThumb = " uc-no-thumb";
+			
+			//replace by default preview
+			if(!empty($urlPreviewDefault)){
+				$classThumb = " uc-default-preview";
+				$urlPreview = $urlPreviewDefault;
+			}
+		}
+
+		
+		if(!empty($urlPreview)){			
+			$styleThumb = "style=\"background-image:url('{$urlPreview}')\"";
+		}
+
 		if($this->showAddonTooltip === true && !empty($urlPreview)){
 			$urlPreviewHtml = htmlspecialchars($urlPreview);
 			$htmlPreview = "data-preview='$urlPreviewHtml'";
 		}
 		
-		$class = "uc-addon-thumbnail";
+		
 		if($isActive == false)
 			$class .= " uc-item-notactive";
 		
@@ -617,6 +644,9 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 			$liAddHTML .= " data-urledit=\"$urlEdit\"";
 		}
 		
+		if(!empty($urlViewPost))
+			$liAddHTML .= " data-urlview=\"$urlViewPost\"";
+		
 		//set html output
 		$htmlItem  = "<li id=\"uc_item_{$itemID}\" data-id=\"{$itemID}\" data-title=\"{$title}\" data-name=\"{$name}\" data-description=\"{$description}\" {$liAddHTML} {$htmlPreview} {$class} >";
 		
@@ -626,61 +656,37 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 			$htmlItem .= "<a class='uc-link-item-pro' href='$urlBuy' target='_blank'>";
 		}
 		
-		if($this->viewType == self::VIEW_TYPE_INFO){
 			
-			$title = esc_html($title);
-			$descOutput = esc_html($descOutput);
 			
-			$htmlItem .= "	<div class=\"uc-item-title unselectable\" unselectable=\"on\">{$title}</div>";
-			$htmlItem .= "	<div class=\"uc-item-description unselectable\" unselectable=\"on\">{$descOutput}</div>";
-			$htmlItem .= "	<div class=\"uc-item-icon unselectable\" unselectable=\"on\"></div>";
+		//add icon to title
+		if(!empty($fontIcon))
+			$title = "<i class=\"$fontIcon\"></i> ".$title;
+		
+		//if svg type - set preview url as svg
+		if($this->objAddonType->isSVG == true){
 			
-			//add icon
-			$htmlIcon = "";
-			if(!empty($urlIcon))
-				$htmlIcon = "<div class='uc-item-icon' style=\"background-image:url('{$urlIcon}')\"></div>";
+			$classThumb .= " uc-type-shape-devider";
 			
-			$htmlItem .= $htmlIcon;
-			
-		}elseif($this->viewType == self::VIEW_TYPE_THUMB){			//thumb type
-			
-			$classThumb = "";
-			$style = "";
-			
-			//add icon to title
-			if(!empty($fontIcon))
-				$title = "<i class=\"$fontIcon\"></i> ".$title;
-			
-			//if svg type - set preview url as svg
-			if($this->objAddonType->isSVG == true){
+			if($isweb == false){
+				$urlPreview = null;
 				
-				$classThumb .= " uc-type-shape-devider";
-				
-				if($isweb == false){
-					$urlPreview = null;
-					
-					$svgContent = $objAddon->getHtml();
-					$urlPreview = UniteFunctionsUC::encodeSVGForBGUrl($svgContent);
-				}
-				
+				$svgContent = $objAddon->getHtml();
+				$urlPreview = UniteFunctionsUC::encodeSVGForBGUrl($svgContent);
 			}
 			
+		}
 			
-			if(empty($urlPreview))
-				$classThumb = " uc-no-thumb";
-			else{
-				$style = "style=\"background-image:url('{$urlPreview}')\"";
-			}
-			
-			
-			$htmlItem .= "	<div class=\"uc-item-thumb{$classThumb} unselectable\" unselectable=\"on\" {$style}>";
+			//output thumb
+			$htmlItem .= "	<div class=\"uc-item-thumb{$classThumb} unselectable\" unselectable=\"on\" {$styleThumb}>";
 			
 			//draw item actions
-			
 			$actionEdit = "edit_addon";
-			if($isLayout == true)
+			if($isLayout == true){
 				$actionEdit = "edit_addon_blank";
-			
+				
+				if($isGroup == true)
+					$actionEdit = "edit_layout_group";
+			}
 			
 			$urlIconEdit = GlobalsUC::$urlPluginImages."icon_item_edit.svg";
 			$urlIconPreview = GlobalsUC::$urlPluginImages."icon_item_preview.svg";
@@ -689,14 +695,23 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 			
 			$textPreview = __("Preview ", "unlimited_textdomain").$this->textSingle;
 			$textEdit = __("Edit ", "unlimited_textdomain").$this->textSingle;
+			
+			if($isGroup == true){
+				$textPreview = __("Preview Template Kit", "unlimited_textdomain");
+				$textEdit = __("Edit Template Kit", "unlimited_textdomain");
+			}
+			
 			$textDuplicate = __("Duplicate ", "unlimited_textdomain").$this->textSingle;
 			
 			
 			$htmlItem .= "<div class=\"uc-item-actions\">";
 			
 			$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-edit uc-tip' onfocus='this.blur()' data-action='{$actionEdit}' title='{$textEdit}' ><img src='{$urlIconEdit}'></a>";
-			$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-preview uc-tip' onfocus='this.blur()' data-action='preview_addon' title='$textPreview'><img src='{$urlIconPreview}'></a>";
-			$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-duplicate uc-tip' onfocus='this.blur()' data-action='duplicate_item' title='$textDuplicate'><img src='{$urlIconDuplicate}'></a>";
+			
+			if($isGroup == false){
+				$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-preview uc-tip' onfocus='this.blur()' data-action='preview_addon' title='$textPreview'><img src='{$urlIconPreview}'></a>";
+				$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-duplicate uc-tip' onfocus='this.blur()' data-action='duplicate_item' title='$textDuplicate'><img src='{$urlIconDuplicate}'></a>";
+			}
 			
 			$htmlItem .= "	<a href='javascript:void(0)' class='uc-item-action uc-item-action-menu' onfocus='this.blur()' data-action='open_menu'><img src='{$urlIconMenu}'></a>";
 			
@@ -712,9 +727,6 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 			if($addHtml)
 				$htmlItem .= $addHtml;
 			
-		}else{
-			UniteFunctionsUC::throwError("Wrong addons view type");
-		}
 		
 		if($state == UniteCreatorBrowser::STATE_PRO){
 			$htmlItem .= "</a>";
@@ -752,6 +764,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 	public function getCatsAndAddonsHtml($catID, $catTitle = "", $isweb = false, $params = array()){
 		
 		$arrCats = $this->getArrCats($params);
+		
 		
 		//change category if needed
 		$arrCatsAssoc = UniteFunctionsUC::arrayToAssoc($arrCats, "id");
@@ -820,7 +833,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 	 * get category items html
 	 */
 	public function getCatAddonsHtmlFromData($data){
-		
+				
 		$this->validateAddonType();
 				
 		$catID = UniteFunctionsUC::getVal($data, "catID");
@@ -861,13 +874,14 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		if(!empty($filterSearch))
 			$params["filter_search"] = $filterSearch;
 		
-		if(!empty($parentID))
+		if(!empty($parentID)){
+			$this->isInsideParent = true;
 			$params["parent_id"] = $parentID;
+		}
 		
 		if($resonseCombo == true){
 			
 			$response = $this->getCatsAndAddonsHtml($catID, $catTitle, $isweb, $params);
-			
 			
 		}else{
 			$itemsHtml = $this->getCatAddonsHtml($catID, $catTitle, $isweb, $params);
@@ -1203,7 +1217,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		}
 	
 		if($this->enableEditGroup)
-			$arrMenuItem["edit_layout_group"] = esc_html__("Edit Template Group","unlimited_elements");
+			$arrMenuItem["edit_layout_group"] = esc_html__("Edit Template Kit","unlimited_elements");
 		
 		if($this->enablePreview == true)
 			$arrMenuItem["preview_addon"] = esc_html__("Preview","unlimited_elements");
@@ -1360,7 +1374,6 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 
 		$filterCatalog = $this->getStateFilterCatalog();
 		
-		
 		switch($filterCatalog){
 			case self::FILTER_CATALOG_MIXED:
 			case self::FILTER_CATALOG_WEB:
@@ -1379,7 +1392,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 					$catsParams["filter_search_addons"] = $filterSearch;
 				
 				$arrCats = $this->objCats->getListExtra($this->objAddonType, "","", false, $catsParams);
-				
+								
 				$arrCats = $this->modifyLocalCats($arrCats);
 				
 			break;
@@ -1396,10 +1409,9 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 	 */
 	protected function getCatList($selectCatID = null, $arrCats = null, $params = array()){
 		
-		
 		if($arrCats === null)
 			$arrCats = $this->getArrCats($params);
-		
+					
 		$htmlCatList = $this->objCats->getHtmlCatList($selectCatID, $this->objAddonType, $arrCats);
 		
 		
@@ -1623,7 +1635,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		 		
 		 		<a href="javascript:void(0)" class="uc-manager-group-back"><?php _e("Back To Category","unlimited_elements")?></a>
 		 		
-		 		<div class="uc-manager-group-text"><?php _e("Template Group","unlimited_elements")?></div>
+		 		<div class="uc-manager-group-text"><?php _e("Template Kit","unlimited_elements")?></div>
 		 				 		
 		 	</div>
 		
@@ -1789,7 +1801,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		 		<a data-action="remove_item" type="button" class="unite-button-secondary button-disabled uc-button-item"><?php esc_html_e("Delete","unlimited_elements")?></a>
 		 		<a data-action="edit_addon" type="button" class="unite-button-primary button-disabled uc-button-item uc-single-item"><?php echo esc_html($textEdit)?> </a>
 		 		<a data-action="preview_addon" type="button" class="unite-button-secondary button-disabled uc-button-item uc-single-item"><?php esc_html_e("Preview", "unlimited_elements")?> </a>
-	 		
+	 			
 		 		<?php if($this->showTestAddon):?>
 		 		<a data-action="test_addon" type="button" class="unite-button-secondary button-disabled uc-button-item uc-single-item"><?php echo esc_html($textTest)?></a>
 				<?php endif?>
@@ -1957,7 +1969,7 @@ class UniteCreatorManagerAddonsWork extends UniteCreatorManager{
 		$arrMenuItem["edit_addon_blank"] = esc_html__("Edit In New Tab","unlimited_elements");
 		
 		if($this->enableEditGroup)
-			$arrMenuItem["edit_layout_group"] = esc_html__("Edit Template Group","unlimited_elements");
+			$arrMenuItem["edit_layout_group"] = esc_html__("Edit Template Kit","unlimited_elements");
 		
 		if($this->enableViewThumbnail)
 			$arrMenuItem["preview_thumb"] = esc_html__("View Thumbnail","unlimited_elements");

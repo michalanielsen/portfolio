@@ -16,12 +16,11 @@ class UniteCreatorWebAPI extends UniteCreatorWebAPIWork{
 	 */
 	public function __construct(){
 		
-		//if(GlobalsUC::$isLocal)
 		if(defined("UNLIMITED_ELEMENTS_UPRESS_URL_API"))
 			self::$urlAPI = UNLIMITED_ELEMENTS_UPRESS_URL_API;
 		
 		//self::$urlAPI = GlobalsUC::URL_API;
-		
+							
 		parent::__construct();
 	}
 	

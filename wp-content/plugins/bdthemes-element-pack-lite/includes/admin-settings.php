@@ -60,7 +60,7 @@ class ElementPack_Admin_Settings {
             BDTEP_TITLE,
             esc_html__( 'Core Widgets', 'bdthemes-element-pack' ),
             'manage_options',
-            self::PAGE_ID .'#widgets',
+            self::PAGE_ID .'#element_pack_active_modules',
             [ $this, 'display_page' ]
         );
 
@@ -76,7 +76,7 @@ class ElementPack_Admin_Settings {
         add_submenu_page(
             self::PAGE_ID,
             BDTEP_TITLE,
-            esc_html__( 'Extend', 'bdthemes-element-pack' ),
+            esc_html__( 'Elementor Extend', 'bdthemes-element-pack' ),
             'manage_options',
             self::PAGE_ID .'#element_pack_elementor_extend',
             [ $this, 'display_page' ]
@@ -1031,6 +1031,16 @@ class ElementPack_Admin_Settings {
                     'video_url'    => 'https://youtu.be/eeyR1YtUFZw',
                 ],
                 [
+                    'name'         => 'twitter-grid',
+                    'label'        => esc_html__( 'Twitter Grid', 'bdthemes-element-pack' ),
+                    'type'         => 'checkbox',
+                    'default'      => "off",
+                    'widget_type'  => 'free',
+                    'content_type' => 'others new',
+                    'demo_url'     => 'https://elementpack.pro/demo/element/twitter-grid/',
+                    'video_url'    => '',
+                ],
+                [
                     'name'         => 'twitter-slider',
                     'label'        => esc_html__( 'Twitter Slider', 'bdthemes-element-pack' ),
                     'type'         => 'checkbox',
@@ -1187,6 +1197,53 @@ class ElementPack_Admin_Settings {
             ],
             'element_pack_api_settings' => [
                 
+                [
+                    'name'              => 'twitter_group_start',
+                    'label'             => esc_html__( 'Twitter Access', 'bdthemes-element-pack' ),
+                    'desc'              => __( 'Go to <a href="https://apps.twitter.com/app/new" target="_blank">https://apps.twitter.com/app/new</a> for create your Consumer key and Access Token.', 'bdthemes-element-pack' ),
+                    'type'              => 'start_group',
+                    'video_url'         => 'https://youtu.be/IrQVteaaAow',
+                ],
+
+                [
+                    'name'              => 'twitter_name',
+                    'label'             => esc_html__( 'User Name', 'bdthemes-element-pack' ),
+                    'placeholder'       => 'for example: bdthemescom',
+                    'type'              => 'text',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ],
+                [
+                    'name'              => 'twitter_consumer_key',
+                    'label'             => esc_html__( 'Consumer Key', 'bdthemes-element-pack' ),
+                    'placeholder'       => '',
+                    'type'              => 'text',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ],
+                [
+                    'name'              => 'twitter_consumer_secret',
+                    'label'             => esc_html__( 'Consumer Secret', 'bdthemes-element-pack' ),
+                    'placeholder'       => '',
+                    'type'              => 'text',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ],
+                [
+                    'name'              => 'twitter_access_token',
+                    'label'             => esc_html__( 'Access Token', 'bdthemes-element-pack' ),
+                    'placeholder'       => '',
+                    'type'              => 'text',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ],
+                [
+                    'name'              => 'twitter_access_token_secret',
+                    'label'             => esc_html__( 'Access Token Secret', 'bdthemes-element-pack' ),
+                    'placeholder'       => '',
+                    'type'              => 'text',
+                    'sanitize_callback' => 'sanitize_text_field'
+                ],
+                [
+                    'name'              => 'twitter_group_end',
+                    'type'              => 'end_group',
+                ],
 
                 [
                     'name'              => 'recaptcha_group_start',
@@ -1276,7 +1333,7 @@ class ElementPack_Admin_Settings {
             'plugin_name'  => 'contact-form-7',
             'plugin_path'  => 'contact-form-7/wp-contact-form-7.php',
             'widget_type'  => 'free',
-            'content_type' => 'forms new',
+            'content_type' => 'forms',
             'demo_url'     => 'https://elementpack.pro/demo/element/contact-form-7/',
             'video_url'    => 'https://youtu.be/oWepfrLrAN4',
         ];
@@ -1302,6 +1359,18 @@ class ElementPack_Admin_Settings {
             'video_url'    => 'https://youtu.be/dXfcvTQQV8Q',
         ];
 
+        $third_party_widget['element_pack_third_party_widget'][] = [
+            'name'         => 'fluent-forms',
+            'label'        => esc_html__( 'Fluent Forms', 'bdthemes-element-pack' ),
+            'type'         => 'checkbox',
+            'default'      => "off",
+            'plugin_name'  => 'fluentform',
+            'plugin_path'  => 'fluentform/fluentform.php',
+            'widget_type'  => 'free',
+            'content_type' => 'forms new',
+            'demo_url'     => 'https://elementpack.pro/demo/element/fluent-forms/',
+            'video_url'    => '',
+        ];
 
         $third_party_widget['element_pack_third_party_widget'][] = [
             'name'         => 'faq',
@@ -1543,7 +1612,10 @@ class ElementPack_Admin_Settings {
             'label'        => esc_html__( 'Ninja Forms', 'bdthemes-element-pack' ),
             'type'         => 'checkbox',
             'default'      => "off",
-            'widget_type'  => 'pro',
+            'plugin_name'  => 'ninja-forms',
+            'plugin_path'  => 'ninja-forms/ninja-forms.php',
+            'widget_type'  => 'free',
+            'content_type' => 'forms new',
             'demo_url'     => 'https://elementpack.pro/demo/element/ninja-forms/',
             'video_url'    => 'https://youtu.be/rMKAUIy1fKc',
         ];
@@ -1553,12 +1625,14 @@ class ElementPack_Admin_Settings {
             'label'        => esc_html__( 'QuForm', 'bdthemes-element-pack' ),
             'type'         => 'checkbox',
             'default'      => "off",
+            'plugin_name'  => 'quform',
+            'plugin_path'  => 'quform/quform.php',
             'paid'         => 'https://codecanyon.net/item/quform-wordpress-form-builder/706149',
             'widget_type'  => 'pro',
             'content_type' => 'forms',
             'demo_url'     => 'https://elementpack.pro/demo/element/quform/',
             'video_url'    => 'https://youtu.be/LM0JtQ58UJM',
-        ];   
+        ];  
 
         $third_party_widget['element_pack_third_party_widget'][] = [
             'name'         => 'revolution-slider',
@@ -1759,8 +1833,8 @@ class ElementPack_Admin_Settings {
                             
                             <ul class="bdt-list bdt-list-divider" bdt-lightbox>
                                 <li>
-                                    <a href="https://youtu.be/MeD9BbX6fB0">
-                                        <h4 class="ep-link-title">What's New in Version V4.5.0</h4>
+                                    <a href="https://youtu.be/x2Pt9X8c4w4">
+                                        <h4 class="ep-link-title">What's New in Version V4.6.0</h4>
                                     </a>
                                 </li>
                                 <li>
@@ -2235,50 +2309,32 @@ class ElementPack_Admin_Settings {
     function script() {
         ?>
         <script>
-            jQuery(document).ready(function($) {                
+            jQuery(document).ready(function($) {
+                'use strict';               
 
-                // jQuery('.ep-option-item').each( function( index ) {
-                //     var pro_widget = jQuery(this).data('widget-type');
-                //     if ('pro' == pro_widget) {
-                //         jQuery(this).addClass("disabled-widget");
-                //         jQuery(this).find('input').attr("disabled", true);
-                //     }
-                // });
-
-                var hash = location.hash.substr(1);
-                
-                if (hash === 'widgets') {
-                   bdtUIkit.tab('.element-pack-dashboard .bdt-tab').show(1);
+                function hashHandler() {
+                    var $tab = $('.element-pack-dashboard .bdt-tab');
+                    if (window.location.hash) {
+                        var hash = window.location.hash.substring(1);
+                        bdtUIkit.tab( $tab ).show( $('#bdt-' + hash ).data('tab-index') );
+                    }
                 }
-                
 
-                jQuery("#adminmenu .toplevel_page_element_pack_options .wp-submenu > li:nth-child(3) > a").click(function(){
-                    bdtUIkit.tab('.element-pack-dashboard .bdt-tab').show(1);
-                    window.location.hash = "widgets"
-
+                $(window).on('load', function() {
+                    hashHandler();
                 });
 
-                jQuery("#adminmenu .toplevel_page_element_pack_options .wp-submenu > li:nth-child(4) > a").click(function(){
-                    bdtUIkit.tab('.element-pack-dashboard .bdt-tab').show(2);
-                    //window.location.hash = "widgets"
+                window.addEventListener("hashchange", hashHandler, true);
 
-                });
-
-                jQuery("#adminmenu .toplevel_page_element_pack_options .wp-submenu > li:nth-child(5) > a").click(function(){
-                    bdtUIkit.tab('.element-pack-dashboard .bdt-tab').show(3);
-                    //window.location.hash = "widgets"
-
-                });
-
-                jQuery("#adminmenu .toplevel_page_element_pack_options .wp-submenu > li:nth-child(6) > a").click(function(){
-                    bdtUIkit.tab('.element-pack-dashboard .bdt-tab').show(4);
-                    //window.location.hash = "widgets"
-
+                $('.toplevel_page_element_pack_options > ul > li > a ').on('click', function(event) {
+                    $(this).parent().siblings().removeClass('current');
+                    $(this).parent().addClass('current');
                 });
 
                 jQuery("#adminmenu .toplevel_page_element_pack_options .wp-submenu > li:nth-child(7) > a").click(function(){
                     window.location = "https://elementpack.pro/pricing/";
                 });
+
 
                 jQuery("#element_pack_active_modules_page a.ep-active-all-widget").click(function(){
                     jQuery('#element_pack_active_modules_page .ep-widget-free .checkbox').attr('checked','checked');

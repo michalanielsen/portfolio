@@ -10,8 +10,6 @@ defined('UNLIMITED_ELEMENTS_INC') or die('Restricted access');
 class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 	
 	
-	
-	
 	/**
 	 * save order from data
 	 */
@@ -19,7 +17,6 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 		
 		foreach($arrIDs as $order=>$postID)
 			UniteFunctionsWPUC::updatePostOrdering($postID, $order);			
-		
 	}
 	
 	
@@ -32,7 +29,6 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 			UniteFunctionsUC::throwError("no id's to delete");
 		
 		UniteFunctionsWPUC::deleteMultiplePosts($arrIDs);
-		
 	}
 	
 	
@@ -108,6 +104,7 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 	 */
 	protected function moveLayout($postID, $catID, $targetParentID = null){
 		
+		
 		$postID = (int)$postID;
 		$catID = (int)$catID;
 		
@@ -127,11 +124,9 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 				
 		UniteFunctionsWPUC::updatePost($postID, $arrUpdate);
 		
-		
 		//update category ID
-					
 		update_post_meta($postID, GlobalsProviderUC::META_KEY_CATID, $catID);
-		
+				
 	}
 	
 	
@@ -155,7 +150,6 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 	 */ 	 
 	public function getCatLayouts($catID = null, $objLayoutType=null, $onlyRecords = false, $options = array()){
 		
-		
 		//UniteFunctionsUC::showTrace();dmp("get layouts");dmp($options);
 		
 		$postType = null;
@@ -172,15 +166,12 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 			$layoutType = $objLayoutType->typeName;
 			if($objLayoutType->isBasicType)
 				$layoutType = null;
-
 		}
 		
 		if(empty($postType))
 			$postType = GlobalsProviderUC::POST_TYPE_LAYOUT;
-		
-		/*
+
 		$metaQuery = array();
-		$metaQuery[] = array("key"=>GlobalsProviderUC::META_KEY_LAYOUT_TYPE, "value"=>$layoutType);
 		
 		if($catID == "all")
 			$catID = null;
@@ -192,7 +183,6 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 			$metaQuery[] = array("key"=>GlobalsProviderUC::META_KEY_CATID, "value"=>$catID);
 		
 		$arrParams["meta_query"] = $metaQuery;
-		*/
 		
 		//dmp($options);exit();
 			
@@ -200,17 +190,22 @@ class UniteCreatorLayouts extends UniteCreatorLayoutsWork{
 		if(empty($parentID))
 			$parentID = 0;
 		
-		$arrParams = array();
-		$arrParams["post_parent"] = $parentID;
-				
+		//if parent id is 'all' - get all the layouts of the category
+		if($parentID !== "all")
+			$arrParams["post_parent"] = $parentID;
+		
 		$arrPosts = UniteFunctionsWPUC::getPostsByType($postType, $sortBY, $arrParams, true);
 		
-		//add the parent post as well
+		
+		//dmp("get cat layouts");dmp($arrPosts);exit();
+		
+		//don't add the parent post as well
+		/*
 		if(!empty($parentID)){
 			$post = get_post($parentID);
 			array_unshift($arrPosts, $post);
 		}
-		
+		*/
 		
 		if($onlyRecords == true)
 			return($arrPosts);
